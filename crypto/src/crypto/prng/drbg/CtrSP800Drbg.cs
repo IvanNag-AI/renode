@@ -665,6 +665,16 @@ namespace Org.BouncyCastle.Crypto.Prng.Drbg
 #endif
 
         /**
+	      * Update the DRBG.
+	      *
+	      * @param additionalInput additional input to be added to the DRBG without reseting the reseed counter and without the use of entropy.
+	      */
+	    public void Update(byte[] additionalInput)
+	    {
+	        CTR_DRBG_Update(additionalInput, mKey, mV);
+	    }
+
+	    /**
 	      * Reseed the DRBG.
 	      *
 	      * @param additionalInput additional input to be added to the DRBG in this step.
