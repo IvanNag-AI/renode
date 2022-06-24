@@ -29,6 +29,7 @@ namespace Org.BouncyCastle.Crypto.Prng.Drbg
 	    private byte[]                mV;
 	    private long                  mReseedCounter = 0;
 	    private bool                  mIsTdea = false;
+	    private bool                  mWithDerivationFunction = false;
 
 	    /**
 	     * Construct a SP800-90A CTR DRBG.
@@ -43,7 +44,7 @@ namespace Org.BouncyCastle.Crypto.Prng.Drbg
 	     * @param nonce nonce to further distinguish this DRBG (may be null).
 	     */
 	    public CtrSP800Drbg(IBlockCipher engine, int keySizeInBits, int securityStrength, IEntropySource entropySource,
-            byte[] personalizationString, byte[] nonce)
+            byte[] personalizationString, byte[] nonce, bool withDerivationFuction = true)
 	    {
 	        if (securityStrength > 256)
 	            throw new ArgumentException("Requested security strength is not supported by the derivation function");
@@ -54,6 +55,7 @@ namespace Org.BouncyCastle.Crypto.Prng.Drbg
 
             mEntropySource = entropySource;
 	        mEngine = engine;     
+	        mWithDerivationFunction = withDerivationFuction;
 
             mKeySizeInBits = keySizeInBits;
 	        mSecurityStrength = securityStrength;
@@ -67,7 +69,7 @@ namespace Org.BouncyCastle.Crypto.Prng.Drbg
 	    {
             byte[] entropy = GetEntropy();  // Get_entropy_input
             byte[] seedMaterial = Arrays.ConcatenateAll(entropy, nonce, personalisationString);
-	        byte[] seed = BlockCipherDF(seedMaterial, mSeedLength / 8);
+	        byte[] seed = mWithDerivationFunction ?  BlockCipherDF(seedMaterial, mSeedLength / 8) : seedMaterial;
 
             int blockSize = mEngine.GetBlockSize();
 
@@ -149,7 +151,7 @@ namespace Org.BouncyCastle.Crypto.Prng.Drbg
 			GetEntropy(input[..entropyLength]);
 			additionalInput.CopyTo(input[entropyLength..]);
 
-            byte[] seedMaterial = BlockCipherDF(input, mSeedLength / 8);
+            byte[] seedMaterial = mWithDerivationFunction ? BlockCipherDF(input, mSeedLength / 8) : input.ToArray();
             input.Fill(0x00);
 
             CTR_DRBG_Update(seedMaterial, mKey, mV);
@@ -527,7 +529,10 @@ namespace Org.BouncyCastle.Crypto.Prng.Drbg
 
 	        if (additionalInput != null)
 	        {
-	            additionalInput = BlockCipherDF(additionalInput, mSeedLength / 8);
+	            if(mWithDerivationFunction)
+	            {
+	                additionalInput = BlockCipherDF(additionalInput, mSeedLength / 8);
+	            }
 	            CTR_DRBG_Update(additionalInput, mKey, mV);
 	        }
 	        else
