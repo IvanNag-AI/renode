@@ -464,6 +464,27 @@ namespace Org.BouncyCastle.Crypto.Prng.Drbg
 	    }
 
 	    /**
+	     * Return the internal V value of the DRBG.
+	     *
+	     * @return the V value of the DRBG as a array of bytes.
+	     */
+	     public byte[] InternalV => mV;
+
+	    /**
+	     * Return the internal Key value of the DRBG.
+	     *
+	     * @return the Key value of the DRBG as a array of bytes.
+	     */
+	     public byte[] InternalKey => mKey;
+
+	    /**
+	     * Return the reseed count of the DRBG.
+	     *
+	     * @return the reseed count of the DRBG.
+	     */
+	     public long InternalReseedCount => mReseedCounter;
+
+	    /**
 	     * Populate a passed in array with random data.
 	     *
 	     * @param output output array for generated bits.
