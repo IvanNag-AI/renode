@@ -19,7 +19,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>crypto</RootNamespace>
     <AssemblyName>crypto</AssemblyName>
-    <TargetFrameworkVersion Condition="$(NET) != 'true'">v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="$(NET) != 'true'">v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <NoWarn>618;672</NoWarn>
