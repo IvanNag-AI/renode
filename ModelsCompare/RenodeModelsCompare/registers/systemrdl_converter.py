@@ -130,8 +130,16 @@ class SystemRDLConverter(BaseConverter):
         hw_reset_val: str = ''
         description: List[str] = field(default_factory=list)
         block_id: int = 0
+        erroneus: str = ''
         def __str__(self) -> str:
-            rets = f'field {{\n'
+
+            rets = ""
+            broken = len(self.erroneus) > 0
+
+            if broken:
+                rets += f'/* Conversion error: {self.erroneus}\n'
+
+            rets += f'field {{\n'
 
             if self.description:
                 rets += f'    desc = "{" ".join(self.description)}";\n'
@@ -147,6 +155,10 @@ class SystemRDLConverter(BaseConverter):
                 rets += f"    reset={int(self.end) - int(self.start) + 1 or len(bin_format)}'b{bin_format};\n"
 
             rets += f'}} {SystemRDLConverter._sanitize_name(self.name)}[{self.end}:{self.start}];'
+
+            if broken:
+                rets += "\n*/"
+
             return rets
 
     @dataclass
@@ -304,6 +316,7 @@ class SystemRDLConverter(BaseConverter):
         field_names = set()
         desc = []
         is_external = False
+        field_offsets = set()
 
         for f in register.Fields:
             field = Field(f)
@@ -321,6 +334,12 @@ class SystemRDLConverter(BaseConverter):
                     print(f'Correcting field name to {field_rdl.name} to avoid duplicates')
                 else:
                     field_names.add(field_rdl.name)
+
+                if field_rdl.start in field_offsets:
+                    field_rdl.erroneus = f'Field "{field_rdl.name}" overlaps another field at the same offset ({hex(field_rdl.start)}) and will be skipped, as it is illegal in SystemRDL.'
+                    print(field_rdl.erroneus)
+                else:
+                    field_offsets.add(field_rdl.start)
 
                 if reset is None:
                     field_rdl.description += ['This field has reset value calculated at runtime.']
