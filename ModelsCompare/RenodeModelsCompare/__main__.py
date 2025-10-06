@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2022-2023 Antmicro
+# Copyright (c) 2022-2025 Antmicro
 #
 # This file is licensed under the Apache License 2.0.
 # Full license text is available in 'LICENSE'.
@@ -95,11 +95,14 @@ def convert(args):
                 # TODO: this top-level map is generated in two places, unify it
                 file.write(f'addrmap {rgs[0].PeripheralName} {{\n\n')
 
-            for group in rgs:
-                with open(path, 'a') as file:
-                    file.write(converter.convert_to(group))
-                    file.write('\n')
-            with open(path, 'a') as file:
+                content = ""
+
+                for group in rgs:
+                    content += converter.convert_to(group)
+                    content += "\n"
+
+                file.write(converter.get_header())
+                file.write(content)
                 file.write('\n\n};')
     
     if args.from_systemrdl:

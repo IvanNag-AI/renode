@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2023 Antmicro
+# Copyright (c) 2023-2025 Antmicro
 #
 # This file is licensed under the Apache License 2.0.
 # Full license text is available in 'LICENSE'.
@@ -33,6 +33,7 @@ def validate_rdl(file: str) -> bool:
 
 class SystemRDLConverter(BaseConverter):
     uniq_name_counter = 0
+    header = []
 
     def __init__(self, layout_id = -1, fill_empty_registers = False, unwind_array = False) -> None:
         # Alternate layout id to convert, -1 means all at once
@@ -348,6 +349,7 @@ class SystemRDLConverter(BaseConverter):
 
                 if field_rdl.start in field_offsets:
                     field_rdl.erroneus = f'Field "{field_rdl.name}" overlaps another field at the same offset ({hex(field_rdl.start)}) and will be skipped, as it is illegal in SystemRDL.'
+                    self.header.append(field_rdl.erroneus)
                     print(field_rdl.erroneus)
                 else:
                     field_offsets.add(field_rdl.start)
@@ -389,6 +391,7 @@ class SystemRDLConverter(BaseConverter):
 
         if register.Offset in register_offsets:
             erroneus = f'Register "{register.Name}" overlaps another register at the same offset ({hex(register.Offset)}) and will be skipped, as it is illegal in SystemRDL.'
+            self.header.append(erroneus)
             print(erroneus)
         else:
             register_offsets.add(register.Offset)
@@ -402,6 +405,19 @@ class SystemRDLConverter(BaseConverter):
             rdl_reg.length = register.raw_data['ArrayInfo']['Length']
 
         return rdl_reg
+
+    def get_header(self) -> str:
+        if len(self.header) == 0:
+            return ""
+
+        rets =  "/* Some conversion errors detected, this might mean that the peripheral's registers structure in this file is incomplete.\n"
+        rets += " * Please refer to logs and comments in the file for more information.\n"
+        rets += " * \n"
+
+        for line in self.header:
+            rets += " * " + line + "\n"
+
+        return rets + " */\n\n"
 
     def convert_to(self, reg_group: RegistersGroup) -> str:
         rets =  f'addrmap {{'
