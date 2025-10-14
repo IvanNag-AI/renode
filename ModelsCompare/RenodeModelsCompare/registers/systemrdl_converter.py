@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2023 Antmicro
+# Copyright (c) 2023-2025 Antmicro
 #
 # This file is licensed under the Apache License 2.0.
 # Full license text is available in 'LICENSE'.
@@ -33,6 +33,7 @@ def validate_rdl(file: str) -> bool:
 
 class SystemRDLConverter(BaseConverter):
     uniq_name_counter = 0
+    header = []
 
     def __init__(self, layout_id = -1, fill_empty_registers = False, unwind_array = False) -> None:
         # Alternate layout id to convert, -1 means all at once
@@ -130,8 +131,16 @@ class SystemRDLConverter(BaseConverter):
         hw_reset_val: str = ''
         description: List[str] = field(default_factory=list)
         block_id: int = 0
+        erroneus: str = ''
         def __str__(self) -> str:
-            rets = f'field {{\n'
+
+            rets = ""
+            broken = len(self.erroneus) > 0
+
+            if broken:
+                rets += f'/* Conversion error: {self.erroneus}\n'
+
+            rets += f'field {{\n'
 
             if self.description:
                 rets += f'    desc = "{" ".join(self.description)}";\n'
@@ -147,6 +156,10 @@ class SystemRDLConverter(BaseConverter):
                 rets += f"    reset={int(self.end) - int(self.start) + 1 or len(bin_format)}'b{bin_format};\n"
 
             rets += f'}} {SystemRDLConverter._sanitize_name(self.name)}[{self.end}:{self.start}];'
+
+            if broken:
+                rets += "\n*/"
+
             return rets
 
     @dataclass
@@ -162,12 +175,19 @@ class SystemRDLConverter(BaseConverter):
         length: int = 0
 
         needs_external: bool = False
+        erroneus: str = ''
 
         def __str__(self) -> str:
             if not self.fields:
                 raise RuntimeError('SystemRDL requires for a register to have at least one field')
 
-            rets = f'{"external " if self.needs_external else ""}reg {{\n'
+            rets = ''
+            broken = len(self.erroneus) > 0
+
+            if broken:
+                rets += f'/* Conversion error: {self.erroneus}\n'
+
+            rets += f'{"external " if self.needs_external else ""}reg {{\n'
             rets += f'    name="{self.name}";\n'
 
             if self.description:
@@ -176,10 +196,11 @@ class SystemRDLConverter(BaseConverter):
             if self.regwidth:
                 rets += f'    regwidth={hex(self.regwidth)};\n'
 
-            if isinstance(self.fields, SystemRDLConverter.RDLConditionalBlock):
-                rets += str(self.fields)
-            else:
-                rets += '\n'.join(indent(str(f), '    ') for f in self.fields)
+            if not broken:
+                if isinstance(self.fields, SystemRDLConverter.RDLConditionalBlock):
+                    rets += str(self.fields)
+                else:
+                    rets += '\n'.join(indent(str(f), '    ') for f in self.fields)
             rets += f'\n}} {SystemRDLConverter._sanitize_name(self.identifier)} '
 
             if self.length > 0:
@@ -191,6 +212,9 @@ class SystemRDLConverter(BaseConverter):
                 rets += f' += {self.stride}'
 
             rets += ';'
+
+            if broken:
+                rets += "\n*/"
 
             return rets
 
@@ -293,7 +317,7 @@ class SystemRDLConverter(BaseConverter):
         
         return rdl_field
 
-    def _convert_register(self, register: Register) -> RDLRegister:
+    def _convert_register(self, register_offsets: set, register: Register) -> RDLRegister:
         def _int_or_none(val, alt=None):
             try:
                 return int(val)
@@ -304,6 +328,7 @@ class SystemRDLConverter(BaseConverter):
         field_names = set()
         desc = []
         is_external = False
+        field_offsets = set()
 
         for f in register.Fields:
             field = Field(f)
@@ -321,6 +346,13 @@ class SystemRDLConverter(BaseConverter):
                     print(f'Correcting field name to {field_rdl.name} to avoid duplicates')
                 else:
                     field_names.add(field_rdl.name)
+
+                if field_rdl.start in field_offsets:
+                    field_rdl.erroneus = f'Field "{field_rdl.name}" overlaps another field at the same offset ({hex(field_rdl.start)}) and will be skipped, as it is illegal in SystemRDL.'
+                    self.header.append(field_rdl.erroneus)
+                    print(field_rdl.erroneus)
+                else:
+                    field_offsets.add(field_rdl.start)
 
                 if reset is None:
                     field_rdl.description += ['This field has reset value calculated at runtime.']
@@ -355,9 +387,18 @@ class SystemRDLConverter(BaseConverter):
             width = 8
             desc += ["Could not determine register's width, guessed 8 bits."]
 
+        erroneus=''
+
+        if register.Offset in register_offsets:
+            erroneus = f'Register "{register.Name}" overlaps another register at the same offset ({hex(register.Offset)}) and will be skipped, as it is illegal in SystemRDL.'
+            self.header.append(erroneus)
+            print(erroneus)
+        else:
+            register_offsets.add(register.Offset)
+
         rdl_reg = self.RDLRegister(register.Name, register.raw_data['OriginalName'], 
                                    width, register.Offset,
-                                   fields, desc, needs_external=is_external)
+                                   fields, desc, needs_external=is_external, erroneus=erroneus)
 
         if not self.unwind_array and register.raw_data['ArrayInfo']['IsArray']:
             rdl_reg.stride = register.raw_data['ArrayInfo']['Stride']
@@ -365,14 +406,28 @@ class SystemRDLConverter(BaseConverter):
 
         return rdl_reg
 
+    def get_header(self) -> str:
+        if len(self.header) == 0:
+            return ""
+
+        rets =  "/* Some conversion errors detected, this might mean that the peripheral's registers structure in this file is incomplete.\n"
+        rets += " * Please refer to logs and comments in the file for more information.\n"
+        rets += " * \n"
+
+        for line in self.header:
+            rets += " * " + line + "\n"
+
+        return rets + " */\n\n"
+
     def convert_to(self, reg_group: RegistersGroup) -> str:
         rets =  f'addrmap {{'
         rets += '\n    desc = "Generated by RenodeModelsAnalyzer";'
+        register_offsets = set()
         for reg in reg_group.Registers:
             if not self.unwind_array and reg.raw_data['ParentReg']:
                 continue
             try:
-                rets += '\n' + indent(str(self._convert_register(reg)), '    ')
+                rets += '\n' + indent(str(self._convert_register(register_offsets, reg)), '    ')
             except RuntimeError as e:
                 print(e)
         rets += f'\n}} {reg_group.GroupName}_addrmap;'
