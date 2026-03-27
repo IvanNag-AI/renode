@@ -1,11 +1,10 @@
 //
-// Copyright (c) 2012-2024 Antmicro
+// Copyright (c) 2012-2026 Antmicro
 //
 // This file is licensed under the MIT License.
 // Full license text is available in the LICENSE file.
 
 using System;
-using System.Runtime.Serialization;
 using System.Collections.Generic;
 
 namespace Antmicro.Migrant
@@ -28,15 +27,6 @@ namespace Antmicro.Migrant
         /// </summary>
         /// <param name="message">Message.</param>
         public NonSerializableTypeException(string message) : base(message)
-        {
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="NonSerializableTypeException"/> class.
-        /// </summary>
-        /// <param name="info">Info.</param>
-        /// <param name="context">Context.</param>
-        public NonSerializableTypeException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
 

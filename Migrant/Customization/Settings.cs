@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2012-2021 Antmicro
+// Copyright (c) 2012-2026 Antmicro
 //
 // This file is licensed under the MIT License.
 // Full license text is available in the LICENSE file.
@@ -32,12 +32,6 @@ namespace Antmicro.Migrant.Customization
         /// that is available when that data is deserialized.
         /// </summary>
         public VersionToleranceLevel VersionTolerance { get; private set; }
-
-        /// <summary>
-        /// Specifies whether Migrant should use GetObjectData approach for serialization.
-        /// </summary>
-        /// <value><c>true</c> if support for ISerializable is active; otherwise, <c>false</c>.</value>
-        public bool SupportForISerializable { get; private set; }
 
         /// <summary>
         /// Specifies whether Migrant should utilize IXmlSerializable interface.
@@ -91,9 +85,6 @@ namespace Antmicro.Migrant.Customization
         /// <param name = "treatCollectionAsUserObject">
         /// Specifies if collection objects are to be deserialized without optimization (treated as normal user objects).
         /// </param>
-        /// <param name = "supportForISerializable">
-        /// Specifies whether Migrant should use GetObjectData approach for serialization.
-        /// </param>
         /// <param name="supportForIXmlSerializable"> 
         /// Specifies whether Migrant should use xml serialization on objects implementing IXmlSerializable.
         /// </param>
@@ -111,13 +102,12 @@ namespace Antmicro.Migrant.Customization
         /// Specifies if type stamps should be compared even when GUID has not changed.
         /// </param>
         public Settings(Method serializationMethod = Method.Generated, Method deserializationMethod = Method.Generated, VersionToleranceLevel versionTolerance = 0,
-                        bool supportForISerializable = false, bool supportForIXmlSerializable = false, bool treatCollectionAsUserObject = false,
+                        bool supportForIXmlSerializable = false, bool treatCollectionAsUserObject = false,
                         bool useBuffering = true, bool disableTypeStamping = false, ReferencePreservation referencePreservation = ReferencePreservation.Preserve, bool forceStampVerification = false)
         {
             SerializationMethod = serializationMethod;
             DeserializationMethod = deserializationMethod;
             VersionTolerance = versionTolerance;
-            SupportForISerializable = supportForISerializable;
             SupportForIXmlSerializable = supportForIXmlSerializable;
             TreatCollectionAsUserObject = treatCollectionAsUserObject;
             UseBuffering = useBuffering;
@@ -142,9 +132,6 @@ namespace Antmicro.Migrant.Customization
         /// <param name = "treatCollectionAsUserObject">
         /// Specifies if collection objects are to be deserialized without optimization (treated as normal user objects).
         /// </param>
-        /// <param name = "supportForISerializable">
-        /// Specifies whether Migrant should use GetObjectData approach for serialization.
-        /// </param>
         /// <param name="useBuffering"> 
         /// True if buffering should be used, false if writes should directly go to the stream and reads should never read
         /// data in advance. Disabling buffering also disables padding.
@@ -159,14 +146,13 @@ namespace Antmicro.Migrant.Customization
         /// Specifies if type stamps should be compared even when GUID has not changed.
         /// </param>
         public Settings With(Method? serializationMethod = null, Method? deserializationMethod = null, VersionToleranceLevel? versionTolerance = null,
-                             bool? supportForISerializable = null, bool? treatCollectionAsUserObject = null, bool? useBuffering = null, bool? disableTypeStamping = null,
+                             bool? treatCollectionAsUserObject = null, bool? useBuffering = null, bool? disableTypeStamping = null,
                              ReferencePreservation? referencePreservation = null, bool? forceStampVerification = null)
         {
             var result = new Settings {
                 SerializationMethod = serializationMethod ?? SerializationMethod,
                 DeserializationMethod = deserializationMethod ?? DeserializationMethod,
                 VersionTolerance = versionTolerance ?? VersionTolerance,
-                SupportForISerializable = supportForISerializable ?? SupportForISerializable,
                 TreatCollectionAsUserObject = treatCollectionAsUserObject ?? TreatCollectionAsUserObject,
                 UseBuffering = useBuffering ?? UseBuffering,
                 DisableTypeStamping = disableTypeStamping ?? DisableTypeStamping,

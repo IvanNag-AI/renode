@@ -14,7 +14,6 @@ using Antmicro.Migrant.VersionTolerance;
 using System.Collections.ObjectModel;
 using Antmicro.Migrant.Generators;
 using System.Collections;
-using System.Text;
 using System.Linq;
 
 namespace Antmicro.Migrant
@@ -45,13 +44,6 @@ namespace Antmicro.Migrant
 
             objectsForSurrogates = new SwapList();
             surrogatesForObjects = new SwapList();
-
-            if(settings.SupportForISerializable)
-            {
-                ForObject<System.Runtime.Serialization.ISerializable>().SetSurrogate(x => new SurrogateForISerializable(x));
-                ForSurrogate<SurrogateForISerializable>().SetObject(x => x.Restore());
-                ForObject<Delegate>().SetSurrogate<Func<Delegate, object>>(null); //because Delegate implements ISerializable but we support it directly.
-            }
 
             if(settings.SupportForIXmlSerializable)
             {
