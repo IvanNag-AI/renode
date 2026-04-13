@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2012-2024 Antmicro
+// Copyright (c) 2012-2026 Antmicro
 //
 // This file is licensed under the MIT License.
 // Full license text is available in the LICENSE file.
@@ -575,6 +575,8 @@ namespace Antmicro.Migrant
             case DeserializationResult.StreamCorrupted:
             case DeserializationResult.TypeStructureChanged:
                 throw LastException;
+            case DeserializationResult.MetadataCorrupted:
+                throw new InvalidOperationException("Metadata Corrupted in deserialization stream.");
             default:
                 throw new ArgumentOutOfRangeException();
             }
