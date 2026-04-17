@@ -13,7 +13,7 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" /> 
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="OptionsParser_NET.csproj" />
+    <ProjectReference Include="OptionsParser.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Tests\ParserTests.cs" />
