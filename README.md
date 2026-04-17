@@ -42,7 +42,7 @@ Below is the simplest way to run analysis on the entire solution:
 
 ```
 dotnet run --configuration Release --project ModelsAnalyzer/Runner/Runner.csproj \
--- -s renode/Renode_NET.sln --show-summary
+-- -s renode/Renode.sln --show-summary
 ```
 
 By default, Runner doesn't display full walkthrough through solution, including files that don't contain peripherals. Still, it has to walk trough the entire solution, to verify which are peripherals and which are not (a peripheral is a class implementing `IPeripheral` interface). To display the entire walkthough you can pass `--no-collapse` option.
@@ -144,7 +144,7 @@ To limit data gathering to a subset of files and analyzers, you can use the foll
 
 ```
 dotnet run --project ModelsAnalyzer/Runner/Runner.csproj \
--- -s renode/Renode_NET.sln --severity Info \
+-- -s renode/Renode.sln --severity Info \
 --files "Potato_UART.cs" "Litex_UART.cs" "TrivialUart.cs" "AmbiqApollo4_IOMaster.cs" \
  "AmbiqApollo4_Timer.cs" "EOSS3_PacketFifo.cs" "NRF52840_EGU.cs" "AppUart.cs" "GIC.cs" \
 --analyzers RegistersDefinitionAnalyzer
@@ -155,7 +155,7 @@ dotnet run --project ModelsAnalyzer/Runner/Runner.csproj \
 This command executes RegistersCoverageAnalyzer on PotatoUART, with `Trace` log level:
 
 ```
-renode-analysis-runner -s renode/Renode_NET.sln \
+renode-analysis-runner -s renode/Renode.sln \
 --analyzers RegistersCoverageAnalyzer \
 --files Potato_UART.cs -l Trace \
 --output .
@@ -243,7 +243,7 @@ Potato_UART is a simple test case and passes without problems.
 Get coverage analysis for STM32F1GPIOPort:
 
 ```
-renode-analysis-runner -s renode/Renode_NET.sln \
+renode-analysis-runner -s renode/Renode.sln \
 --analyzers RegistersCoverageAnalyzer \
 --files STM32F1GPIOPort.cs -l Trace \
 --output . --show-summary
@@ -254,7 +254,7 @@ If you see output file, this analysis displays erroneous data: it can't get info
 
 * #### Coverage for AmbiqApollo4_GPIO
 ```
-renode-analysis-runner -s renode/Renode_NET.sln \
+renode-analysis-runner -s renode/Renode.sln \
 --analyzers RegistersCoverageAnalyzer \
 --files AmbiqApollo4_GPIO.cs -l Trace \
 --output . --show-summary
