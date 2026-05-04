@@ -3,7 +3,7 @@
     <NoWarn>SYSLIB0050;SYSLIB0051</NoWarn> <!-- Suppresses, but warn in WarnUser target -->
     <TargetFrameworks>net6.0</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-	  <Deterministic>false</Deterministic>
+    <Deterministic>false</Deterministic>
     <RootNamespace>Antmicro.Migrant</RootNamespace>
     <AssemblyName>Migrant</AssemblyName>
   </PropertyGroup>
