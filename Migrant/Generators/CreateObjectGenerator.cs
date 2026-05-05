@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2012-2021 Antmicro
+// Copyright (c) 2012-2026 Antmicro
 //
 // This file is licensed under the MIT License.
 // Full license text is available in the LICENSE file.
@@ -7,7 +7,7 @@
 using System;
 using System.Reflection;
 using System.Reflection.Emit;
-using System.Runtime.Serialization;
+using System.Runtime.CompilerServices;
 
 namespace Antmicro.Migrant.Generators
 {
@@ -56,7 +56,7 @@ namespace Antmicro.Migrant.Generators
                 generator.Call(() => Activator.CreateInstance(type, default(bool)));
                 break;
                 case ObjectReader.CreationWay.Uninitialized:
-                generator.Call(() => FormatterServices.GetUninitializedObject(type));
+                generator.Call(() => RuntimeHelpers.GetUninitializedObject(type));
                 break;
             }
 

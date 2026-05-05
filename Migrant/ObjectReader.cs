@@ -1,13 +1,13 @@
 //
-// Copyright (c) 2012-2021 Antmicro
+// Copyright (c) 2012-2026 Antmicro
 //
 // This file is licensed under the MIT License.
 // Full license text is available in the LICENSE file.
 
 using System;
 using System.IO;
-using System.Runtime.Serialization;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Collections.Generic;
 using System.Collections;
 using Antmicro.Migrant.Hooks;
@@ -337,8 +337,8 @@ namespace Antmicro.Migrant
                 if(isSurrogated)
                 {
                     var objectTypeAfterDesurrogation = ReadType();
-                    // using formatter service here is enough, as the whole content of an object will be cloned later
-                    deserializedObjects[refId] = FormatterServices.GetUninitializedObject(objectTypeAfterDesurrogation.UnderlyingType);
+                    // using GetUninitializedObject here is enough, as the whole content of an object will be cloned later
+                    deserializedObjects[refId] = RuntimeHelpers.GetUninitializedObject(objectTypeAfterDesurrogation.UnderlyingType);
                     var surrogate = readMethods.createObjectMethodsProvider.GetOrCreate(type.UnderlyingType)();
                     surrogatesWhileReading.Add(refId, surrogate);
                 }
@@ -659,7 +659,7 @@ namespace Antmicro.Migrant
                 result = Activator.CreateInstance(type, true);
                 break;
                 case CreationWay.Uninitialized:
-                result = FormatterServices.GetUninitializedObject(type);
+                result = RuntimeHelpers.GetUninitializedObject(type);
                 break;
             }
             return result;
