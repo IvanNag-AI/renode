@@ -25,6 +25,13 @@ namespace Antmicro.OptionsParser
                 value = null;
                 return false;
             }
+
+            // For nullable types, null can only be achieved by not specifying the option at all (as a default value).
+            var underlyingNullableType = Nullable.GetUnderlyingType(type);
+            if(underlyingNullableType != null)
+            {
+                return TryParse(str, underlyingNullableType, out value);
+            }
             
             if(type == typeof(string))
             {

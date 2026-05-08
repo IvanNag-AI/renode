@@ -197,6 +197,46 @@ namespace Antmicro.OptionsParser.Tests
         }
 
         [Test]
+        public void ShouldParseNullableIntOptionWithValue()
+        {
+            var args = new [] { "--number", "-1" };
+            var parser = new OptionsParser();
+            parser.WithOption<int?>("number");
+
+            parser.Parse(args);
+
+            Assert.AreEqual(1, parser.ParsedOptions.Count());
+            Assert.AreEqual("number", parser.ParsedOptions.First().Flag.LongName);
+            Assert.AreEqual(-1, parser.ParsedOptions.First().Value);
+        }
+
+        [Test]
+        public void ShouldKeepNullableIntOptionNullWhenMissing()
+        {
+            var args = new string[0];
+            var parser = new OptionsParser();
+            var options = new OptionsWithNullableInt();
+
+            parser.Parse(options, args);
+
+            Assert.AreEqual(0, parser.ParsedOptions.Count());
+            Assert.IsNull(options.Value);
+        }
+
+        [Test]
+        public void ShouldSetNullableIntOptionInClass()
+        {
+            var args = new [] { "--value", "-1" };
+            var parser = new OptionsParser();
+            var options = new OptionsWithNullableInt();
+
+            parser.Parse(options, args);
+
+            Assert.AreEqual(1, parser.ParsedOptions.Count());
+            Assert.AreEqual(-1, options.Value);
+        }
+
+        [Test]
         public void ShouldParseLongSwitchWithStringWithAssignmentOperator()
         {
             var args = new [] { "--long=test" };
@@ -775,6 +815,11 @@ namespace Antmicro.OptionsParser.Tests
         {
             [DefaultValue(-1)]
             public int Value { get; set; }
+        }
+
+        private class OptionsWithNullableInt
+        {
+            public int? Value { get; set; }
         }
         
         private class OptionsWithPositionalEnumArgument

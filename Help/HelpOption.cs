@@ -160,21 +160,23 @@ namespace Antmicro.OptionsParser
 
         private static void AppendTypeInformation(StringBuilder optionBuilder, IFlag option)
         {
-            if(option.OptionType.IsArray)
+            var optionType = Nullable.GetUnderlyingType(option.OptionType) ?? option.OptionType;
+
+            if(optionType.IsArray)
             {
-                optionBuilder.AppendFormat("{0}s separated by '{1}'", option.OptionType.GetElementType().Name.ToUpper(), option.Delimiter);
+                optionBuilder.AppendFormat("{0}s separated by '{1}'", optionType.GetElementType().Name.ToUpper(), option.Delimiter);
             }
-            else if(option.OptionType.IsEnum)
+            else if(optionType.IsEnum)
             {
                 optionBuilder.AppendLine("ENUM with possible values: ");
-                foreach(var name in GetEnumNames(option.OptionType))
+                foreach(var name in GetEnumNames(optionType))
                 {
                     optionBuilder.Append(' ', 32).Append(name.Item1).Append('\n');
                 }
             }
             else
             {
-                optionBuilder.Append(option.OptionType.Name.ToUpper());
+                optionBuilder.Append(optionType.Name.ToUpper());
             }
         }
 
