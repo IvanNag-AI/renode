@@ -87,6 +87,9 @@ namespace DNNE.BuildTasks
         // Optional
         public string AssemblyVersion { get; set; }
 
+        // Optional
+        public bool ForceGnuToolchain { get; set; }
+
         // Used to ensure the supplied path is absolute and
         // can be supplied as-is in a command line scenario.
         internal string AbsoluteExportsDefFilePath
@@ -162,7 +165,7 @@ Native Build:
             }
             else if (Language.Equals("c99", StringComparison.OrdinalIgnoreCase))
             {
-                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows) && !ForceGnuToolchain)
                 {
                     Windows.ConstructCommandLine(this, out command, out commandArguments);
                 }
@@ -173,7 +176,7 @@ Native Build:
                         throw new NotSupportedException(".NET Framework can only be targeted on Windows");
                     }
 
-                    if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+                    if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux) || ForceGnuToolchain)
                     {
                         Linux.ConstructCommandLine(this, out command, out commandArguments);
                     }

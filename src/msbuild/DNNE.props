@@ -65,6 +65,9 @@ DNNE.props
         This value will be placed after all other flags passed to the compiler. -->
     <DnneLinkerUserFlags></DnneLinkerUserFlags>
 
+    <!-- Set to true to force the use of a GNU or compatible toolchain on Windows. -->
+    <DnneForceGnuToolchain>false</DnneForceGnuToolchain>
+
     <!-- Provide a .def file to pass to the Windows Linker for controlling
         how exports are handled. This is only passed to the linker on
         the Windows platform.

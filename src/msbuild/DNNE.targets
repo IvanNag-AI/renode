@@ -236,6 +236,7 @@ DNNE.targets
         IsSelfContained="$(DnneSelfContained_Experimental)"
         UserDefinedCompilerFlags="$(DnneCompilerUserFlags)"
         UserDefinedLinkerFlags="$(DnneLinkerUserFlags)"
+        ForceGnuToolchain="$(DnneForceGnuToolchain)"
         AdditionalIncludeDirectories="@(__DnneAdditionalIncludeDirectories)">
       <Output TaskParameter="Command" PropertyName="CompilerCmd" />
       <Output TaskParameter="CommandArguments" PropertyName="CompilerArgs" />
