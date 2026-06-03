@@ -156,14 +156,29 @@ typedef volatile long dnne_lock_handle;
 #define DNNE_LOCK_OPEN (0)
 #define DNNE_LOCK_TAKEN (-1)
 
-#ifdef DNNE_WINDOWS
+#if defined(DNNE_WINDOWS)
+#define DNNE_CORECLR_NAME DNNE_STR("coreclr.dll")
+#elif defined(DNNE_OSX)
+#define DNNE_CORECLR_NAME DNNE_STR("libcoreclr.dylib")
+#else
+#define DNNE_CORECLR_NAME DNNE_STR("libcoreclr.so")
+#endif
 
+#ifdef DNNE_WINDOWS
 #define WIN32_LEAN_AND_MEAN
 #define NOMINMAX
 #include <Windows.h>
+#include <io.h>
+#include <stdio.h>
+#include <string.h>
+#include <wchar.h>
 
 #define DNNE_NORETURN __declspec(noreturn)
 #define DNNE_DIR_SEPARATOR L'\\'
+#define dnne_access(path) _waccess(path, 0)
+#define dnne_realpath(path, buffer) _wfullpath(buffer, path, DNNE_MAX_PATH)
+#define dnne_snprintf swprintf
+#define dnne_strrchr wcsrchr
 
 static void* load_library(const char_t* path)
 {
@@ -234,12 +249,18 @@ static void exit_lock(dnne_lock_handle* lock)
 
 #include <dlfcn.h>
 #include <limits.h>
+#include <stdio.h>
 #include <string.h>
 #include <sched.h>
 #include <errno.h>
+#include <unistd.h>
 
 #define DNNE_NORETURN __attribute__((__noreturn__))
 #define DNNE_DIR_SEPARATOR '/'
+#define dnne_access(path) access(path, F_OK)
+#define dnne_realpath(path, buffer) realpath(path, buffer)
+#define dnne_snprintf snprintf
+#define dnne_strrchr strrchr
 
 static void* load_library(const char_t* path)
 {
@@ -423,6 +444,39 @@ static int get_current_dir_filepath(int32_t buffer_len, char_t* buffer, int32_t 
     return DNNE_SUCCESS;
 }
 
+static bool file_exists_in_dir(const char_t* directory, const char_t* file_name)
+{
+    char_t file_path[DNNE_MAX_PATH];
+    dnne_snprintf(file_path, DNNE_ARRAY_SIZE(file_path), DNNE_STR("%s%c%s"), directory, DNNE_DIR_SEPARATOR, file_name);
+    return dnne_access(file_path) == 0;
+}
+
+static bool try_get_portable_runtime_root(const char_t* assembly_path, char_t* buffer)
+{
+    const char_t* last_separator = dnne_strrchr(assembly_path, DNNE_DIR_SEPARATOR);
+    if (last_separator == NULL)
+        return false;
+
+    int assembly_dir_len = (int)(last_separator - assembly_path);
+    char_t runtime_root_candidate[DNNE_MAX_PATH];
+    dnne_snprintf(runtime_root_candidate, DNNE_ARRAY_SIZE(runtime_root_candidate), DNNE_STR("%.*s%c..%c.."), assembly_dir_len, assembly_path, DNNE_DIR_SEPARATOR, DNNE_DIR_SEPARATOR);
+
+    if (dnne_realpath(runtime_root_candidate, buffer) == NULL)
+        return false;
+
+    return file_exists_in_dir(buffer, DNNE_CORECLR_NAME) && file_exists_in_dir(buffer, DNNE_STR("Renode.dll"));
+}
+
+static bool try_get_portable_app_path(const char_t* assembly_path, char_t* buffer)
+{
+    char_t runtime_root[DNNE_MAX_PATH];
+    if (!try_get_portable_runtime_root(assembly_path, runtime_root))
+        return false;
+
+    dnne_snprintf(buffer, DNNE_MAX_PATH, DNNE_STR("%s%c%s"), runtime_root, DNNE_DIR_SEPARATOR, DNNE_STR("Renode.dll"));
+    return true;
+}
+
 #ifdef DNNE_WINDOWS
 typedef int (NETHOST_CALLTYPE *get_hostfxr_path_fn)(char_t*, size_t*, const struct get_hostfxr_parameters*);
 static get_hostfxr_path_fn get_hostfxr_path_fptr;
@@ -469,6 +523,7 @@ static int load_hostfxr(const char_t* assembly_path)
     // Discover the path to hostfxr.
     char_t buffer[DNNE_MAX_PATH];
     size_t buffer_size = DNNE_ARRAY_SIZE(buffer);
+    char_t dotnet_root_buffer[DNNE_MAX_PATH];
     int rc = load_nethost();
     if (is_failure(rc))
         return rc;
@@ -477,6 +532,10 @@ static int load_hostfxr(const char_t* assembly_path)
     params.size = sizeof(params);
     params.assembly_path = assembly_path;
     params.dotnet_root = NULL;
+    if (try_get_portable_runtime_root(assembly_path, dotnet_root_buffer))
+    {
+        params.dotnet_root = dotnet_root_buffer;
+    }
     rc = get_hostfxr_path(buffer, &buffer_size, &params);
     if (is_failure(rc))
         return rc;
@@ -505,7 +564,13 @@ static int init_dotnet(const char_t* assembly_path)
     // entry-point. The logic here is to trick the hosting API into initializing as an application
     // but call the "load assembly and get delegate" instead of "run main". This has impact
     // on the TPA make-up and hence assembly loading in general since the TPA populates the default ALC.
+    char_t config_path_buffer[DNNE_MAX_PATH];
     config_path = assembly_path;
+    // Portable packages keep the runtime next to Renode, not next to librenode.
+    if (try_get_portable_app_path(assembly_path, config_path_buffer))
+    {
+        config_path = config_path_buffer;
+    }
 #else
     char_t buffer[DNNE_MAX_PATH];
     const char_t config_filename[] = DNNE_STR(DNNE_TOSTRING(DNNE_ASSEMBLY_NAME)) DNNE_STR(".runtimeconfig.json");
