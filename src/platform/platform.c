@@ -423,6 +423,40 @@ static int get_current_dir_filepath(int32_t buffer_len, char_t* buffer, int32_t 
     return DNNE_SUCCESS;
 }
 
+#ifdef DNNE_WINDOWS
+typedef int (NETHOST_CALLTYPE *get_hostfxr_path_fn)(char_t*, size_t*, const struct get_hostfxr_parameters*);
+static get_hostfxr_path_fn get_hostfxr_path_fptr;
+#define get_hostfxr_path get_hostfxr_path_fptr
+
+static int load_nethost(void)
+{
+    if (get_hostfxr_path_fptr != NULL)
+        return DNNE_SUCCESS;
+
+    char_t buffer[DNNE_MAX_PATH];
+    const char_t nethost_filename[] = DNNE_STR("nethost.dll");
+    const char_t* nethost_path = NULL;
+    int rc = get_current_dir_filepath(DNNE_ARRAY_SIZE(buffer), buffer, DNNE_ARRAY_SIZE(nethost_filename), nethost_filename, &nethost_path);
+    if (is_failure(rc))
+        return rc;
+
+    HMODULE lib = LoadLibraryW(nethost_path);
+    if (lib == NULL)
+        return (int)HRESULT_FROM_WIN32(GetLastError());
+
+    get_hostfxr_path_fptr = (get_hostfxr_path_fn)GetProcAddress(lib, "get_hostfxr_path");
+    if (get_hostfxr_path_fptr == NULL)
+        return (int)HRESULT_FROM_WIN32(GetLastError());
+
+    return DNNE_SUCCESS;
+}
+#else
+static int load_nethost(void)
+{
+    return DNNE_SUCCESS;
+}
+#endif
+
 // Globals to hold hostfxr exports
 
 static hostfxr_initialize_for_dotnet_command_line_fn init_self_contained_fptr;
@@ -435,11 +469,15 @@ static int load_hostfxr(const char_t* assembly_path)
     // Discover the path to hostfxr.
     char_t buffer[DNNE_MAX_PATH];
     size_t buffer_size = DNNE_ARRAY_SIZE(buffer);
+    int rc = load_nethost();
+    if (is_failure(rc))
+        return rc;
+
     struct get_hostfxr_parameters params;
     params.size = sizeof(params);
     params.assembly_path = assembly_path;
     params.dotnet_root = NULL;
-    int rc = get_hostfxr_path(buffer, &buffer_size, &params);
+    rc = get_hostfxr_path(buffer, &buffer_size, &params);
     if (is_failure(rc))
         return rc;
 
