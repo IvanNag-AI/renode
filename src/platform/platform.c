@@ -356,7 +356,12 @@ DNNE_EXTERN_C DNNE_API void DNNE_CALLTYPE set_failure_callback(failure_fn cb)
         #pragma comment(linker, "/alternatename:dnne_abort=default_dnne_abort")
     #endif
 #else
-    #define DNNE_DEFAULT_IMPL(methodName, ...) __attribute__((weak)) methodName(__VA_ARGS__)
+    // GNU ld cannot export a weak default implementation from a PE DLL.
+    #ifdef DNNE_WINDOWS
+        #define DNNE_DEFAULT_IMPL(methodName, ...) methodName(__VA_ARGS__)
+    #else
+        #define DNNE_DEFAULT_IMPL(methodName, ...) __attribute__((weak)) methodName(__VA_ARGS__)
+    #endif
 #endif
 
 DNNE_EXTERN_C DNNE_API void DNNE_DEFAULT_IMPL(dnne_abort, enum failure_type type, int error_code)
