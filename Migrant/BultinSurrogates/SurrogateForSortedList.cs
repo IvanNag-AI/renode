@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2012-2023 Antmicro
+// Copyright (c) 2012-2026 Antmicro
 //
 // This file is licensed under the MIT License.
 // Full license text is available in the LICENSE file.
@@ -14,6 +14,7 @@ namespace Antmicro.Migrant.BultinSurrogates
         {
             keys = new List<TKey>(list.Count);
             values = new List<TVal>(list.Count);
+            comparer = list.Comparer;
 
             foreach(var key in list.Keys)
             {
@@ -24,7 +25,7 @@ namespace Antmicro.Migrant.BultinSurrogates
 
         public object Restore()
         {
-            var result = new SortedList<TKey, TVal>();
+            var result = new SortedList<TKey, TVal>(comparer);
             for(var i = 0; i < keys.Count; i++)
             {
                 result.Add(keys[i], values[i]);
@@ -35,6 +36,7 @@ namespace Antmicro.Migrant.BultinSurrogates
 
         private readonly List<TKey> keys;
         private readonly List<TVal> values;
+        private readonly IComparer<TKey> comparer;
     }
 }
 
