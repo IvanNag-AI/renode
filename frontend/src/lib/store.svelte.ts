@@ -1,7 +1,6 @@
 import type { RenodeProxySession } from 'renode-ws-api';
 import { SvelteMap } from 'svelte/reactivity';
-import type { ExtendedHterm } from './components/panels/ExtendedHterm';
-import { terminalHistories, type TerminalHistory } from './terminalHistory';
+import { SocketConsole, type ExtendedHterm } from './components/panels/ExtendedHterm';
 
 type Terminalable = 'Monitor' | 'Renode Logs' | 'UARTs';
 export type PanelType =
@@ -12,24 +11,24 @@ export type PanelType =
   | 'User preferences'
   | 'Color theme'
   | 'Empty';
+export type SocketInitializerFn = (wsURL: string, name: string) => Promise<Socket>;
+export type SocketMessageData = string | ArrayBuffer;
 
 let loadingTerminalsAmount = $state(0);
 
 export interface Socket {
-  addEventListener(
-    type: 'message',
-    listener: (ev: { data: string | Blob | ArrayBuffer }) => void,
-  ): void;
+  addEventListener(type: 'message', listener: (ev: { data: SocketMessageData }) => void): void;
   send(data: string): void;
   close(): void;
+
+  readyState: number;
 }
 
 // Not reactive on purpose - these should be set during initialization and not changed afterwards
-let customWSInitializer: (wsURL: string, name: string) => Promise<Socket> = (
-  wsURL: string,
-  _name: string,
-) => {
+let customWSInitializer: SocketInitializerFn = (wsURL: string, _name: string) => {
   const w = new WebSocket(wsURL);
+  // NOTE: We are explicitly require `ArrayBuffer` so we don't have to deal with
+  //       `Blob`'s asynchronicity.
   w.binaryType = 'arraybuffer';
   return Promise.resolve(w);
 };
@@ -37,15 +36,19 @@ let customWSInitializer: (wsURL: string, name: string) => Promise<Socket> = (
 let renodeWSManager: RenodeProxySession | null = null;
 
 export const getRenodeWSManager = () => renodeWSManager!;
-export const getSocketInitializer = () => customWSInitializer!;
+export const getSocketConsole = (wsURL: string, name: string): Promise<SocketConsole> => {
+  if (!(wsURL in SOCKET_CONSOLES) || !SOCKET_CONSOLES[wsURL].isValid) {
+    SOCKET_CONSOLES[wsURL] = new SocketConsole(wsURL, name, customWSInitializer!);
+  }
+
+  return Promise.resolve(SOCKET_CONSOLES[wsURL]);
+};
 
 export const setRenodeWSManager = (manager: RenodeProxySession) => {
   renodeWSManager = manager;
 };
 
-export const setSocketInitializer = (
-  initializer: (wsURL: string, name: string) => Promise<Socket>,
-) => {
+export const setSocketInitializer = (initializer: SocketInitializerFn) => {
   customWSInitializer = initializer;
 };
 
@@ -79,7 +82,6 @@ export const openUARTsManager = new SvelteMap<string, { [uart: string]: number }
 
 export const RENODE_WS_PORT = { value: 21234 };
 
-export const TERMINALS: { value: Array<ExtendedHterm> } = { value: [] };
+export const SOCKET_CONSOLES: Record<string, SocketConsole> = {};
 
-export { terminalHistories };
-export type { TerminalHistory };
+export const TERMINALS: { value: Array<ExtendedHterm> } = { value: [] };

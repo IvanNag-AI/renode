@@ -27,10 +27,13 @@
   };
 
   const onSplit = () => {
+    let panel = containerApi.getPanel(api.id);
+
     createPanel({
       dockview: containerApi,
-      panelType: 'Empty',
+      panelType: panelType,
       position: { referenceGroup: api.group, direction: 'right' },
+      ...panel?.params,
     });
   };
 

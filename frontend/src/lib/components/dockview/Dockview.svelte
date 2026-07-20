@@ -12,7 +12,7 @@
     RENODE_WS_PORT,
     setRenodeWSManager,
     setSocketInitializer,
-    type Socket,
+    type SocketInitializerFn,
   } from '$lib/store.svelte';
   import { RenodeProxySession, type UartOpenedArgs } from 'renode-ws-api';
   import LoadingScreen from '../loaders/LoadingScreen.svelte';
@@ -30,7 +30,7 @@
 
   interface RunInCloudProps {
     customProxyInitializer: () => Promise<RenodeProxySession>;
-    customWsInitializer: (wsURL: string, name: string) => Promise<Socket>;
+    customWsInitializer: SocketInitializerFn;
     getRestoreState?: () => Promise<UartOpenedArgs>;
   }
 

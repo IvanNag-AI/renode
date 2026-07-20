@@ -1,12 +1,10 @@
 import { hterm, lib } from '../../thirdparty/hterm';
-import type { PanelType, Socket } from '$lib/store.svelte';
-import type { TerminalHistory } from '$lib/terminalHistory';
+import type { PanelType, Socket, SocketInitializerFn, SocketMessageData } from '$lib/store.svelte';
 
 interface ConstructorArgs {
   profileId: string;
   interactible: boolean;
   metadata: { panelType: PanelType; port?: number; uart?: string };
-  history: TerminalHistory;
   onReady?: () => void;
   onFocus?: () => void;
   onResize?: (width: number, height: number) => void;
@@ -82,53 +80,113 @@ class UTF8StreamDecoder {
   }
 }
 
+type SocketConsoleListener = (chunk: string) => void;
+
+const SOCKET_CONSOLE_SCROLLBACK = 5000;
+
+export class SocketConsole {
+  private ws?: Socket;
+  private decoder: UTF8StreamDecoder;
+  private lines: string[];
+  private incompleteLine: string;
+  private callbacks: Record<string, SocketConsoleListener>;
+
+  constructor(url: string, name: string, initializer: SocketInitializerFn) {
+    this.decoder = new UTF8StreamDecoder();
+
+    this.incompleteLine = '';
+    this.lines = [];
+    this.callbacks = {};
+
+    initializer(url, name).then((ws) => {
+      this.ws = ws as WebSocket;
+      this.ws!.addEventListener('message', this.onMessage.bind(this));
+    });
+  }
+
+  public get isValid(): boolean {
+    return this.ws?.readyState == WebSocket.OPEN;
+  }
+
+  public send(message: string): void {
+    this.ws?.send(message);
+  }
+
+  public get scrollbackBuffer(): string[] {
+    return [...this.lines, this.incompleteLine];
+  }
+
+  public register(listener: SocketConsoleListener): string {
+    let uuid = crypto.randomUUID();
+    this.callbacks[uuid] = listener;
+    return uuid;
+  }
+
+  public unregister(uuid: string) {
+    console.assert(uuid in this.callbacks, 'tried to unregister non-existing callback');
+    delete this.callbacks[uuid];
+  }
+
+  private onMessage(event: { data: SocketMessageData }) {
+    let chunk;
+
+    if (typeof event.data == 'string') {
+      chunk = event.data;
+    } else if (event.data instanceof ArrayBuffer) {
+      chunk = this.decoder.decode(event.data);
+    } else {
+      throw new Error(
+        `Unexpected type of message. Expected string or ArrayBuffer. Got ${(event.data as object).constructor?.name}`,
+      );
+    }
+
+    let lines = chunk.split('\n');
+    this.incompleteLine += lines[0];
+    if (lines.length > 1) {
+      this.ingestLine(this.incompleteLine);
+      this.incompleteLine = lines.pop() as string;
+    }
+
+    for (let i = 1; i < lines.length - 1; ++i) {
+      this.ingestLine(lines[i]);
+    }
+
+    Object.values(this.callbacks).forEach((callback) => {
+      callback.call(null, chunk);
+    });
+  }
+
+  private ingestLine(line: string) {
+    this.lines.push(line + '\n');
+    if (this.lines.length > SOCKET_CONSOLE_SCROLLBACK) {
+      this.lines.shift();
+    }
+  }
+}
+
 export class ExtendedHterm extends hterm.Terminal {
   private interactible: boolean;
   private onReady?: () => void;
   private onResize?: (width: number, height: number) => void;
   private onFocus?: () => void;
   private currentResize?: number;
-  private history: TerminalHistory;
-  private socket?: Socket;
+  private console?: SocketConsole;
+  private identifier?: string;
 
   public metadata: { panelType: PanelType; port?: number; uart?: string };
 
-  constructor({
-    profileId,
-    interactible,
-    metadata,
-    history,
-    onReady,
-    onResize,
-    onFocus,
-  }: ConstructorArgs) {
+  constructor({ profileId, interactible, metadata, onReady, onResize, onFocus }: ConstructorArgs) {
     hterm.messageManager?.disable();
     super({ profileId, storage: new lib.Storage.Local(), opts: { autofocus: false } });
     this.interactible = interactible;
     this.onReady = onReady;
     this.onResize = onResize;
     this.onFocus = onFocus;
-    this.history = history;
     this.metadata = metadata;
   }
 
-  public async install(node: HTMLElement, socket: Socket): Promise<void> {
-    this.socket = socket;
-
-    const decoder = new UTF8StreamDecoder();
-    this.socket?.addEventListener('message', async (e) => {
-      if (typeof e.data == 'string') {
-        this.interpret(e.data);
-      } else if (e.data instanceof Blob) {
-        this.interpret(decoder.decode(await e.data.arrayBuffer()));
-      } else if (e.data instanceof ArrayBuffer) {
-        this.interpret(decoder.decode(e.data));
-      } else {
-        throw new Error(
-          `Unexpected type of message. Expected string, Blob, or ArrayBuffer. Got ${(e.data as object).constructor?.name}`,
-        );
-      }
-    });
+  public async install(node: HTMLElement, con: SocketConsole): Promise<void> {
+    this.console = con;
 
     this.decorate(node);
     await this.screenReady();
@@ -145,11 +203,12 @@ export class ExtendedHterm extends hterm.Terminal {
       this.sendToWebsocket(msg);
     };
 
-    console.assert(this.socket !== undefined, 'ws is not initialized');
+    this.rewriteScrollback();
+    this.identifier = this.console?.register(this.interpret.bind(this));
+
+    console.assert(this.console !== undefined, 'console is not initialized');
 
     this.installKeyboard();
-
-    await this.history.replayInto(this.createHistoryStream());
 
     this.scrollEnd();
     this.onReady?.();
@@ -161,13 +220,18 @@ export class ExtendedHterm extends hterm.Terminal {
       return;
     }
 
-    this.socket?.send(message);
+    this.console?.send(message);
     this.scrollEnd();
   }
 
-  public interpret(str: string): void {
-    this.history.append(str);
-    super.interpret(str);
+  public rewriteScrollback(): void {
+    this.wipeContents();
+    this.setAbsoluteCursorPosition(0, 0);
+
+    this.console?.scrollbackBuffer.forEach(this.interpret.bind(this));
+
+    this.io.flush();
+    this.scrollPort_.resize();
   }
 
   public async horizontalResize(width: number, height: number): Promise<void> {
@@ -178,7 +242,7 @@ export class ExtendedHterm extends hterm.Terminal {
     this.currentResize = window.setTimeout(async () => {
       try {
         this.onResize?.(width, height);
-        await this.history.replayInto(this.createHistoryStream());
+        this.rewriteScrollback();
       } finally {
         this.currentResize = undefined;
       }
@@ -231,20 +295,11 @@ export class ExtendedHterm extends hterm.Terminal {
     ]);
   }
 
-  private createHistoryStream(): WritableStream<string> {
-    this.wipeContents();
-    this.setAbsoluteCursorPosition(0, 0);
-    return new WritableStream<string>({
-      write: (data: string) => super.interpret(data),
-      close: () => {
-        this.io.flush();
-        this.scrollPort_.resize();
-      },
-    });
-  }
-
   public close(): void {
-    this.socket?.close();
+    if (this.identifier !== null) {
+      this.console!.unregister(this.identifier!);
+      this.console = this.identifier = undefined;
+    }
   }
 
   public onFocusChange_(focused: boolean): void {

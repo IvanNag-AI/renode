@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { openPanelsManager, type PanelType } from '$lib/store.svelte';
+  import { type PanelType } from '$lib/store.svelte';
   import {
     SquareTerminal,
     Logs,
@@ -9,20 +9,11 @@
   } from '@lucide/svelte';
 
   let { onPanelTypeChange, panelType } = $props();
-
-  const restrictedToOnePanelTypes = ['Monitor', 'Renode Logs'];
-
-  const shouldDisable = (btnName: string) => {
-    const openPanels = new Set(openPanelsManager.values()) as Set<string>;
-    return restrictedToOnePanelTypes.includes(btnName) && openPanels.has(btnName);
-  };
 </script>
 
 {#snippet GroupItem(name: PanelType, Icon: typeof IconType, inactive: boolean = false)}
   <button
-    disabled={shouldDisable(name)}
-    class="group-item {panelType === name && 'active'} {(shouldDisable(name) || inactive) &&
-      'inactive'}"
+    class="group-item {panelType === name && 'active'} {inactive && 'inactive'}"
     onclick={() => onPanelTypeChange(name)}
   >
     <Icon size={16} />

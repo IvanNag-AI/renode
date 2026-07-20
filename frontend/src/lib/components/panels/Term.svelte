@@ -2,13 +2,12 @@
   import {
     decrementLoadingTerminalsAmount,
     TERMINALS,
-    terminalHistories,
     type PanelType,
     getRenodeWSManager,
+    getSocketConsole,
   } from '$lib/store.svelte';
   import { ExtendedHterm } from './ExtendedHterm';
   import { typeToEndpoint, typeToWsURL } from '$lib/utils';
-  import { getSocketInitializer } from '$lib/store.svelte';
   import type { DockviewPanelApi } from 'dockview-core';
 
   interface Props {
@@ -23,13 +22,11 @@
 
   export const installHterm = (panelType: PanelType, port?: number, uart?: string) => {
     return (element: HTMLElement) => {
-      const history = terminalHistories.getOrCreate(panelType, port, uart);
       const termEndpoint = typeToEndpoint(panelType, port);
       const term = new ExtendedHterm({
         profileId: panelType,
         interactible: panelType === 'Monitor' || panelType === 'UARTs',
         metadata: { panelType, port, uart },
-        history,
         onResize: (width, height) => {
           wsManager.resizeTerminal(termEndpoint, width, height);
         },
@@ -39,9 +36,8 @@
       });
 
       const wsURL = typeToWsURL(panelType, port);
-      const socketInitializer = getSocketInitializer();
-      socketInitializer(wsURL, uart !== undefined ? `Analyzer (${uart})` : panelType)
-        .then((socket) => term.install(element, socket))
+      getSocketConsole(wsURL, uart !== undefined ? `Analyzer (${uart})` : panelType)
+        .then((con) => term.install(element, con))
         .then(() => {
           decrementLoadingTerminalsAmount();
           TERMINALS.value.push(term);
