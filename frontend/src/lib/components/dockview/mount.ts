@@ -108,14 +108,12 @@ export const createUartAndSensorPanels = async ({
   }
 
   const existingUart = openUARTsManager.get(uartArgs.machineName) ?? {};
-  if (uartArgs.name in existingUart) {
-    return;
+  if (!(uartArgs.name in existingUart)) {
+    openUARTsManager.set(uartArgs.machineName, {
+      ...existingUart,
+      [uartArgs.name]: uartArgs.port,
+    });
   }
-
-  openUARTsManager.set(uartArgs.machineName, {
-    ...existingUart,
-    [uartArgs.name]: uartArgs.port,
-  });
 
   await createPanel({
     dockview,
