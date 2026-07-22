@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <!-- The projects share a directory, so they need distinct NuGet assets files.
+         This can be removed after updating vstest to a version that includes
+         https://github.com/microsoft/vstest/pull/16101 -->
+    <BaseIntermediateOutputPath>obj/$(MSBuildProjectName)/</BaseIntermediateOutputPath>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj/**</DefaultItemExcludes>
+  </PropertyGroup>
+</Project>
