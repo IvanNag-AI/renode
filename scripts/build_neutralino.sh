@@ -7,7 +7,7 @@ cd $MAIN_DIR
 if [[ -n "$CI" && -d "frontend/build" ]]; then
   echo "Skipping frontend build."
 else
-  npm ci --prefix="frontend/"
+  npm ci --prefix="frontend/" --allow-remote=root
 
   if [[ -n "$LINKED_WS_API" ]]; then
     cd frontend; npm link renode-ws-api; cd ..
