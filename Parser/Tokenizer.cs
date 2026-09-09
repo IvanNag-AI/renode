@@ -17,7 +17,7 @@ namespace Antmicro.OptionsParser
             {
                 return null;
             }
-            
+
             if(state != TokenizerState.PositionalValues && input[position] == EscapeMarker)
             {
                 ReadNextString();
@@ -183,7 +183,7 @@ namespace Antmicro.OptionsParser
         private int markedStringPosition;
         private TokenizerState state;
         private readonly string[] input;
-      
+
         private const char Space = ' ';
         private const char AssignmentOperator = '=';
 
