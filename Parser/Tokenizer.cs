@@ -53,15 +53,14 @@ namespace Antmicro.OptionsParser
                     var hasAssignment = lastReadChar == AssignmentOperator;
                     return new LongNameToken(name, hasAssignment, location);
                 }
-
-                state = TokenizerState.ShortName;
-                return ReadNextToken();
+                else if(f != EndOfString)
+                {
+                    state = TokenizerState.ShortName;
+                    return ReadNextToken();
+                }
             }
-            else
-            {
-                var value = ReadNextString();
-                return (value == null) ? null : new PositionalArgumentToken(value, location);
-            }
+            var value = ReadNextString();
+            return (value == null) ? null : new PositionalArgumentToken(value, location);
         }
 
         public void MoveToTheNextString()
@@ -132,8 +131,7 @@ namespace Antmicro.OptionsParser
 
             if(stringPosition == input[position].Length)
             {
-                // we assume that there are no empty strings in 'input'
-                return input[position + 1].ElementAt(0);
+                return Tokenizer.EndOfString;
             }
 
             return input[position].ElementAt(stringPosition);
