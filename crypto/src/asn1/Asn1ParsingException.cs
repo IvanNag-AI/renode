@@ -21,10 +21,5 @@ namespace Org.BouncyCastle.Asn1
             : base(message, innerException)
         {
         }
-
-        protected Asn1ParsingException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

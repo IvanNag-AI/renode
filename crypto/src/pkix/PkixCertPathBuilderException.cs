@@ -23,10 +23,5 @@ namespace Org.BouncyCastle.Pkix
             : base(message, innerException)
         {
         }
-
-        protected PkixCertPathBuilderException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

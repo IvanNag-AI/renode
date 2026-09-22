@@ -22,10 +22,5 @@ namespace Org.BouncyCastle.Bcpg.OpenPgp
             : base(message, innerException)
         {
         }
-
-        protected PgpDataValidationException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

@@ -18,18 +18,6 @@ namespace Org.BouncyCastle.Tls
             m_alertDescription = (byte)alertDescription;
         }
 
-        protected TlsFatalAlertReceived(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-            m_alertDescription = info.GetByte("alertDescription");
-        }
-
-        public override void GetObjectData(SerializationInfo info, StreamingContext context)
-        {
-            base.GetObjectData(info, context);
-            info.AddValue("alertDescription", m_alertDescription);
-        }
-
         public virtual short AlertDescription
         {
             get { return m_alertDescription; }

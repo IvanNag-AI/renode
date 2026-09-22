@@ -28,10 +28,5 @@ namespace Org.BouncyCastle.Utilities
             : base(message, innerException)
         {
         }
-
-        protected MemoableResetException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

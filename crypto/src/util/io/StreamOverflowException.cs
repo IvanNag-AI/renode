@@ -22,10 +22,5 @@ namespace Org.BouncyCastle.Utilities.IO
             : base(message, innerException)
         {
         }
-
-        protected StreamOverflowException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

@@ -21,10 +21,5 @@ namespace Org.BouncyCastle.Security
             : base(message, innerException)
         {
         }
-
-        protected GeneralSecurityException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

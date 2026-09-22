@@ -23,10 +23,5 @@ namespace Org.BouncyCastle.Pkcs
             : base(message, innerException)
         {
         }
-
-        protected PkcsIOException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

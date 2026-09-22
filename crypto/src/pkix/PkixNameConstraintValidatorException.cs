@@ -21,10 +21,5 @@ namespace Org.BouncyCastle.Pkix
             : base(message, innerException)
         {
         }
-
-        protected PkixNameConstraintValidatorException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

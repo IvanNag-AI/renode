@@ -24,10 +24,5 @@ namespace Org.BouncyCastle.Crypto
             : base(message, innerException)
         {
         }
-
-        protected MaxBytesExceededException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

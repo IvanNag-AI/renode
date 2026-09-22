@@ -21,10 +21,5 @@ namespace Org.BouncyCastle.Cms
             : base(message, innerException)
         {
         }
-
-        protected CmsAlgorithmNotAllowedException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

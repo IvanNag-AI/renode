@@ -22,10 +22,5 @@ namespace Org.BouncyCastle.Tls.Crypto
             : base(message, innerException)
         {
         }
-
-        protected TlsCryptoException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

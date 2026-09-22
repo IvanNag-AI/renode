@@ -21,10 +21,5 @@ namespace Org.BouncyCastle.Tsp
             : base(message, innerException)
         {
         }
-
-        protected TspException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

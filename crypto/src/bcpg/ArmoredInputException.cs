@@ -22,10 +22,5 @@ namespace Org.BouncyCastle.Bcpg
             : base(message, innerException)
         {
         }
-
-        protected ArmoredInputException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

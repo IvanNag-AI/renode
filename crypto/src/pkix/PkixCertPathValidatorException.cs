@@ -65,18 +65,6 @@ namespace Org.BouncyCastle.Pkix
             m_index = index;
         }
 
-        protected PkixCertPathValidatorException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-            m_index = info.GetInt32("index");
-        }
-
-        public override void GetObjectData(SerializationInfo info, StreamingContext context)
-        {
-            base.GetObjectData(info, context);
-            info.AddValue("index", m_index);
-        }
-
         /// <summary> eturns the index of the certificate in the certification path that caused the exception to be
         /// thrown.</summary>
         /// <remarks>

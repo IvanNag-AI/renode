@@ -21,10 +21,5 @@ namespace Org.BouncyCastle.Cmp
             : base(message, innerException)
         {
         }
-
-        protected CmpException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

@@ -21,10 +21,5 @@ namespace Org.BouncyCastle.Utilities.IO.Pem
             : base(message, innerException)
         {
         }
-
-        protected PemGenerationException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

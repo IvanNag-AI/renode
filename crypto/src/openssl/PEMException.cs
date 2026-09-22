@@ -22,10 +22,5 @@ namespace Org.BouncyCastle.OpenSsl
             : base(message, innerException)
         {
         }
-
-        protected PemException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

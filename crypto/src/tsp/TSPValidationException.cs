@@ -28,18 +28,6 @@ namespace Org.BouncyCastle.Tsp
             m_failureCode = failureCode;
         }
 
-        protected TspValidationException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-            m_failureCode = info.GetInt32("failureCode");
-        }
-
-        public override void GetObjectData(SerializationInfo info, StreamingContext context)
-        {
-            base.GetObjectData(info, context);
-            info.AddValue("failureCode", m_failureCode);
-        }
-
         /// <returns>The failure code associated with this exception, if one is set.</returns>
         public int FailureCode => m_failureCode;
     }

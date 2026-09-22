@@ -26,10 +26,5 @@ namespace Org.BouncyCastle.Crypto
             : base(message, innerException)
         {
         }
-
-        protected DataLengthException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

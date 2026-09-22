@@ -21,10 +21,5 @@ namespace Org.BouncyCastle.Security.Certificates
             : base(message, innerException)
         {
         }
-
-        protected CertificateNotYetValidException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

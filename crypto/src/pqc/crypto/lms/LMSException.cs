@@ -22,10 +22,5 @@ namespace Org.BouncyCastle.Pqc.Crypto.Lms
             : base(message, innerException)
         {
         }
-
-        protected LmsException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

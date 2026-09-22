@@ -22,10 +22,5 @@ namespace Org.BouncyCastle.Tls
             : base(message, innerException)
         {
         }
-
-        protected TlsException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

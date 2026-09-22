@@ -21,10 +21,5 @@ namespace Org.BouncyCastle.Crmf
             : base(message, innerException)
         {
         }
-
-        protected CrmfException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

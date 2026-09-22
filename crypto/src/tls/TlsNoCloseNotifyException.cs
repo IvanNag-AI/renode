@@ -19,10 +19,5 @@ namespace Org.BouncyCastle.Tls
             : base("No close_notify alert received before connection closed")
         {
         }
-
-        protected TlsNoCloseNotifyException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }

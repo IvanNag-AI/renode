@@ -21,10 +21,5 @@ namespace Org.BouncyCastle.Ocsp
             : base(message, innerException)
         {
         }
-
-        protected OcspException(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
     }
 }
