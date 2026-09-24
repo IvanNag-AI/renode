@@ -10,6 +10,7 @@ const config = {
     router: {
       type: 'hash',
     },
+    alias: process.env.WS_API_PATH ? { 'renode-ws-api': process.env.WS_API_PATH } : {},
   },
 };
 
