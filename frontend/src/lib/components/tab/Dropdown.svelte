@@ -5,6 +5,7 @@
     Logs,
     ArrowRightLeft,
     Radio,
+    Monitor,
     type Icon as IconType,
   } from '@lucide/svelte';
 
@@ -14,6 +15,7 @@
 {#snippet GroupItem(name: PanelType, Icon: typeof IconType, inactive: boolean = false)}
   <button
     class="group-item {panelType === name && 'active'} {inactive && 'inactive'}"
+    data-test-id={`${name}-option`}
     onclick={() => onPanelTypeChange(name)}
   >
     <Icon size={16} />
@@ -34,6 +36,7 @@
     <div class="group-items">
       {@render GroupItem('UARTs', ArrowRightLeft)}
       {@render GroupItem('Sensors', Radio)}
+      {@render GroupItem('Displays', Monitor)}
     </div>
   </div>
 </div>

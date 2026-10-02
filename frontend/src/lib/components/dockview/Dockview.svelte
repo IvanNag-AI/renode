@@ -7,6 +7,7 @@
   import {
     clearTerminalsLoadingCounter,
     getRenodeWSManager,
+    openDisplaysManager,
     openPanelsManager,
     openUARTsManager,
     RENODE_WS_PORT,
@@ -114,6 +115,7 @@
     getRenodeWSManager()?.dispose();
     openPanelsManager.clear();
     openUARTsManager.clear();
+    openDisplaysManager.clear();
     clearTerminalsLoadingCounter();
     dockview?.dispose();
   });

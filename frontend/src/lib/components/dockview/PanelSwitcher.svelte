@@ -8,6 +8,7 @@
     port?: number;
     predefinedMachine?: string;
     predefinedUart?: string;
+    predefinedDisplay?: string;
   }
 
   const props: Props = $props();

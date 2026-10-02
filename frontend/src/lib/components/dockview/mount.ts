@@ -5,6 +5,7 @@ import { RenodeProxySession, type EmptyEventCallback, type UartOpenedArgs } from
 import {
   getRenodeWSManager,
   incrementLoadingTerminalsAmount,
+  openDisplaysManager,
   openPanelsManager,
   openUARTsManager,
   RENODE_WS_PORT,
@@ -50,12 +51,14 @@ interface CreatePanelArgs {
   port?: number;
   predefinedMachine?: string;
   predefinedUart?: string;
+  predefinedDisplay?: string;
   position?: AddPanelPositionOptions;
 }
 
 const DEFAULT_PANEL_DIRECTION: Record<string, { direction: string }> = {
   'Renode Logs': { direction: 'below' },
   UARTs: { direction: 'right' },
+  Displays: { direction: 'right' },
 };
 
 export const createPanel = async ({
@@ -64,6 +67,7 @@ export const createPanel = async ({
   port,
   predefinedMachine,
   predefinedUart,
+  predefinedDisplay,
   position,
 }: CreatePanelArgs) => {
   const panelId = 'panel-' + Math.floor(Math.random() * 10000).toString();
@@ -73,7 +77,7 @@ export const createPanel = async ({
     position: position ?? DEFAULT_PANEL_DIRECTION[panelType],
     tabComponent: 'default',
     inactive: panelType == 'Sensors',
-    params: { panelType: panelType, port, predefinedMachine, predefinedUart },
+    params: { panelType: panelType, port, predefinedMachine, predefinedUart, predefinedDisplay },
   });
 
   incrementLoadingTerminalsAmount();
@@ -137,12 +141,25 @@ export const registerWSProxyCallbacks = ({
     ws.registerRenodeQuittedCallback(onQuit);
   }
   ws.registerUartOpenedCallback(async (e) => createUartAndSensorPanels({ dockview, uartArgs: e }));
+  ws.registerDisplayOpenedCallback(async (e) => {
+    openDisplaysManager.set(e.machineName, {
+      ...openDisplaysManager.get(e.machineName),
+      [e.name]: e.port,
+    });
+    await createPanel({
+      dockview,
+      panelType: 'Displays',
+      port: e.port,
+      predefinedMachine: e.machineName,
+      predefinedDisplay: e.name,
+    });
+  });
   ws.registerLedStateChangedCallback(() => {});
   ws.registerClearCommandCallback(() => {
     const idsToRemove = [];
 
     for (const [id, type] of openPanelsManager.entries()) {
-      if (type === 'UARTs' || type === 'Sensors') {
+      if (type === 'UARTs' || type === 'Sensors' || type === 'Displays') {
         const panel = dockview.getPanel(id);
         if (panel) {
           dockview.removePanel(panel);
@@ -156,6 +173,7 @@ export const registerWSProxyCallbacks = ({
     }
 
     openUARTsManager.clear();
+    openDisplaysManager.clear();
   });
 };
 

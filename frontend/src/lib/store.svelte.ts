@@ -6,6 +6,7 @@ type Terminalable = 'Monitor' | 'Renode Logs' | 'UARTs';
 export type PanelType =
   | Terminalable
   | 'Sensors'
+  | 'Displays'
   | 'Keyboard shortcuts'
   | 'Documentation'
   | 'User preferences'
@@ -44,6 +45,8 @@ export const getSocketConsole = (wsURL: string, name: string): Promise<SocketCon
   return Promise.resolve(SOCKET_CONSOLES[wsURL]);
 };
 
+export const openSocket = (wsURL: string, name: string) => customWSInitializer(wsURL, name);
+
 export const setRenodeWSManager = (manager: RenodeProxySession) => {
   renodeWSManager = manager;
 };
@@ -79,6 +82,8 @@ export const waitForNoTerminalsLoading = async () => {
 };
 
 export const openUARTsManager = new SvelteMap<string, { [uart: string]: number }>();
+
+export const openDisplaysManager = new SvelteMap<string, { [display: string]: number }>();
 
 export const RENODE_WS_PORT = { value: 21234 };
 

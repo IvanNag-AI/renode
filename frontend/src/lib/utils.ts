@@ -2,6 +2,7 @@ import { RENODE_WS_PORT, type PanelType } from './store.svelte';
 import {
   ArrowRightLeft,
   Logs,
+  Monitor,
   Radio,
   SquareMousePointer,
   SquareTerminal,
@@ -11,6 +12,7 @@ import Terminal from './components/panels/Term.svelte';
 import UART from './components/panels/UART.svelte';
 import Empty from './components/panels/Empty.svelte';
 import Sensors from './components/panels/sensors/Sensors.svelte';
+import Display from './components/panels/display/Display.svelte';
 
 export const typeToIcon = (t: PanelType): typeof Icon => {
   switch (t) {
@@ -22,6 +24,8 @@ export const typeToIcon = (t: PanelType): typeof Icon => {
       return ArrowRightLeft;
     case 'Sensors':
       return Radio;
+    case 'Displays':
+      return Monitor;
     case 'Empty':
       return SquareMousePointer;
     default:
@@ -38,6 +42,8 @@ export const typeToComponent = (t: string) => {
       return UART;
     case 'Sensors':
       return Sensors;
+    case 'Displays':
+      return Display;
     case 'Empty':
       return Empty;
   }
@@ -51,6 +57,8 @@ export const typeToEndpoint = (t: string, port?: number): string => {
       return '/telnet/29170';
     case 'UARTs':
       return `/telnet/${port}`;
+    case 'Displays':
+      return `/display/${port}`;
     default:
       console.error(`undefined port for type: ${t}`);
       return '';
