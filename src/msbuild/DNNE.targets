@@ -261,13 +261,25 @@ DNNE.targets
         WorkingDirectory="$(DnneGeneratedOutputPath)"
         Outputs="$(DnneCompiledToBinPath)"
         ConsoleToMSBuild="true" />
-    <!--
-        Copy the binary to the project output directory.
-        The dnne-gen tool generates a C99 file that can act as both compilation unit and header.
-        Deploy the official 'dnne.h' header.
-    -->
+</Target>
+
+<!--
+    Copy the binary to the project output directory.
+    The dnne-gen tool generates a C99 file that can act as both compilation unit and header.
+    Deploy the official 'dnne.h' header.
+    Keep this copy in its own target. MSBuild decides which files are out of date once,
+    before a target runs, and the build target above relinks the binary while it runs.
+    Copying in a separate step means the check happens after the link, so the new binary
+    is always copied. SkipUnchangedFiles skips files that are already current.
+-->
+<Target
+  Condition="'$(DnneLanguage)' == 'c99'"
+  Name="DnneCopyC99Exports"
+  AfterTargets="DnneBuildC99Exports">
+
     <Copy SourceFiles="@(DnneNativeExportsInput)"
-        DestinationFiles="@(DnneNativeExportsInput->'$(DnneNativeExportsBinaryPath)%(OutputFileName)')" />
+        DestinationFiles="@(DnneNativeExportsInput->'$(DnneNativeExportsBinaryPath)%(OutputFileName)')"
+        SkipUnchangedFiles="true" />
 </Target>
 
 <Target
