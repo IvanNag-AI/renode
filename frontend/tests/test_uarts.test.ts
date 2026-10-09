@@ -53,7 +53,7 @@ test('test open empty uarts page', async ({ page, fixtures: { loggerTabBtn } }) 
   await expect(loggerTabBtn.locator('.group-item')).toHaveCount(0);
 
   await openPanelDropdown(loggerTabBtn);
-  await loggerTabBtn.locator('.group').nth(1).locator('.group-item').first().click();
+  await loggerTabBtn.getByTestId('UARTs-option').click();
   await expect(page.locator('.uart-main .empty')).toHaveText('No machines');
 });
 
@@ -64,7 +64,7 @@ test('test UARTs panel with machine with zero uarts', async ({
   await enterCommand(monitor, 'mach create');
 
   await openPanelDropdown(loggerTabBtn);
-  await loggerTabBtn.locator('.group').nth(1).locator('.group-item').first().click();
+  await loggerTabBtn.getByTestId('UARTs-option').click();
   await expect(page.locator('.uart-main .empty')).toHaveText('Select machine and UART');
 });
 
