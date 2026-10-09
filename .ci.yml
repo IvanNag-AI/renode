@@ -86,6 +86,7 @@ package-neutralino:
 
   variables:
     SCALENODE_RAM: 8192
+    SCALENODE_FEATURES: "!hetzner"
 
   before_script:
   - apt update -qq > /dev/null 2>&1
@@ -120,6 +121,7 @@ deploy_docs:
   dependencies: [test_chromium, test_old_chromium, test_firefox, test_old_firefox]
   variables:
     GIT_SUBMODULE_STRATEGY: none
+    SCALENODE_FEATURES: "!hetzner"
   script:
     - mkdir docs
     - mv playwright-report-* docs
