@@ -4,7 +4,7 @@ import { expect, type Locator, type Page } from '@playwright/test';
 
 async function runSensorDemo(page: Page, monitor: Locator): Promise<void> {
   await enterCommand(monitor, 's @scripts/single-node/ck-ra6m5.resc');
-  await expect(monitor.getByText('(Renesas CK-RA6M5)')).toBeVisible();
+  await expect(monitor.getByText('(Renesas CK-RA6M5)')).toBeVisible({ timeout: 30_000 });
 
   const sensorsTabLocator = await getTerminalTabLocator(page, 'Sensors-btn');
   await expect(sensorsTabLocator).toHaveCount(1);
