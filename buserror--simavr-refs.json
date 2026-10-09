@@ -1,0 +1,98 @@
+[
+  {
+    "sha": "d6aed536755bd0ff72b9d2bf02e4a476af64ce82",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "21ab0038d184a4ac51f62b607e0ac3f8d58bce40",
+    "ref": "refs/heads/wip/jit"
+  },
+  {
+    "sha": "288cde96c2f17d4d788c2fc0b5e11fb00ad7321a",
+    "ref": "refs/heads/wip/shell"
+  },
+  {
+    "sha": "6cc90c4580ae621a39295a32b50ef7ea6067369d",
+    "ref": "refs/heads/wip/sreg-inline"
+  },
+  {
+    "sha": "a9cd39cc0cd34eeaf3f256a9b53138e6ef8e884e",
+    "ref": "refs/tags/v1.0"
+  },
+  {
+    "sha": "8476fda9ee4e5eb6f58b23af5b758b99a9549242",
+    "ref": "refs/tags/v1.0a1"
+  },
+  {
+    "sha": "ccad49469feb37e21424df67c385e53c95459668",
+    "ref": "refs/tags/v1.0a2"
+  },
+  {
+    "sha": "42dab7385192880a35e9d88f64dc19c1b8d94393",
+    "ref": "refs/tags/v1.0a3"
+  },
+  {
+    "sha": "4055170baf10c38cee41c87e988b7d992f306131",
+    "ref": "refs/tags/v1.0a4"
+  },
+  {
+    "sha": "6280c0db426bfca89fd4bd1015b1bbda44296314",
+    "ref": "refs/tags/v1.0a5"
+  },
+  {
+    "sha": "dc151e032e426d08f289c86defc830192b7946af",
+    "ref": "refs/tags/v1.0a6"
+  },
+  {
+    "sha": "f871e491959a4f5b8fc0c6cb1ccc2b95626c1b8c",
+    "ref": "refs/tags/v1.0a7"
+  },
+  {
+    "sha": "a722838a191f6003f7d040cac0da628c17727056",
+    "ref": "refs/tags/v1.0a8"
+  },
+  {
+    "sha": "a26a2e43fc4b547090f3069e121713702593261d",
+    "ref": "refs/tags/v1.0a9"
+  },
+  {
+    "sha": "72c8f45a0134a81fd86c1ff4f163ce1cef213427",
+    "ref": "refs/tags/v1.0b1"
+  },
+  {
+    "sha": "7aab93651c05b3e18aa634f69f0c13feeb47d505",
+    "ref": "refs/tags/v1.0b2"
+  },
+  {
+    "sha": "350bd851fe0a5718de9faa23d47a2ed45fdb1938",
+    "ref": "refs/tags/v1.1"
+  },
+  {
+    "sha": "70a208b9e967643712ef94c36003090688450286",
+    "ref": "refs/tags/v1.2"
+  },
+  {
+    "sha": "51d5fa69f9bc3d62941827faec02f8fbc7e187ab",
+    "ref": "refs/tags/v1.3"
+  },
+  {
+    "sha": "5868219894fe3fc15cb165608de5a35711064114",
+    "ref": "refs/tags/v1.4"
+  },
+  {
+    "sha": "e0d4de41a72520491a4076b3ed87beb997a395c0",
+    "ref": "refs/tags/v1.5"
+  },
+  {
+    "sha": "1b6e6ed10a92438da47fe99864698db9ac2169b6",
+    "ref": "refs/tags/v1.6"
+  },
+  {
+    "sha": "1d227277b3d0039f9faef9ea62880ca3051b14f8",
+    "ref": "refs/tags/v1.7"
+  },
+  {
+    "sha": "f44723e8c42431136d5b4de81f789ded56d7e8fa",
+    "ref": "refs/tags/v1.8"
+  }
+]

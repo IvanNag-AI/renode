@@ -1,0 +1,78 @@
+[
+  {
+    "sha": "329acf867535406505203dfccff0f5159edb6ecf",
+    "ref": "refs/heads/7segementTests"
+  },
+  {
+    "sha": "47efb68ea8ccf33c78b73169125ef800dafc54cb",
+    "ref": "refs/heads/fixingVisualization"
+  },
+  {
+    "sha": "4ddaf124805506a8284cc31a3048e5f0abb439a3",
+    "ref": "refs/heads/i2cImplementation"
+  },
+  {
+    "sha": "5aca847c9f57ed96603e55d28e8ceeefa09e55f6",
+    "ref": "refs/heads/main"
+  },
+  {
+    "sha": "d87def6a6828e59817b8db247a851338488b5100",
+    "ref": "refs/heads/moreI2CTests"
+  },
+  {
+    "sha": "2447b1e5881d6a4e4fbdcb1cb9666d37f2aa4dda",
+    "ref": "refs/heads/renode_1.16.0"
+  },
+  {
+    "sha": "1f844a988f8b88b2eef4940fd940d1828bca21dc",
+    "ref": "refs/heads/rp2350Blinking"
+  },
+  {
+    "sha": "06ce7bde481e3cacc8e50dd837793dbded538aa9",
+    "ref": "refs/heads/sioFix"
+  },
+  {
+    "sha": "1d5b22786f743437304912e1688dbbd94d14679e",
+    "ref": "refs/heads/testsStabilitzation"
+  },
+  {
+    "sha": "4b5d33642800d5ba2c815a56db9d7a7c18e31fcf",
+    "ref": "refs/tags/0.0.1"
+  },
+  {
+    "sha": "ef2b3362d1b2283a7d0ac84c4cafd839e387573f",
+    "ref": "refs/tags/v0.1.0"
+  },
+  {
+    "sha": "d3dead1abbf989c310bb8b57d91613c1e11a8558",
+    "ref": "refs/tags/v0.2.0"
+  },
+  {
+    "sha": "45698b922d5d6a8cf0c79eee01470ea8711145a5",
+    "ref": "refs/tags/v0.2.1"
+  },
+  {
+    "sha": "756a1328008dce8eaf14328563e06524115aa434",
+    "ref": "refs/tags/v0.2.2"
+  },
+  {
+    "sha": "060be525ae9d17bd33450d067e00695735bf4517",
+    "ref": "refs/tags/v0.2.3"
+  },
+  {
+    "sha": "0d45da458fffadf6ed8c037f4dea9f9d216a7b9d",
+    "ref": "refs/tags/v0.2.4"
+  },
+  {
+    "sha": "305d1f659d3f99dd5daf18b9221c7c7924113b72",
+    "ref": "refs/tags/v0.3.0"
+  },
+  {
+    "sha": "305d1f659d3f99dd5daf18b9221c7c7924113b72",
+    "ref": "refs/tags/v0.3.1"
+  },
+  {
+    "sha": "5aca847c9f57ed96603e55d28e8ceeefa09e55f6",
+    "ref": "refs/tags/v0.3.2"
+  }
+]

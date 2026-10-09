@@ -1,0 +1,50 @@
+[
+  {
+    "sha": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "ref": "refs/heads/e2k"
+  },
+  {
+    "sha": "7e9a0c15105cdf7d8470bbaf81f49dbcd9436f69",
+    "ref": "refs/heads/e2k-bsd-user"
+  },
+  {
+    "sha": "4489b5793cc40b5f5670c74f505dd85ec4c9ee46",
+    "ref": "refs/heads/e2k-bsd-user-blitz"
+  },
+  {
+    "sha": "1aa66c07caf4d96683891ad1b9579bebadd45f4e",
+    "ref": "refs/heads/e2k-host"
+  },
+  {
+    "sha": "6f612858892b299b7466688455f6c5cd560a3f17",
+    "ref": "refs/heads/e2k-host-v9.0.0"
+  },
+  {
+    "sha": "0cd2e9c69bd1cf02836a372d24bd1ef8a238697f",
+    "ref": "refs/heads/e2k-old"
+  },
+  {
+    "sha": "e3304f721947f91deb3855dcdfc8243f948ee158",
+    "ref": "refs/heads/e2k-softmmu"
+  },
+  {
+    "sha": "05a87e1bd8b8dfad8c4f3b0163027c3ac4ef4533",
+    "ref": "refs/heads/e2k-v8.1.3"
+  },
+  {
+    "sha": "2c79cad7786dec93b414655a2970521925f9a36e",
+    "ref": "refs/heads/e2k-v9.0.0"
+  },
+  {
+    "sha": "af82362cd679a1e6f0490071d0906a472035345d",
+    "ref": "refs/heads/e90s"
+  },
+  {
+    "sha": "b6df314a4ed91a0d02862a4a081dbe4d7b67b8e3",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "c8b24245813ec2860ab6e8361fcef5350a9e8ed3",
+    "ref": "refs/heads/termux-patches"
+  }
+]

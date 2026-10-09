@@ -1,0 +1,46 @@
+[
+  {
+    "sha": "d1f473968d5fca1bcab7ccf3e8623f7a02d732f2",
+    "ref": "refs/heads/106-simplify_write_method"
+  },
+  {
+    "sha": "db1925e60914eef5761dea61488e600ab2d2ae67",
+    "ref": "refs/heads/dotnet_support"
+  },
+  {
+    "sha": "ed7abba1b9979bc495804decbec504edea2d7af7",
+    "ref": "refs/heads/generic_stamping_fix"
+  },
+  {
+    "sha": "c9f5b965c7ff768fb50d8a8dc7ca15d02c7e13dd",
+    "ref": "refs/heads/issue64"
+  },
+  {
+    "sha": "93ec58d363a38e4670a40f26e98f9b1a0b9fda36",
+    "ref": "refs/heads/issue75"
+  },
+  {
+    "sha": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "085b7931973adf5380522bbf19c4c582964a4863",
+    "ref": "refs/heads/mono6-collection-hotfix"
+  },
+  {
+    "sha": "d1a343b661132ba020b5361dc7ecea601560c67f",
+    "ref": "refs/heads/new_format"
+  },
+  {
+    "sha": "c0102cf7f907ef2183f89cebd1e6d883de58b3e5",
+    "ref": "refs/heads/primitive_writer_reader_tagging"
+  },
+  {
+    "sha": "61b3cf3fd9071bd176d67fe287e4095f222e0ea8",
+    "ref": "refs/tags/v0.4.2"
+  },
+  {
+    "sha": "15d48d393c084abe8e919bda741c64619aedb553",
+    "ref": "refs/tags/v0.4.4"
+  }
+]

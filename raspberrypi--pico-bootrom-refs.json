@@ -1,0 +1,18 @@
+[
+  {
+    "sha": "ef22cd8ede5bc007f81d7f2416b48db90f313434",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "c09c7f08550e8a36fc38dc74f8873b9576de99eb",
+    "ref": "refs/tags/b0"
+  },
+  {
+    "sha": "ad55537bf35e332503b950d6951c41bcb8a7954f",
+    "ref": "refs/tags/b1"
+  },
+  {
+    "sha": "ef22cd8ede5bc007f81d7f2416b48db90f313434",
+    "ref": "refs/tags/b2"
+  }
+]

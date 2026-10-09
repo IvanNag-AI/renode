@@ -1,0 +1,14 @@
+[
+  {
+    "sha": "533eb13e971b669f41eb4597fdcfd8a8eaf984fa",
+    "ref": "refs/heads/65543-build-renode-cmake"
+  },
+  {
+    "sha": "eb498c55bab0f49c3903f69524e2674abe71c26b",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "62f740d30f5f7962f7eefa6b32662a5faf2d8286",
+    "ref": "refs/heads/renode"
+  }
+]

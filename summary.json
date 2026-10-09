@@ -1,0 +1,14 @@
+{
+  "source_repositories": 32,
+  "github_forks": 10,
+  "namespaced_source_histories": 22,
+  "original_refs": 1101,
+  "pin_refs": 30,
+  "selected_local_bare_file_bytes": 1885156106,
+  "release_artifacts": 3,
+  "release_artifact_bytes": 499613215,
+  "renode_dependency_snapshots": 3,
+  "renode_manifest_edges": 54,
+  "mcu_map_rows": 51,
+  "not_claimed": "Exact GitHub physical/billed storage; Git object sharing makes summed local mirror sizes unsuitable for that claim."
+}

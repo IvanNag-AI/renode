@@ -1,0 +1,268 @@
+{
+  "utc": "2026-10-09T15:30:26.641621+00:00",
+  "result": "passed",
+  "remote_ref_checks": [
+    {
+      "upstream": "renode/renode",
+      "original_refs_verified": 150,
+      "pin_refs_verified": 3,
+      "status": "passed"
+    },
+    {
+      "upstream": "renode/renode-infrastructure",
+      "original_refs_verified": 90,
+      "pin_refs_verified": 3,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/tlib",
+      "original_refs_verified": 42,
+      "pin_refs_verified": 2,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/berkeley-softfloat-3",
+      "original_refs_verified": 3,
+      "pin_refs_verified": 1,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/termsharp",
+      "original_refs_verified": 7,
+      "pin_refs_verified": 1,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/xwt",
+      "original_refs_verified": 15,
+      "pin_refs_verified": 1,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/FdtSharp",
+      "original_refs_verified": 2,
+      "pin_refs_verified": 1,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/Packet.Net",
+      "original_refs_verified": 2,
+      "pin_refs_verified": 1,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/AntShell",
+      "original_refs_verified": 5,
+      "pin_refs_verified": 1,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/elfsharp",
+      "original_refs_verified": 7,
+      "pin_refs_verified": 1,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/options-parser",
+      "original_refs_verified": 4,
+      "pin_refs_verified": 2,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/CxxDemangler",
+      "original_refs_verified": 3,
+      "pin_refs_verified": 1,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/InpliTftpServer",
+      "original_refs_verified": 3,
+      "pin_refs_verified": 1,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/BigGustave",
+      "original_refs_verified": 8,
+      "pin_refs_verified": 1,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/Migrant",
+      "original_refs_verified": 11,
+      "pin_refs_verified": 1,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/bc-csharp",
+      "original_refs_verified": 32,
+      "pin_refs_verified": 2,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/dts2repl",
+      "original_refs_verified": 4,
+      "pin_refs_verified": 2,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/renode-models-analyzer",
+      "original_refs_verified": 1,
+      "pin_refs_verified": 1,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/renode-ui",
+      "original_refs_verified": 1,
+      "pin_refs_verified": 2,
+      "status": "passed"
+    },
+    {
+      "upstream": "antmicro/DNNE",
+      "original_refs_verified": 7,
+      "pin_refs_verified": 2,
+      "status": "passed"
+    },
+    {
+      "upstream": "matgla/Renode_RP2040",
+      "original_refs_verified": 19,
+      "pin_refs_verified": 0,
+      "status": "passed"
+    },
+    {
+      "upstream": "matgla/Renode_RP2040_PioSim",
+      "original_refs_verified": 4,
+      "pin_refs_verified": 0,
+      "status": "passed"
+    },
+    {
+      "upstream": "wokwi/rp2040js",
+      "original_refs_verified": 93,
+      "pin_refs_verified": 0,
+      "status": "passed"
+    },
+    {
+      "upstream": "buserror/simavr",
+      "original_refs_verified": 24,
+      "pin_refs_verified": 0,
+      "status": "passed"
+    },
+    {
+      "upstream": "espressif/qemu",
+      "original_refs_verified": 509,
+      "pin_refs_verified": 0,
+      "status": "passed"
+    },
+    {
+      "upstream": "OpenE2K/qemu-e2k-tests",
+      "original_refs_verified": 1,
+      "pin_refs_verified": 0,
+      "status": "passed"
+    },
+    {
+      "upstream": "OpenE2K/qemu-e2k",
+      "original_refs_verified": 12,
+      "pin_refs_verified": 0,
+      "status": "passed"
+    },
+    {
+      "upstream": "espressif/esp-rom-elfs",
+      "original_refs_verified": 10,
+      "pin_refs_verified": 0,
+      "status": "passed"
+    },
+    {
+      "upstream": "NathanY3G/rp2040-pio-emulator",
+      "original_refs_verified": 21,
+      "pin_refs_verified": 0,
+      "status": "passed"
+    },
+    {
+      "upstream": "raspberrypi/pico-bootrom-rp2350",
+      "original_refs_verified": 4,
+      "pin_refs_verified": 0,
+      "status": "passed"
+    },
+    {
+      "upstream": "raspberrypi/pico-bootrom",
+      "original_refs_verified": 4,
+      "pin_refs_verified": 0,
+      "status": "passed"
+    },
+    {
+      "upstream": "GhostRoboticsLab/rp2350js_emulator",
+      "original_refs_verified": 3,
+      "pin_refs_verified": 0,
+      "status": "passed"
+    }
+  ],
+  "actions": [
+    {
+      "repo": "IvanNag-AI/renode",
+      "enabled": false
+    },
+    {
+      "repo": "IvanNag-AI/renode-infrastructure",
+      "enabled": false
+    },
+    {
+      "repo": "IvanNag-AI/tlib",
+      "enabled": false
+    },
+    {
+      "repo": "IvanNag-AI/berkeley-softfloat-3",
+      "enabled": false
+    },
+    {
+      "repo": "IvanNag-AI/TermSharp",
+      "enabled": false
+    },
+    {
+      "repo": "IvanNag-AI/xwt",
+      "enabled": false
+    },
+    {
+      "repo": "IvanNag-AI/FdtSharp",
+      "enabled": false
+    },
+    {
+      "repo": "IvanNag-AI/Renode_RP2040",
+      "enabled": false
+    },
+    {
+      "repo": "IvanNag-AI/rp2040js",
+      "enabled": false
+    },
+    {
+      "repo": "IvanNag-AI/simavr",
+      "enabled": false
+    }
+  ],
+  "clean_tag_restoration": {
+    "repository_count": 20,
+    "sources": "owner URLs only",
+    "fsck": "passed",
+    "worktrees": "all clean before the separately recorded build-chain switch"
+  },
+  "build_identity_chain": "see build-chain-verification.json",
+  "lfs": {
+    "result": "no pointers in all reachable small blobs",
+    "local_repositories_scanned": 34,
+    "archived_repositories_scanned": 32
+  },
+  "runtime": {
+    "downloaded_from": "https://github.com/IvanNag-AI/renode/releases/download/emveris-backup-renode-1.17.0/renode-1.17.0.windows-portable.zip",
+    "sha256": "18bcf145422039e8702c3e5f9864c7787561bfd5deb7a3ee6e168ecf19e2b9db",
+    "version_output": "Renode v1.17.0\n  build: 1.17.0+20260906gitf1dd1b4af\n  build type: Release\n  runtime: .NET 8.0.10",
+    "exit_code": 0,
+    "bundled_coreclr_present": true,
+    "gui_or_firmware_execution": false
+  },
+  "artifacts": {
+    "count": 3,
+    "bytes": 499613215,
+    "github_sha256_digests_match": true
+  },
+  "source_build_executed": false,
+  "firmware_acceptance_executed": false,
+  "catalog_repository_creation": "GitHub secondary rate limit blocked creation of optional private index; public upstream-only metadata published on new archive-index branch in our Renode fork."
+}

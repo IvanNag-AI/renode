@@ -1,0 +1,30 @@
+[
+  {
+    "sha": "e0e1adc36552df466c538d8bdeed401fbed2d9cc",
+    "ref": "refs/heads/38544-bundle_dotnet"
+  },
+  {
+    "sha": "6594fba29ebd062494ca1d44a4826a5f3b9471d0",
+    "ref": "refs/heads/6441-focus_better_solution"
+  },
+  {
+    "sha": "1d7edbe4027f0607337783f15fa0b9dad6c5562a",
+    "ref": "refs/heads/change_configuration"
+  },
+  {
+    "sha": "6a16a4a965011e34b37bca72b4681200ff80da03",
+    "ref": "refs/heads/dependabot/nuget/Example/System.Drawing.Common-5.0.3"
+  },
+  {
+    "sha": "3d1a3bacdc59c10de9e941bb787bd6fad0070b2f",
+    "ref": "refs/heads/dependabot/nuget/System.Drawing.Common-5.0.3"
+  },
+  {
+    "sha": "bd743667700f9737b22f41fb7c3ef4c503832928",
+    "ref": "refs/heads/dotnet_support"
+  },
+  {
+    "sha": "c13c96b95e92c1a8e29705f0884f690ea2f1a876",
+    "ref": "refs/heads/master"
+  }
+]

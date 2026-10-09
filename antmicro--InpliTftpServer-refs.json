@@ -1,0 +1,14 @@
+[
+  {
+    "sha": "69c2303d06343d7f11941b91499f4748a310bc17",
+    "ref": "refs/heads/dotnet_support"
+  },
+  {
+    "sha": "2a4877dce99fd7a30b85b5bf217c631538cd7086",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "33e5ab24eaaab488e9a94f1a40d5d6ae2f7f02f1",
+    "ref": "refs/heads/renode"
+  }
+]

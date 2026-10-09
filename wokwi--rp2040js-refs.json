@@ -1,0 +1,374 @@
+[
+  {
+    "sha": "79ba4f2c5cb045b6659f4d1cb7a22215baa9b101",
+    "ref": "refs/heads/accurate-clock"
+  },
+  {
+    "sha": "694bc3430a38366067c7856734b38f5d4b8e867a",
+    "ref": "refs/heads/ci-micrpython"
+  },
+  {
+    "sha": "78e7d1d8b1be44c55d2b3260ef3934d8265cda1a",
+    "ref": "refs/heads/ci-pico-sdk"
+  },
+  {
+    "sha": "a304c7486f329dae64be5f65baf28795d62ceb95",
+    "ref": "refs/heads/main"
+  },
+  {
+    "sha": "d5826262c21684352471610f35b10504a4803244",
+    "ref": "refs/tags/v0.1.0"
+  },
+  {
+    "sha": "8130673df43c42ca4d8db305492b70a95bb3c137",
+    "ref": "refs/tags/v0.1.1"
+  },
+  {
+    "sha": "e22a56d7b56e109f1417440a14ad754c7c66d6f2",
+    "ref": "refs/tags/v0.10.0"
+  },
+  {
+    "sha": "793958278ea9adadc6686be745d2096aa5c5fc33",
+    "ref": "refs/tags/v0.10.1"
+  },
+  {
+    "sha": "55aa5e812e7b63903615b421a0103df75f17b0d2",
+    "ref": "refs/tags/v0.11.0"
+  },
+  {
+    "sha": "c397e300e63255cc2185e192c922e28b5a1e0255",
+    "ref": "refs/tags/v0.11.1"
+  },
+  {
+    "sha": "8c3cb56decf2a01fb052227c26ecec6865d87b5c",
+    "ref": "refs/tags/v0.12.0"
+  },
+  {
+    "sha": "bc3830ecdb942f764c7f98081b7cfecc37418cda",
+    "ref": "refs/tags/v0.13.0"
+  },
+  {
+    "sha": "1592aa4a7c6acf60234b1b3dfb20aef393d0dbb3",
+    "ref": "refs/tags/v0.13.1"
+  },
+  {
+    "sha": "a7c77a1cc11aaaa41d0b5a4c5fd14afaa5407497",
+    "ref": "refs/tags/v0.14.0"
+  },
+  {
+    "sha": "e74e90b4044d7ff0c7c83f50fc1e1f42b51f5ae8",
+    "ref": "refs/tags/v0.14.1"
+  },
+  {
+    "sha": "c036fc959e4e2d691d6d04c582efb1a9974ea0e6",
+    "ref": "refs/tags/v0.14.2"
+  },
+  {
+    "sha": "da3e970bf776c086f320a777fa5cf5965be01cc8",
+    "ref": "refs/tags/v0.14.3"
+  },
+  {
+    "sha": "e872c3183e71f27b4ebc39e65ff4d30950d42a9b",
+    "ref": "refs/tags/v0.14.4"
+  },
+  {
+    "sha": "d4787c6b92426d91f0a9bb80fd664e8ef41e5dac",
+    "ref": "refs/tags/v0.14.5"
+  },
+  {
+    "sha": "db599354f28d6defcbfa4a38562586f3162155ce",
+    "ref": "refs/tags/v0.14.6"
+  },
+  {
+    "sha": "467048775d2333669a95a7a090953aaafe692b8c",
+    "ref": "refs/tags/v0.14.7"
+  },
+  {
+    "sha": "7d8be0b07211aed33e3c1a7ce713281f55694502",
+    "ref": "refs/tags/v0.14.8"
+  },
+  {
+    "sha": "a479b9282a1d08fd7295a7d4d8d5120ad764d8f6",
+    "ref": "refs/tags/v0.14.9"
+  },
+  {
+    "sha": "0dc840d7d01b412a69b751c4295bc67b982607b4",
+    "ref": "refs/tags/v0.15.0"
+  },
+  {
+    "sha": "b9e7b4b9f405f33f7f3234ffa8ae50c52d789bb4",
+    "ref": "refs/tags/v0.15.1"
+  },
+  {
+    "sha": "d093b7a2791eacac0d20056f777f8cf3f1fec004",
+    "ref": "refs/tags/v0.16.0"
+  },
+  {
+    "sha": "23adbad48d4b64fb6bdf4a50c811a1b9e1f1f543",
+    "ref": "refs/tags/v0.16.1"
+  },
+  {
+    "sha": "99c2fd73a9b33f26177fd6c9268f2438544770d7",
+    "ref": "refs/tags/v0.17.0"
+  },
+  {
+    "sha": "82437019b292ac81fb71545a5d6efa0949a37d6d",
+    "ref": "refs/tags/v0.17.1"
+  },
+  {
+    "sha": "ec726471a48dc27c0eb3a57ac6c9ef39d7c93763",
+    "ref": "refs/tags/v0.17.10"
+  },
+  {
+    "sha": "11538071f55da3bfd4ded5b0008841c8cb35a22c",
+    "ref": "refs/tags/v0.17.11"
+  },
+  {
+    "sha": "47b1739a52e3a9b13f27feb0ac8a8129a48bf6a6",
+    "ref": "refs/tags/v0.17.12"
+  },
+  {
+    "sha": "79a9d409c8ebd003c52a71d792e6f1840a365b7d",
+    "ref": "refs/tags/v0.17.13"
+  },
+  {
+    "sha": "66ffa7591ce47d9884c70b5cabf78dbd3e1b1a6a",
+    "ref": "refs/tags/v0.17.14"
+  },
+  {
+    "sha": "e239155f19c1204e091243ba2a36fb973094ca25",
+    "ref": "refs/tags/v0.17.15"
+  },
+  {
+    "sha": "a66234e5520a9b661434e9095aeacaa1cee3ffc9",
+    "ref": "refs/tags/v0.17.16"
+  },
+  {
+    "sha": "180bcde1052c766501c0cd7892619a25775a0c3b",
+    "ref": "refs/tags/v0.17.17"
+  },
+  {
+    "sha": "774b794052574871c519b8f313c00996fbf5d426",
+    "ref": "refs/tags/v0.17.2"
+  },
+  {
+    "sha": "33e67dcff95ec9b7a125de7f326dc93d1b1154bf",
+    "ref": "refs/tags/v0.17.3"
+  },
+  {
+    "sha": "061d2845ef5abcf8a7a76948a3543f1fe55c90d7",
+    "ref": "refs/tags/v0.17.4"
+  },
+  {
+    "sha": "d8e0e099402547f2174196d183e63729d2a192e4",
+    "ref": "refs/tags/v0.17.5"
+  },
+  {
+    "sha": "8695f9400162a4a540ef367a0adf5221daac1ae6",
+    "ref": "refs/tags/v0.17.6"
+  },
+  {
+    "sha": "5786b19043caa13c01f8b87517b48db1f7499611",
+    "ref": "refs/tags/v0.17.7"
+  },
+  {
+    "sha": "96d1a0cba9ab93530ec47ef47f7e1c5d68acaa79",
+    "ref": "refs/tags/v0.17.8"
+  },
+  {
+    "sha": "c0a6c069dbddea4cbc91f9699e49ed276ff00b4a",
+    "ref": "refs/tags/v0.17.9"
+  },
+  {
+    "sha": "8721f40cbf02f070b02666363656cc982ecde568",
+    "ref": "refs/tags/v0.18.0"
+  },
+  {
+    "sha": "ca964095cd33ed03acb6e35ef0104c0c4b2f5696",
+    "ref": "refs/tags/v0.18.1"
+  },
+  {
+    "sha": "b463d5a8e22eb8f195af26d4d1a83d797ee4f7b1",
+    "ref": "refs/tags/v0.18.2"
+  },
+  {
+    "sha": "559766a1debf5c45f098b39122e30bfb76d8b0e4",
+    "ref": "refs/tags/v0.19.0"
+  },
+  {
+    "sha": "fedbcfbd7725601bb787861e282afb671969d58d",
+    "ref": "refs/tags/v0.19.1"
+  },
+  {
+    "sha": "bc02f7781ef891dfcd4c2b21fcbaac172e0f394a",
+    "ref": "refs/tags/v0.19.2"
+  },
+  {
+    "sha": "5c8f0106ca49cf2be1c2f3cfcea6c1cbe3ec213c",
+    "ref": "refs/tags/v0.19.3"
+  },
+  {
+    "sha": "b67c4dd3f7e7c4d2a66de8017b67cdc5737a834b",
+    "ref": "refs/tags/v0.19.4"
+  },
+  {
+    "sha": "dc77919b3362ad012f142178ddb8005ab47c91c2",
+    "ref": "refs/tags/v0.2.0"
+  },
+  {
+    "sha": "94ecd99da002186ed0e8c63b29798c9c451e8014",
+    "ref": "refs/tags/v0.3.0"
+  },
+  {
+    "sha": "5346ccfd7c8a88b6c0008123ea53b27a32901371",
+    "ref": "refs/tags/v0.3.1"
+  },
+  {
+    "sha": "885a4a0af86bb6103172ae8a5d7133de87e4b7d8",
+    "ref": "refs/tags/v0.3.2"
+  },
+  {
+    "sha": "54011a6a8b1dd2207e7a6b769db1587565e6203d",
+    "ref": "refs/tags/v0.3.3"
+  },
+  {
+    "sha": "095d3b75f0694ac49b2a412298f5e1ee8caf7fd6",
+    "ref": "refs/tags/v0.3.4"
+  },
+  {
+    "sha": "448123094f2758b20f5b7afa07bf3f12e8bb57b1",
+    "ref": "refs/tags/v0.3.5"
+  },
+  {
+    "sha": "b4d42a2b02922da022b2289388814d1560bacafc",
+    "ref": "refs/tags/v0.3.6"
+  },
+  {
+    "sha": "f27ef3721b62c0db27913e4fe35f2d9c1024a500",
+    "ref": "refs/tags/v0.3.7"
+  },
+  {
+    "sha": "3d699facd434d41f9916024df74d791bfb96c69b",
+    "ref": "refs/tags/v0.3.8"
+  },
+  {
+    "sha": "56dda4d4dc99ba319dc3177782c5e261f11c4465",
+    "ref": "refs/tags/v0.3.9"
+  },
+  {
+    "sha": "931fd6c52e00c03ea1810d3e611281c6e1944063",
+    "ref": "refs/tags/v0.4.0"
+  },
+  {
+    "sha": "8f5a451f2622526f8bb1fa955b56b31107295d4c",
+    "ref": "refs/tags/v0.5.0"
+  },
+  {
+    "sha": "ff20dbda71bc7b097946a65c6f4e918ac305fb3c",
+    "ref": "refs/tags/v0.6.0"
+  },
+  {
+    "sha": "e863b9b892af7a6eba2409e2f47e5cea4534fbdc",
+    "ref": "refs/tags/v0.6.1"
+  },
+  {
+    "sha": "e0f974a033090b1077038f9f08437623b5ddb305",
+    "ref": "refs/tags/v0.6.2"
+  },
+  {
+    "sha": "9e04aeb341e97fd4d60bfcf5fee4858339d4778b",
+    "ref": "refs/tags/v0.6.3"
+  },
+  {
+    "sha": "00aef9c25dfda80a9b555057098c8f48a1d0476f",
+    "ref": "refs/tags/v0.6.4"
+  },
+  {
+    "sha": "88f81078b1d3851897d90c3b3c0725594be04ed1",
+    "ref": "refs/tags/v0.6.5"
+  },
+  {
+    "sha": "106b68616187dfa183fc1b56424a617694db6209",
+    "ref": "refs/tags/v0.7.0"
+  },
+  {
+    "sha": "d9819f5d7877a2fddaed09938be8526e5ef93416",
+    "ref": "refs/tags/v0.7.1"
+  },
+  {
+    "sha": "6b43b5b7b6b1edb772e48bf5a32fe0be5f2b7a58",
+    "ref": "refs/tags/v0.8.0"
+  },
+  {
+    "sha": "e01f4cd94532067c1ef171baf00b8cc110b7a453",
+    "ref": "refs/tags/v0.8.1"
+  },
+  {
+    "sha": "2c2d1939d6580d353b2f5d7b3701f4b916012480",
+    "ref": "refs/tags/v0.8.2"
+  },
+  {
+    "sha": "bb3c614cd06537cc97ab973be8b03528f2501895",
+    "ref": "refs/tags/v0.8.3"
+  },
+  {
+    "sha": "8b3b94e094162f0a98d40a442be51d3a9add0521",
+    "ref": "refs/tags/v0.9.0"
+  },
+  {
+    "sha": "f5e4c5b1e0d37c38c0f0ada923820e2e60d59eba",
+    "ref": "refs/tags/v0.9.1"
+  },
+  {
+    "sha": "bff7d504df54a60cf61ffe1350d1a7d024880577",
+    "ref": "refs/tags/v0.9.2"
+  },
+  {
+    "sha": "e052758bbb7ba09c5e26be7e067125d8336d310a",
+    "ref": "refs/tags/v1.0.0"
+  },
+  {
+    "sha": "e8ba5589325f05602f05b9168a56c168ebc1a0c7",
+    "ref": "refs/tags/v1.0.1"
+  },
+  {
+    "sha": "11eccf33c966bbfc94d2c54caf4b29edceaeba3c",
+    "ref": "refs/tags/v1.0.2"
+  },
+  {
+    "sha": "b9777b4f8e543bcae14bed2bfc3efb99e007e559",
+    "ref": "refs/tags/v1.1.0"
+  },
+  {
+    "sha": "60b253b8a0ef5f327c3ee998839c85ef4c845fe6",
+    "ref": "refs/tags/v1.1.1"
+  },
+  {
+    "sha": "b9db9f463054c3cf74634b09837ec4f5f96cd8e3",
+    "ref": "refs/tags/v1.2.0"
+  },
+  {
+    "sha": "943c4c0691e9397a8e387bdb18ed959da0d4f016",
+    "ref": "refs/tags/v1.3.0"
+  },
+  {
+    "sha": "76c4018d1822a9287611e7bd369c292ec0bdc22f",
+    "ref": "refs/tags/v1.3.1"
+  },
+  {
+    "sha": "6f8c3a5ef963be4fe5f3903ac6b8dda32a7df989",
+    "ref": "refs/tags/v1.3.2"
+  },
+  {
+    "sha": "7604cf16a36a559905a349b41c3202fe7944e672",
+    "ref": "refs/tags/v1.3.3"
+  },
+  {
+    "sha": "bf1d886defe8ff1964f3650e98354ecc4d6a5d5f",
+    "ref": "refs/tags/v1.3.4"
+  },
+  {
+    "sha": "0c1c316e87b34e616985af35d4c147fc19cfeee9",
+    "ref": "refs/tags/v1.4.0"
+  }
+]

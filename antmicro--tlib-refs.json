@@ -1,0 +1,170 @@
+[
+  {
+    "sha": "72860d7b4839a72a9908057a2c2452d6b32b7dd1",
+    "ref": "refs/heads/10872-block_completed_hook"
+  },
+  {
+    "sha": "1912767faf490eb4807120239e9d3e65e9449aae",
+    "ref": "refs/heads/10872-block_completed_hook-cleanup"
+  },
+  {
+    "sha": "24412f9cd451137955fe2b5f5c74cc0b90f5c391",
+    "ref": "refs/heads/15737-gdb_stepping_issues"
+  },
+  {
+    "sha": "c5f15c8bbec2defe6eadcbd2d11c4f6408befc36",
+    "ref": "refs/heads/25371-pmp"
+  },
+  {
+    "sha": "84963785eb0f149d73e7456abf0ac88757a94d67",
+    "ref": "refs/heads/27438-riscv_implement_load_and_store_for_v"
+  },
+  {
+    "sha": "ac7f127d27924a4d04de911a0030d414c25e8111",
+    "ref": "refs/heads/29791-instr_counting"
+  },
+  {
+    "sha": "1d11eb31e7f7ea1577bbe481f4c11a97b864bda8",
+    "ref": "refs/heads/30105-non_deterministic_mode"
+  },
+  {
+    "sha": "44df89683559eece25446f82662bf38123eb77f6",
+    "ref": "refs/heads/32516_external_mmu"
+  },
+  {
+    "sha": "aa3ea2d2d73f74282ac5ca60f349b35dceb0ba8a",
+    "ref": "refs/heads/33997-watchpoint_virtual"
+  },
+  {
+    "sha": "baff78ad27131d29a874d888d8a7d96339519996",
+    "ref": "refs/heads/36334-risc-v-thread-detection"
+  },
+  {
+    "sha": "68653c811c1bbca87b42d6272d18a422c38149aa",
+    "ref": "refs/heads/38527-opentitan_otbn"
+  },
+  {
+    "sha": "d0fe1d1332373234e8db3b4188672cc99abc22de",
+    "ref": "refs/heads/40237-caches_invalidation"
+  },
+  {
+    "sha": "35e0567c2285a683b34284e9cb65182d167ed2a1",
+    "ref": "refs/heads/43578-vfredosum"
+  },
+  {
+    "sha": "fea768fdabaeee7c4a2ac3f75277934b70782feb",
+    "ref": "refs/heads/49711-riscv_zfh-package_1"
+  },
+  {
+    "sha": "913559a8018ee97abbafafe83cb4af4eb7078ec5",
+    "ref": "refs/heads/49712-riscv_zfh-package_0"
+  },
+  {
+    "sha": "22246f74365e2e0dcc3d704a7fe26e42a1b96c93",
+    "ref": "refs/heads/53362-fix_serialization_breakpoints"
+  },
+  {
+    "sha": "d092c556f8f582c5840e34bf2e7e9a04929dbd22",
+    "ref": "refs/heads/58985-insn_count"
+  },
+  {
+    "sha": "f4e0e61eda26e81cf08b85bc9c07b2cbe4a474c5",
+    "ref": "refs/heads/59115-add_riscv_zve_mr"
+  },
+  {
+    "sha": "5459f1655ba23f6e35c72756ca42a71f1874a08b",
+    "ref": "refs/heads/59539-clic_test"
+  },
+  {
+    "sha": "b0176c72e0871e0847c94e92160582d055b38a5d",
+    "ref": "refs/heads/60761-clic_test-rc"
+  },
+  {
+    "sha": "a3b62511404344b49a2c8d32eba346d775f800c8",
+    "ref": "refs/heads/65543-build-renode-cmake"
+  },
+  {
+    "sha": "d692fc1dd375770f1ae6427238dcb2d06dd60995",
+    "ref": "refs/heads/68189-aarch64-tcg-ops"
+  },
+  {
+    "sha": "113e5e14aa017ca05a44b414f111b171a3a93fb1",
+    "ref": "refs/heads/88885-prepare-github-formatting-CI"
+  },
+  {
+    "sha": "0fff02bb82eeece75d4904478ee55be2f27ccef2",
+    "ref": "refs/heads/88885-prepare-github-formatting-CI-TEST-FAILURES"
+  },
+  {
+    "sha": "375c8f1e0c9721c955fb79ecf3b041d30d793baf",
+    "ref": "refs/heads/90353-multicore_demo"
+  },
+  {
+    "sha": "5b577a53bdd634513c80bf7f7779f5215ea4f02f",
+    "ref": "refs/heads/91656-arm-mpu-aligment"
+  },
+  {
+    "sha": "76014bceb8e670668acf3f43ea675615a46b9b37",
+    "ref": "refs/heads/95150-win-systemc"
+  },
+  {
+    "sha": "0a29d6069efc3fd57a26cf48b7b19c10ad7a1185",
+    "ref": "refs/heads/Linux_LiteX_VexRiscv"
+  },
+  {
+    "sha": "a08e0c6a72b8cec4c3b47d62e66b02efb765ca08",
+    "ref": "refs/heads/WIP/19267_address_translation"
+  },
+  {
+    "sha": "a57f1846f930a6ec19ecb48a19623e640211de6f",
+    "ref": "refs/heads/always-go-through-softmmu-qemu-st"
+  },
+  {
+    "sha": "d913ad3332535e3624444d628c91e68d8d703b09",
+    "ref": "refs/heads/armv7r-add-configuration-signals"
+  },
+  {
+    "sha": "29996826b01c4c14b8c476ace27591bdccc530f8",
+    "ref": "refs/heads/dotnet_support"
+  },
+  {
+    "sha": "0b50c327f5f1b10891e1cab056f8940fccf8f677",
+    "ref": "refs/heads/executable_array_memory"
+  },
+  {
+    "sha": "25e73871a3c5cef5cc9b6f81bc263cf4b95f135a",
+    "ref": "refs/heads/gh4-v_extensions"
+  },
+  {
+    "sha": "8620bc4a9c32814218f338f2f52163e4aaf8bfca",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "9dddbc90f5dce37660393bf1c3ef26e5bbc37154",
+    "ref": "refs/heads/public-hst-strong-helpers"
+  },
+  {
+    "sha": "9495a42ec11367d5f7f1e0868dd4848b5987a74d",
+    "ref": "refs/heads/public-hst-strong-ir"
+  },
+  {
+    "sha": "a813d6c4cdc65e6f70968da4fe30b312e2a69024",
+    "ref": "refs/heads/public-hst-weak-helpers"
+  },
+  {
+    "sha": "18f9069377479954e72142baf9a8e9569e3f8a0e",
+    "ref": "refs/heads/public-hst-weak-ir"
+  },
+  {
+    "sha": "daae57c7a081d497b429dda9306d56e2d424cf10",
+    "ref": "refs/heads/riscv-vectored_instructions"
+  },
+  {
+    "sha": "091b3015faa49b0282f3bb7fc1bb2d4772508981",
+    "ref": "refs/heads/translation-cache-optimisations"
+  },
+  {
+    "sha": "6fa5b20dd7bb3134f0b5255a30ba5a4aa57947a3",
+    "ref": "refs/heads/vexriscv"
+  }
+]

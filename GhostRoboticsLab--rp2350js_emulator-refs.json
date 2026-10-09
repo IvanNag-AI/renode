@@ -1,0 +1,14 @@
+[
+  {
+    "sha": "72fe7cb323dd25408f76892288ee00e3b2f1e3f1",
+    "ref": "refs/heads/dependabot/npm_and_yarn/multi-d0c2d048a7"
+  },
+  {
+    "sha": "fee5726521c989cd1dd2c996a65acbebc9d2ce16",
+    "ref": "refs/heads/main"
+  },
+  {
+    "sha": "74c9b7998cd1eb52d54db6feeb8b8bb8f3bd8248",
+    "ref": "refs/tags/rp2350-v0.1.0"
+  }
+]

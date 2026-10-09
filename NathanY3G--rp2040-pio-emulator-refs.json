@@ -1,0 +1,86 @@
+[
+  {
+    "sha": "4d348c32ddbc659d812e260aec3079e9d0956986",
+    "ref": "refs/heads/bump-version"
+  },
+  {
+    "sha": "abd90e0bf91ff09b3824fd13e8715ff886fda19d",
+    "ref": "refs/heads/main"
+  },
+  {
+    "sha": "05dedea572ad3b9b09a57f75e5cb6766f52bd807",
+    "ref": "refs/heads/support-pin-mapping-groups"
+  },
+  {
+    "sha": "a907ee83c9eb5731616611de1a8064a481eb2ac1",
+    "ref": "refs/tags/v0.20.0"
+  },
+  {
+    "sha": "23f61a94773346536b64b178b91c70f5db1228ef",
+    "ref": "refs/tags/v0.22.0"
+  },
+  {
+    "sha": "e79cfcd3f4a902e8b47baecba8e848cbe3da51f2",
+    "ref": "refs/tags/v0.26.0"
+  },
+  {
+    "sha": "ac5dd84cdf067d63ceac7ef58692c634c136e406",
+    "ref": "refs/tags/v0.70.0"
+  },
+  {
+    "sha": "d450bfcc22dcc5bb0372162b858853c333d729ca",
+    "ref": "refs/tags/v0.75.1"
+  },
+  {
+    "sha": "a6192217d63c65a1b73c65b340addba984964392",
+    "ref": "refs/tags/v0.76.0"
+  },
+  {
+    "sha": "57626aebaa098fbbaa1776abbeeadcad78bf0eeb",
+    "ref": "refs/tags/v0.77.0"
+  },
+  {
+    "sha": "b5f9c0c4f4e20c14ce63657766b34f5bad4376d6",
+    "ref": "refs/tags/v0.78.0"
+  },
+  {
+    "sha": "9274d77d10fdb939c0beddd970f9faca9730dee2",
+    "ref": "refs/tags/v0.79.0"
+  },
+  {
+    "sha": "b9f83a7d262a1fdf7d049d20c6ec44d6ff419736",
+    "ref": "refs/tags/v0.80.0"
+  },
+  {
+    "sha": "c527ca5739ed81a963c83ea6a031a74023c47a53",
+    "ref": "refs/tags/v0.81.0"
+  },
+  {
+    "sha": "4c1baadecbded50db95e019c5f60dcf2a1aa9430",
+    "ref": "refs/tags/v0.82.0"
+  },
+  {
+    "sha": "01235ffd9094064a2a6a72510d5ed0373c6717fe",
+    "ref": "refs/tags/v0.83.0"
+  },
+  {
+    "sha": "fd0f7b76f2e988ee8f1eabc1fd8e9bf4bf6eeae6",
+    "ref": "refs/tags/v0.84.0"
+  },
+  {
+    "sha": "2134c6e0ea172949a0c53519ee01779906d7bc9f",
+    "ref": "refs/tags/v0.85.0"
+  },
+  {
+    "sha": "8cdc5820e67c579bcf5de7e0c006d9b97e076b56",
+    "ref": "refs/tags/v0.86.0"
+  },
+  {
+    "sha": "4003d80c44f2e0783c5591a14935189253b2dde5",
+    "ref": "refs/tags/v0.87.0"
+  },
+  {
+    "sha": "719baf825dab3850e1b4d51ac1844c47a9312c60",
+    "ref": "refs/tags/v0.88.0"
+  }
+]

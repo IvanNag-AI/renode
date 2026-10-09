@@ -1,0 +1,14 @@
+[
+  {
+    "sha": "98fb1e84a0a51499248e777bcf9e04b6b74212f4",
+    "ref": "refs/heads/InjestingNewCheckins"
+  },
+  {
+    "sha": "a9cdc659f8375e8f0769694e0ff2d868e095ca70",
+    "ref": "refs/heads/dotnet_support"
+  },
+  {
+    "sha": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "ref": "refs/heads/master"
+  }
+]

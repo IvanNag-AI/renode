@@ -1,0 +1,1820 @@
+[
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/BigGustave",
+    "revision": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55",
+    "source_declaration": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55:src/BigGustave.Tests/BigGustave.Tests.csproj:33:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"15.8.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/BigGustave",
+    "revision": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55",
+    "source_declaration": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55:src/BigGustave.Tests/BigGustave.Tests.csproj:34:    <PackageReference Include=\"xunit\" Version=\"2.3.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/BigGustave",
+    "revision": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55",
+    "source_declaration": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55:src/BigGustave.Tests/BigGustave.Tests.csproj:35:    <PackageReference Include=\"xunit.runner.visualstudio\" Version=\"2.3.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:27:    <PackageReference Include=\"Appveyor.TestLogger\" Version=\"1.1.0-post-rtm\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:28:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"15.3.0-preview-20170425-07\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:29:    <PackageReference Include=\"MSTest.TestAdapter\" Version=\"1.1.17\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:30:    <PackageReference Include=\"MSTest.TestFramework\" Version=\"1.1.17\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:31:    <PackageReference Include=\"OpenCover\" Version=\"4.6.519\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:sample/Sample.csproj:18:    <PackageReference Include=\"DNNE\" Version=\"$(DnneVersion)\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:src/dnne-analyzers/DNNE.Analyzers.targets:102:             Text=\"The DNNE source generators might not be loaded correctly, as the current project is using the packages.config setup to restore NuGet packages. Source generators require PackageReference to be used (either in a legacy-style or SDK-style .csproj project, both are supported as long as PackageReference is used).\"/>"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:src/dnne-analyzers/dnne-analyzers.csproj:10:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp\" Version=\"4.0.1\" PrivateAssets=\"all\" Pack=\"false\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:src/msbuild/DNNE.BuildTasks/DNNE.BuildTasks.csproj:14:    <PackageReference Include=\"Microsoft.Build.Utilities.Core\" Version=\"16.5.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:test/DNNE.UnitTests/DNNE.UnitTests.csproj:10:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.7.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:test/DNNE.UnitTests/DNNE.UnitTests.csproj:11:    <PackageReference Include=\"xunit\" Version=\"2.4.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:test/DNNE.UnitTests/DNNE.UnitTests.csproj:12:    <PackageReference Include=\"xunit.runner.visualstudio\" Version=\"2.4.3\">"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:test/DNNE.UnitTests/DNNE.UnitTests.csproj:15:    </PackageReference>"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:test/DNNE.UnitTests/DNNE.UnitTests.csproj:16:    <PackageReference Include=\"coverlet.collector\" Version=\"1.3.0\">"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:test/DNNE.UnitTests/DNNE.UnitTests.csproj:19:    </PackageReference>"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:test/ExportingAssembly/ExportingAssembly.csproj:51:    <PackageReference Include=\"DNNE\" Version=\"2.*\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/InpliTftpServer",
+    "revision": "2a4877dce99fd7a30b85b5bf217c631538cd7086",
+    "source_declaration": "2a4877dce99fd7a30b85b5bf217c631538cd7086:InpliTftpServer/InpliTftpServer.csproj:19:    <PackageReference Update=\"Microsoft.NETCore.App\" Version=\"2.0.7\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/Migrant",
+    "revision": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c",
+    "source_declaration": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c:Migrant/Migrant.csproj:9:\t\t<PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/Migrant",
+    "revision": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c",
+    "source_declaration": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c:Migrant/Migrant.csproj:10:\t\t<PackageReference Include=\"System.Reflection.Emit.ILGeneration\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/Migrant",
+    "revision": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c",
+    "source_declaration": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c:Migrant/Migrant.csproj:11:\t\t<PackageReference Include=\"System.Reflection.Emit.Lightweight\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/options-parser",
+    "revision": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4",
+    "source_declaration": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4:OptionsParser.csproj:9:    <PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/options-parser",
+    "revision": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4",
+    "source_declaration": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4:OptionsParserTests.csproj:11:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/options-parser",
+    "revision": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4",
+    "source_declaration": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4:OptionsParserTests.csproj:12:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/options-parser",
+    "revision": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4",
+    "source_declaration": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4:OptionsParserTests.csproj:13:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:16:    <PackageReference Include=\"Teronis.MSBuild.Packaging.ProjectBuildInPackage\" Version=\"1.0.0\">"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:19:    </PackageReference>"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:20:    <PackageReference Include=\"Microsoft.CodeAnalysis\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:21:    <PackageReference Include=\"Microsoft.CodeAnalysis.Analyzers\" Version=\"3.3.4\">"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:24:    </PackageReference>"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:25:    <PackageReference Include=\"Microsoft.CodeAnalysis.Csharp\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:26:    <PackageReference Include=\"NLog\" Version=\"5.1.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:12:    <PackageReference Include=\"CommandLineParser\" Version=\"2.9.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:13:    <PackageReference Include=\"Microsoft.Build.Locator\" Version=\"1.5.5\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:14:    <PackageReference Include=\"Microsoft.CodeAnalysis.Workspaces.MSBuild\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:15:    <PackageReference Include=\"Newtonsoft.Json\" Version=\"13.0.3\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:16:    <PackageReference Include=\"NLog\" Version=\"5.1.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Utils/Utils.csproj:10:    <PackageReference Include=\"Microsoft.CodeAnalysis\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Utils/Utils.csproj:11:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp.Workspaces\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Utils/Utils.csproj:12:    <PackageReference Include=\"NLog\" Version=\"5.1.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Utils/Utils.csproj:13:    <PackageReference Include=\"Newtonsoft.Json\" Version=\"13.0.3\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/termsharp",
+    "revision": "c13c96b95e92c1a8e29705f0884f690ea2f1a876",
+    "source_declaration": "c13c96b95e92c1a8e29705f0884f690ea2f1a876:Example/TermSharpExample.csproj:7:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/termsharp",
+    "revision": "c13c96b95e92c1a8e29705f0884f690ea2f1a876",
+    "source_declaration": "c13c96b95e92c1a8e29705f0884f690ea2f1a876:TermSharp.csproj:7:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:41:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:42:    <PackageReference Include=\"AtkSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:43:    <PackageReference Include=\"GdkSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:44:    <PackageReference Include=\"GLibSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:45:    <PackageReference Include=\"GtkSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:46:    <PackageReference Include=\"PangoSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:47:    <PackageReference Include=\"CairoSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:48:    <PackageReference Include=\"GioSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.WPF/Xwt.WPF.csproj:71:    <PackageReference Include=\"Microsoft.Windows.Compatibility\" Version=\"5.0.2\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.WPF/Xwt.WPF.csproj:72:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:src/Directory.Build.targets:8:    <PackageReference Include=\"StyleCop.Analyzers\" Version=\"1.1.118\" PrivateAssets=\"All\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:src/Renode/Renode.csproj:50:    <PackageReference Include=\"NetMQ\" Version=\"4.0.1.12\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:src/Renode/Renode.csproj:51:    <PackageReference Include=\"Newtonsoft.Json\" Version=\"13.0.3\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:tests/unit-tests/RenodeTests/RenodeTests.csproj:11:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:tests/unit-tests/RenodeTests/RenodeTests.csproj:12:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:tests/unit-tests/RenodeTests/RenodeTests.csproj:13:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:tests/unit-tests/RenodeTests/RenodeTests.csproj:14:    <PackageReference Include=\"Moq\" Version=\"4.18.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:tools/NativeInterface/csharp/NativeInterface.csproj:54:    <PackageReference Include=\"DNNE\" Version=\"$(DnnePackageVersion)\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:tools/PeakRDL-renode/tests/SystemRDLPeripheralsTests.csproj:8:    <PackageReference Include=\"Moq\" Version=\"4.18.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:tools/PeakRDL-renode/tests/SystemRDLPeripheralsTests.csproj:9:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:tools/PeakRDL-renode/tests/SystemRDLPeripheralsTests.csproj:10:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:tools/PeakRDL-renode/tests/SystemRDLPeripheralsTests.csproj:11:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:tools/analyzers/Analyzers.csproj:9:    <PackageReference Include=\"Microsoft.CodeAnalysis.Analyzers\" Version=\"3.3.4\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:tools/analyzers/Analyzers.csproj:10:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp\" Version=\"3.9.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode",
+    "revision": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+    "source_declaration": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2:tools/analyzers/Analyzers.csproj:11:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp.Workspaces\" Version=\"3.9.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Emulator/Extensions/MonitorTests/MonitorTests.csproj:9:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Emulator/Extensions/MonitorTests/MonitorTests.csproj:10:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Emulator/Extensions/MonitorTests/MonitorTests.csproj:11:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:14:    <PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:15:    <PackageReference Include=\"Moq\" Version=\"4.18.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:19:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:20:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:21:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Emulator/Peripherals/Test/PeripheralsTests/PeripheralsTests.csproj:9:    <PackageReference Include=\"Moq\" Version=\"4.18.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Emulator/Peripherals/Test/PeripheralsTests/PeripheralsTests.csproj:10:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Emulator/Peripherals/Test/PeripheralsTests/PeripheralsTests.csproj:11:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Emulator/Peripherals/Test/PeripheralsTests/PeripheralsTests.csproj:12:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Infrastructure.csproj:15:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Infrastructure.csproj:16:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp\" Version=\"5.0.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Infrastructure.csproj:17:    <PackageReference Include=\"Dynamitey\" Version=\"2.0.10.189\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Infrastructure.csproj:18:    <PackageReference Include=\"Mono.Cecil\" Version=\"0.11.3\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Infrastructure.csproj:19:    <PackageReference Include=\"K4os.Compression.LZ4\" Version=\"1.3.8\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Infrastructure.csproj:29:    <PackageReference Include=\"IronPython.StdLib\" Version=\"2.7.12.0\">"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Infrastructure.csproj:33:    </PackageReference>"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Infrastructure.csproj:34:    <PackageReference Include=\"DynamicLanguageRuntime\" Version=\"1.3.5\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Infrastructure.csproj:35:    <PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Infrastructure.csproj:54:    <PackageReference Include=\"GirCore.Gst-1.0\" Version=\"0.7.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Infrastructure.csproj:55:    <PackageReference Include=\"GirCore.GstApp-1.0\" Version=\"0.7.0\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Infrastructure.csproj:77:    <PackageReference Include=\"GdkSharp\" Version=\"3.24.24.95\" Condition=\" $(GUI_DISABLED) != 'true' \"/>"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Infrastructure.csproj:78:    <PackageReference Include=\"GLibSharp\" Version=\"3.24.24.95\" Condition=\" $(GUI_DISABLED) != 'true' \"/>"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Plugins/TracePlugin/TracePlugin.csproj:8:    <PackageReference Include=\"Dynamitey\" Version=\"2.0.10.189\" />"
+  },
+  {
+    "snapshot": "v1.17.0",
+    "repository": "renode/renode-infrastructure",
+    "revision": "066a7f13c052215632d469c995c89aea37c573b1",
+    "source_declaration": "066a7f13c052215632d469c995c89aea37c573b1:src/Plugins/TracePlugin/TracePlugin.csproj:9:    <PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/BigGustave",
+    "revision": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55",
+    "source_declaration": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55:src/BigGustave.Tests/BigGustave.Tests.csproj:33:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"15.8.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/BigGustave",
+    "revision": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55",
+    "source_declaration": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55:src/BigGustave.Tests/BigGustave.Tests.csproj:34:    <PackageReference Include=\"xunit\" Version=\"2.3.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/BigGustave",
+    "revision": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55",
+    "source_declaration": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55:src/BigGustave.Tests/BigGustave.Tests.csproj:35:    <PackageReference Include=\"xunit.runner.visualstudio\" Version=\"2.3.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:27:    <PackageReference Include=\"Appveyor.TestLogger\" Version=\"1.1.0-post-rtm\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:28:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"15.3.0-preview-20170425-07\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:29:    <PackageReference Include=\"MSTest.TestAdapter\" Version=\"1.1.17\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:30:    <PackageReference Include=\"MSTest.TestFramework\" Version=\"1.1.17\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:31:    <PackageReference Include=\"OpenCover\" Version=\"4.6.519\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:sample/Sample.csproj:18:    <PackageReference Include=\"DNNE\" Version=\"$(DnneVersion)\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:src/dnne-analyzers/DNNE.Analyzers.targets:102:             Text=\"The DNNE source generators might not be loaded correctly, as the current project is using the packages.config setup to restore NuGet packages. Source generators require PackageReference to be used (either in a legacy-style or SDK-style .csproj project, both are supported as long as PackageReference is used).\"/>"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:src/dnne-analyzers/dnne-analyzers.csproj:10:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp\" Version=\"4.0.1\" PrivateAssets=\"all\" Pack=\"false\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:src/msbuild/DNNE.BuildTasks/DNNE.BuildTasks.csproj:14:    <PackageReference Include=\"Microsoft.Build.Utilities.Core\" Version=\"16.5.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:test/DNNE.UnitTests/DNNE.UnitTests.csproj:10:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.7.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:test/DNNE.UnitTests/DNNE.UnitTests.csproj:11:    <PackageReference Include=\"xunit\" Version=\"2.4.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:test/DNNE.UnitTests/DNNE.UnitTests.csproj:12:    <PackageReference Include=\"xunit.runner.visualstudio\" Version=\"2.4.3\">"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:test/DNNE.UnitTests/DNNE.UnitTests.csproj:15:    </PackageReference>"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:test/DNNE.UnitTests/DNNE.UnitTests.csproj:16:    <PackageReference Include=\"coverlet.collector\" Version=\"1.3.0\">"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:test/DNNE.UnitTests/DNNE.UnitTests.csproj:19:    </PackageReference>"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/DNNE",
+    "revision": "658fe59cc088ed6def40001ca1554e06ee277f36",
+    "source_declaration": "658fe59cc088ed6def40001ca1554e06ee277f36:test/ExportingAssembly/ExportingAssembly.csproj:51:    <PackageReference Include=\"DNNE\" Version=\"2.*\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/InpliTftpServer",
+    "revision": "2a4877dce99fd7a30b85b5bf217c631538cd7086",
+    "source_declaration": "2a4877dce99fd7a30b85b5bf217c631538cd7086:InpliTftpServer/InpliTftpServer.csproj:19:    <PackageReference Update=\"Microsoft.NETCore.App\" Version=\"2.0.7\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/Migrant",
+    "revision": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c",
+    "source_declaration": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c:Migrant/Migrant.csproj:9:\t\t<PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/Migrant",
+    "revision": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c",
+    "source_declaration": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c:Migrant/Migrant.csproj:10:\t\t<PackageReference Include=\"System.Reflection.Emit.ILGeneration\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/Migrant",
+    "revision": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c",
+    "source_declaration": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c:Migrant/Migrant.csproj:11:\t\t<PackageReference Include=\"System.Reflection.Emit.Lightweight\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/options-parser",
+    "revision": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4",
+    "source_declaration": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4:OptionsParser.csproj:9:    <PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/options-parser",
+    "revision": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4",
+    "source_declaration": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4:OptionsParserTests.csproj:11:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/options-parser",
+    "revision": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4",
+    "source_declaration": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4:OptionsParserTests.csproj:12:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/options-parser",
+    "revision": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4",
+    "source_declaration": "2b2b67a0b8f9ec93e1ba2cf2cfadded38d2855a4:OptionsParserTests.csproj:13:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:16:    <PackageReference Include=\"Teronis.MSBuild.Packaging.ProjectBuildInPackage\" Version=\"1.0.0\">"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:19:    </PackageReference>"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:20:    <PackageReference Include=\"Microsoft.CodeAnalysis\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:21:    <PackageReference Include=\"Microsoft.CodeAnalysis.Analyzers\" Version=\"3.3.4\">"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:24:    </PackageReference>"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:25:    <PackageReference Include=\"Microsoft.CodeAnalysis.Csharp\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:26:    <PackageReference Include=\"NLog\" Version=\"5.1.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:12:    <PackageReference Include=\"CommandLineParser\" Version=\"2.9.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:13:    <PackageReference Include=\"Microsoft.Build.Locator\" Version=\"1.5.5\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:14:    <PackageReference Include=\"Microsoft.CodeAnalysis.Workspaces.MSBuild\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:15:    <PackageReference Include=\"Newtonsoft.Json\" Version=\"13.0.3\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:16:    <PackageReference Include=\"NLog\" Version=\"5.1.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Utils/Utils.csproj:10:    <PackageReference Include=\"Microsoft.CodeAnalysis\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Utils/Utils.csproj:11:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp.Workspaces\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Utils/Utils.csproj:12:    <PackageReference Include=\"NLog\" Version=\"5.1.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Utils/Utils.csproj:13:    <PackageReference Include=\"Newtonsoft.Json\" Version=\"13.0.3\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/termsharp",
+    "revision": "c13c96b95e92c1a8e29705f0884f690ea2f1a876",
+    "source_declaration": "c13c96b95e92c1a8e29705f0884f690ea2f1a876:Example/TermSharpExample.csproj:7:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/termsharp",
+    "revision": "c13c96b95e92c1a8e29705f0884f690ea2f1a876",
+    "source_declaration": "c13c96b95e92c1a8e29705f0884f690ea2f1a876:TermSharp.csproj:7:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:41:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:42:    <PackageReference Include=\"AtkSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:43:    <PackageReference Include=\"GdkSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:44:    <PackageReference Include=\"GLibSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:45:    <PackageReference Include=\"GtkSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:46:    <PackageReference Include=\"PangoSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:47:    <PackageReference Include=\"CairoSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:48:    <PackageReference Include=\"GioSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.WPF/Xwt.WPF.csproj:71:    <PackageReference Include=\"Microsoft.Windows.Compatibility\" Version=\"5.0.2\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.WPF/Xwt.WPF.csproj:72:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:src/Directory.Build.targets:8:    <PackageReference Include=\"StyleCop.Analyzers\" Version=\"1.1.118\" PrivateAssets=\"All\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:src/Renode/Renode.csproj:50:    <PackageReference Include=\"NetMQ\" Version=\"4.0.1.12\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:src/Renode/Renode.csproj:51:    <PackageReference Include=\"Newtonsoft.Json\" Version=\"13.0.3\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:tests/unit-tests/RenodeTests/RenodeTests.csproj:11:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:tests/unit-tests/RenodeTests/RenodeTests.csproj:12:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:tests/unit-tests/RenodeTests/RenodeTests.csproj:13:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:tests/unit-tests/RenodeTests/RenodeTests.csproj:14:    <PackageReference Include=\"Moq\" Version=\"4.18.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:tools/NativeInterface/csharp/NativeInterface.csproj:54:    <PackageReference Include=\"DNNE\" Version=\"$(DnnePackageVersion)\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:tools/PeakRDL-renode/tests/SystemRDLPeripheralsTests.csproj:8:    <PackageReference Include=\"Moq\" Version=\"4.18.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:tools/PeakRDL-renode/tests/SystemRDLPeripheralsTests.csproj:9:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:tools/PeakRDL-renode/tests/SystemRDLPeripheralsTests.csproj:10:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:tools/PeakRDL-renode/tests/SystemRDLPeripheralsTests.csproj:11:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:tools/analyzers/Analyzers.csproj:9:    <PackageReference Include=\"Microsoft.CodeAnalysis.Analyzers\" Version=\"3.3.4\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:tools/analyzers/Analyzers.csproj:10:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp\" Version=\"3.9.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode",
+    "revision": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+    "source_declaration": "f1dd1b4af7838b45a925c17603cdfed0a583844a:tools/analyzers/Analyzers.csproj:11:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp.Workspaces\" Version=\"3.9.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Emulator/Extensions/MonitorTests/MonitorTests.csproj:9:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Emulator/Extensions/MonitorTests/MonitorTests.csproj:10:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Emulator/Extensions/MonitorTests/MonitorTests.csproj:11:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:14:    <PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:15:    <PackageReference Include=\"Moq\" Version=\"4.18.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:19:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:20:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:21:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Emulator/Peripherals/Test/PeripheralsTests/PeripheralsTests.csproj:9:    <PackageReference Include=\"Moq\" Version=\"4.18.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Emulator/Peripherals/Test/PeripheralsTests/PeripheralsTests.csproj:10:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Emulator/Peripherals/Test/PeripheralsTests/PeripheralsTests.csproj:11:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Emulator/Peripherals/Test/PeripheralsTests/PeripheralsTests.csproj:12:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Infrastructure.csproj:15:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Infrastructure.csproj:16:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp\" Version=\"5.0.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Infrastructure.csproj:17:    <PackageReference Include=\"Dynamitey\" Version=\"2.0.10.189\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Infrastructure.csproj:18:    <PackageReference Include=\"Mono.Cecil\" Version=\"0.11.3\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Infrastructure.csproj:19:    <PackageReference Include=\"K4os.Compression.LZ4\" Version=\"1.3.8\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Infrastructure.csproj:29:    <PackageReference Include=\"IronPython.StdLib\" Version=\"2.7.12.0\">"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Infrastructure.csproj:33:    </PackageReference>"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Infrastructure.csproj:34:    <PackageReference Include=\"DynamicLanguageRuntime\" Version=\"1.3.5\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Infrastructure.csproj:35:    <PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Infrastructure.csproj:54:    <PackageReference Include=\"GirCore.Gst-1.0\" Version=\"0.7.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Infrastructure.csproj:55:    <PackageReference Include=\"GirCore.GstApp-1.0\" Version=\"0.7.0\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Infrastructure.csproj:77:    <PackageReference Include=\"GdkSharp\" Version=\"3.24.24.95\" Condition=\" $(GUI_DISABLED) != 'true' \"/>"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Infrastructure.csproj:78:    <PackageReference Include=\"GLibSharp\" Version=\"3.24.24.95\" Condition=\" $(GUI_DISABLED) != 'true' \"/>"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Plugins/TracePlugin/TracePlugin.csproj:8:    <PackageReference Include=\"Dynamitey\" Version=\"2.0.10.189\" />"
+  },
+  {
+    "snapshot": "f1dd1b4af",
+    "repository": "renode/renode-infrastructure",
+    "revision": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+    "source_declaration": "cd4b002aac2398994c4a61a34a8b31b5700facf2:src/Plugins/TracePlugin/TracePlugin.csproj:9:    <PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/BigGustave",
+    "revision": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55",
+    "source_declaration": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55:src/BigGustave.Tests/BigGustave.Tests.csproj:33:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"15.8.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/BigGustave",
+    "revision": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55",
+    "source_declaration": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55:src/BigGustave.Tests/BigGustave.Tests.csproj:34:    <PackageReference Include=\"xunit\" Version=\"2.3.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/BigGustave",
+    "revision": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55",
+    "source_declaration": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55:src/BigGustave.Tests/BigGustave.Tests.csproj:35:    <PackageReference Include=\"xunit.runner.visualstudio\" Version=\"2.3.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:27:    <PackageReference Include=\"Appveyor.TestLogger\" Version=\"1.1.0-post-rtm\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:28:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"15.3.0-preview-20170425-07\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:29:    <PackageReference Include=\"MSTest.TestAdapter\" Version=\"1.1.17\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:30:    <PackageReference Include=\"MSTest.TestFramework\" Version=\"1.1.17\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/CxxDemangler",
+    "revision": "71eb9736623081a09712a8cb08bcd322ce17c7b5",
+    "source_declaration": "71eb9736623081a09712a8cb08bcd322ce17c7b5:Tests/Tests.csproj:31:    <PackageReference Include=\"OpenCover\" Version=\"4.6.519\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/DNNE",
+    "revision": "f3ad8ba9952e871d789ac352699f05ff2956efc2",
+    "source_declaration": "f3ad8ba9952e871d789ac352699f05ff2956efc2:sample/Sample.csproj:18:    <PackageReference Include=\"DNNE\" Version=\"$(DnneVersion)\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/DNNE",
+    "revision": "f3ad8ba9952e871d789ac352699f05ff2956efc2",
+    "source_declaration": "f3ad8ba9952e871d789ac352699f05ff2956efc2:src/dnne-analyzers/DNNE.Analyzers.targets:102:             Text=\"The DNNE source generators might not be loaded correctly, as the current project is using the packages.config setup to restore NuGet packages. Source generators require PackageReference to be used (either in a legacy-style or SDK-style .csproj project, both are supported as long as PackageReference is used).\"/>"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/DNNE",
+    "revision": "f3ad8ba9952e871d789ac352699f05ff2956efc2",
+    "source_declaration": "f3ad8ba9952e871d789ac352699f05ff2956efc2:src/dnne-analyzers/dnne-analyzers.csproj:10:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp\" Version=\"4.0.1\" PrivateAssets=\"all\" Pack=\"false\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/DNNE",
+    "revision": "f3ad8ba9952e871d789ac352699f05ff2956efc2",
+    "source_declaration": "f3ad8ba9952e871d789ac352699f05ff2956efc2:src/msbuild/DNNE.BuildTasks/DNNE.BuildTasks.csproj:14:    <PackageReference Include=\"Microsoft.Build.Utilities.Core\" Version=\"16.5.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/DNNE",
+    "revision": "f3ad8ba9952e871d789ac352699f05ff2956efc2",
+    "source_declaration": "f3ad8ba9952e871d789ac352699f05ff2956efc2:test/DNNE.UnitTests/DNNE.UnitTests.csproj:10:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.7.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/DNNE",
+    "revision": "f3ad8ba9952e871d789ac352699f05ff2956efc2",
+    "source_declaration": "f3ad8ba9952e871d789ac352699f05ff2956efc2:test/DNNE.UnitTests/DNNE.UnitTests.csproj:11:    <PackageReference Include=\"xunit\" Version=\"2.4.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/DNNE",
+    "revision": "f3ad8ba9952e871d789ac352699f05ff2956efc2",
+    "source_declaration": "f3ad8ba9952e871d789ac352699f05ff2956efc2:test/DNNE.UnitTests/DNNE.UnitTests.csproj:12:    <PackageReference Include=\"xunit.runner.visualstudio\" Version=\"2.4.3\">"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/DNNE",
+    "revision": "f3ad8ba9952e871d789ac352699f05ff2956efc2",
+    "source_declaration": "f3ad8ba9952e871d789ac352699f05ff2956efc2:test/DNNE.UnitTests/DNNE.UnitTests.csproj:15:    </PackageReference>"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/DNNE",
+    "revision": "f3ad8ba9952e871d789ac352699f05ff2956efc2",
+    "source_declaration": "f3ad8ba9952e871d789ac352699f05ff2956efc2:test/DNNE.UnitTests/DNNE.UnitTests.csproj:16:    <PackageReference Include=\"coverlet.collector\" Version=\"1.3.0\">"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/DNNE",
+    "revision": "f3ad8ba9952e871d789ac352699f05ff2956efc2",
+    "source_declaration": "f3ad8ba9952e871d789ac352699f05ff2956efc2:test/DNNE.UnitTests/DNNE.UnitTests.csproj:19:    </PackageReference>"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/DNNE",
+    "revision": "f3ad8ba9952e871d789ac352699f05ff2956efc2",
+    "source_declaration": "f3ad8ba9952e871d789ac352699f05ff2956efc2:test/ExportingAssembly/ExportingAssembly.csproj:51:    <PackageReference Include=\"DNNE\" Version=\"2.*\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/InpliTftpServer",
+    "revision": "2a4877dce99fd7a30b85b5bf217c631538cd7086",
+    "source_declaration": "2a4877dce99fd7a30b85b5bf217c631538cd7086:InpliTftpServer/InpliTftpServer.csproj:19:    <PackageReference Update=\"Microsoft.NETCore.App\" Version=\"2.0.7\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/Migrant",
+    "revision": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c",
+    "source_declaration": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c:Migrant/Migrant.csproj:9:\t\t<PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/Migrant",
+    "revision": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c",
+    "source_declaration": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c:Migrant/Migrant.csproj:10:\t\t<PackageReference Include=\"System.Reflection.Emit.ILGeneration\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/Migrant",
+    "revision": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c",
+    "source_declaration": "9e135403b5e1612d9c6bed7d3498bf39ada0a95c:Migrant/Migrant.csproj:11:\t\t<PackageReference Include=\"System.Reflection.Emit.Lightweight\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/bc-csharp",
+    "revision": "e4dd148f9dcd179839ce8a24327186dbb1eb8353",
+    "source_declaration": "e4dd148f9dcd179839ce8a24327186dbb1eb8353:crypto/src/BouncyCastle.Crypto.csproj:93:    <PackageReference Include=\"Microsoft.NETFramework.ReferenceAssemblies\" Version=\"1.0.3\">"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/bc-csharp",
+    "revision": "e4dd148f9dcd179839ce8a24327186dbb1eb8353",
+    "source_declaration": "e4dd148f9dcd179839ce8a24327186dbb1eb8353:crypto/src/BouncyCastle.Crypto.csproj:96:    </PackageReference>"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/bc-csharp",
+    "revision": "e4dd148f9dcd179839ce8a24327186dbb1eb8353",
+    "source_declaration": "e4dd148f9dcd179839ce8a24327186dbb1eb8353:crypto/src/BouncyCastle.Crypto.csproj:97:    <PackageReference Include=\"Microsoft.SourceLink.GitHub\" Version=\"8.0.0\">"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/bc-csharp",
+    "revision": "e4dd148f9dcd179839ce8a24327186dbb1eb8353",
+    "source_declaration": "e4dd148f9dcd179839ce8a24327186dbb1eb8353:crypto/src/BouncyCastle.Crypto.csproj:100:    </PackageReference>"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/bc-csharp",
+    "revision": "e4dd148f9dcd179839ce8a24327186dbb1eb8353",
+    "source_declaration": "e4dd148f9dcd179839ce8a24327186dbb1eb8353:crypto/src/BouncyCastle.Crypto.csproj:101:    <PackageReference Include=\"Nerdbank.GitVersioning\" Version=\"3.9.50\">"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/bc-csharp",
+    "revision": "e4dd148f9dcd179839ce8a24327186dbb1eb8353",
+    "source_declaration": "e4dd148f9dcd179839ce8a24327186dbb1eb8353:crypto/src/BouncyCastle.Crypto.csproj:104:    </PackageReference>"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/bc-csharp",
+    "revision": "e4dd148f9dcd179839ce8a24327186dbb1eb8353",
+    "source_declaration": "e4dd148f9dcd179839ce8a24327186dbb1eb8353:crypto/test/BouncyCastle.Crypto.Tests.csproj:33:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"17.13.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/bc-csharp",
+    "revision": "e4dd148f9dcd179839ce8a24327186dbb1eb8353",
+    "source_declaration": "e4dd148f9dcd179839ce8a24327186dbb1eb8353:crypto/test/BouncyCastle.Crypto.Tests.csproj:34:    <PackageReference Include=\"Microsoft.NETFramework.ReferenceAssemblies\" Version=\"1.0.3\">"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/bc-csharp",
+    "revision": "e4dd148f9dcd179839ce8a24327186dbb1eb8353",
+    "source_declaration": "e4dd148f9dcd179839ce8a24327186dbb1eb8353:crypto/test/BouncyCastle.Crypto.Tests.csproj:37:    </PackageReference>"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/bc-csharp",
+    "revision": "e4dd148f9dcd179839ce8a24327186dbb1eb8353",
+    "source_declaration": "e4dd148f9dcd179839ce8a24327186dbb1eb8353:crypto/test/BouncyCastle.Crypto.Tests.csproj:38:    <PackageReference Include=\"NUnit\" Version=\"3.14.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/bc-csharp",
+    "revision": "e4dd148f9dcd179839ce8a24327186dbb1eb8353",
+    "source_declaration": "e4dd148f9dcd179839ce8a24327186dbb1eb8353:crypto/test/BouncyCastle.Crypto.Tests.csproj:39:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"5.2.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/options-parser",
+    "revision": "34bc258cc4f6585af8c0bea5a77f0c2a9e43d481",
+    "source_declaration": "34bc258cc4f6585af8c0bea5a77f0c2a9e43d481:OptionsParser.csproj:9:    <PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/options-parser",
+    "revision": "34bc258cc4f6585af8c0bea5a77f0c2a9e43d481",
+    "source_declaration": "34bc258cc4f6585af8c0bea5a77f0c2a9e43d481:OptionsParserTests.csproj:11:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/options-parser",
+    "revision": "34bc258cc4f6585af8c0bea5a77f0c2a9e43d481",
+    "source_declaration": "34bc258cc4f6585af8c0bea5a77f0c2a9e43d481:OptionsParserTests.csproj:12:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/options-parser",
+    "revision": "34bc258cc4f6585af8c0bea5a77f0c2a9e43d481",
+    "source_declaration": "34bc258cc4f6585af8c0bea5a77f0c2a9e43d481:OptionsParserTests.csproj:13:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:16:    <PackageReference Include=\"Teronis.MSBuild.Packaging.ProjectBuildInPackage\" Version=\"1.0.0\">"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:19:    </PackageReference>"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:20:    <PackageReference Include=\"Microsoft.CodeAnalysis\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:21:    <PackageReference Include=\"Microsoft.CodeAnalysis.Analyzers\" Version=\"3.3.4\">"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:24:    </PackageReference>"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:25:    <PackageReference Include=\"Microsoft.CodeAnalysis.Csharp\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Analyzers/Analyzers.csproj:26:    <PackageReference Include=\"NLog\" Version=\"5.1.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:12:    <PackageReference Include=\"CommandLineParser\" Version=\"2.9.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:13:    <PackageReference Include=\"Microsoft.Build.Locator\" Version=\"1.5.5\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:14:    <PackageReference Include=\"Microsoft.CodeAnalysis.Workspaces.MSBuild\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:15:    <PackageReference Include=\"Newtonsoft.Json\" Version=\"13.0.3\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Runner/Runner.csproj:16:    <PackageReference Include=\"NLog\" Version=\"5.1.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Utils/Utils.csproj:10:    <PackageReference Include=\"Microsoft.CodeAnalysis\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Utils/Utils.csproj:11:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp.Workspaces\" Version=\"4.4.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Utils/Utils.csproj:12:    <PackageReference Include=\"NLog\" Version=\"5.1.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/renode-models-analyzer",
+    "revision": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4",
+    "source_declaration": "f6ec17b71742ca48fe8d6e3fc60bda42c9890ae4:ModelsAnalyzer/Utils/Utils.csproj:13:    <PackageReference Include=\"Newtonsoft.Json\" Version=\"13.0.3\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/termsharp",
+    "revision": "c13c96b95e92c1a8e29705f0884f690ea2f1a876",
+    "source_declaration": "c13c96b95e92c1a8e29705f0884f690ea2f1a876:Example/TermSharpExample.csproj:7:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/termsharp",
+    "revision": "c13c96b95e92c1a8e29705f0884f690ea2f1a876",
+    "source_declaration": "c13c96b95e92c1a8e29705f0884f690ea2f1a876:TermSharp.csproj:7:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:41:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:42:    <PackageReference Include=\"AtkSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:43:    <PackageReference Include=\"GdkSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:44:    <PackageReference Include=\"GLibSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:45:    <PackageReference Include=\"GtkSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:46:    <PackageReference Include=\"PangoSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:47:    <PackageReference Include=\"CairoSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.Gtk/Xwt.Gtk3.csproj:48:    <PackageReference Include=\"GioSharp\" Version=\"3.24.24.95\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.WPF/Xwt.WPF.csproj:71:    <PackageReference Include=\"Microsoft.Windows.Compatibility\" Version=\"5.0.2\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "antmicro/xwt",
+    "revision": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "source_declaration": "edb7793688c83448b1eb5336ab2fc9e98905eaa3:Xwt.WPF/Xwt.WPF.csproj:72:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:src/Directory.Build.targets:8:    <PackageReference Include=\"StyleCop.Analyzers\" Version=\"1.1.118\" PrivateAssets=\"All\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:src/Renode/Renode.csproj:50:    <PackageReference Include=\"NetMQ\" Version=\"4.0.1.12\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:src/Renode/Renode.csproj:51:    <PackageReference Include=\"Newtonsoft.Json\" Version=\"13.0.3\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:tests/Directory.Build.targets:8:    <PackageReference Include=\"StyleCop.Analyzers\" Version=\"1.1.118\" PrivateAssets=\"All\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:tests/unit-tests/RenodeTests/RenodeTests.csproj:11:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:tests/unit-tests/RenodeTests/RenodeTests.csproj:12:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:tests/unit-tests/RenodeTests/RenodeTests.csproj:13:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:tests/unit-tests/RenodeTests/RenodeTests.csproj:14:    <PackageReference Include=\"Moq\" Version=\"4.18.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:tools/NativeInterface/csharp/NativeInterface.csproj:57:    <PackageReference Include=\"DNNE\" Version=\"$(DnnePackageVersion)\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:tools/PeakRDL-renode/tests/SystemRDLPeripheralsTests.csproj:8:    <PackageReference Include=\"Moq\" Version=\"4.18.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:tools/PeakRDL-renode/tests/SystemRDLPeripheralsTests.csproj:9:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:tools/PeakRDL-renode/tests/SystemRDLPeripheralsTests.csproj:10:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:tools/PeakRDL-renode/tests/SystemRDLPeripheralsTests.csproj:11:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:tools/analyzers/Analyzers.csproj:9:    <PackageReference Include=\"Microsoft.CodeAnalysis.Analyzers\" Version=\"3.3.4\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:tools/analyzers/Analyzers.csproj:10:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp\" Version=\"3.9.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode",
+    "revision": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5",
+    "source_declaration": "150e30d3fee51a1fe1f64188173c69fe6cc5feb5:tools/analyzers/Analyzers.csproj:11:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp.Workspaces\" Version=\"3.9.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Emulator/Extensions/MonitorTests/MonitorTests.csproj:9:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Emulator/Extensions/MonitorTests/MonitorTests.csproj:10:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Emulator/Extensions/MonitorTests/MonitorTests.csproj:11:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:14:    <PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:15:    <PackageReference Include=\"Moq\" Version=\"4.18.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:19:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:20:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Emulator/Main/Tests/UnitTests/UnitTests.csproj:21:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Emulator/Peripherals/Test/PeripheralsTests/PeripheralsTests.csproj:9:    <PackageReference Include=\"Moq\" Version=\"4.18.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Emulator/Peripherals/Test/PeripheralsTests/PeripheralsTests.csproj:10:    <PackageReference Include=\"NUnit\" Version=\"3.13.1\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Emulator/Peripherals/Test/PeripheralsTests/PeripheralsTests.csproj:11:    <PackageReference Include=\"NUnit3TestAdapter\" Version=\"3.17.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Emulator/Peripherals/Test/PeripheralsTests/PeripheralsTests.csproj:12:    <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"16.9.1\" /> "
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Infrastructure.csproj:18:    <PackageReference Include=\"System.Drawing.Common\" Version=\"5.0.3\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Infrastructure.csproj:19:    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp\" Version=\"5.0.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Infrastructure.csproj:20:    <PackageReference Include=\"Dynamitey\" Version=\"2.0.10.189\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Infrastructure.csproj:21:    <PackageReference Include=\"Mono.Cecil\" Version=\"0.11.3\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Infrastructure.csproj:22:    <PackageReference Include=\"K4os.Compression.LZ4\" Version=\"1.3.8\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Infrastructure.csproj:32:    <PackageReference Include=\"IronPython.StdLib\" Version=\"2.7.12.0\">"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Infrastructure.csproj:36:    </PackageReference>"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Infrastructure.csproj:37:    <PackageReference Include=\"DynamicLanguageRuntime\" Version=\"1.3.5\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Infrastructure.csproj:38:    <PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Infrastructure.csproj:57:    <PackageReference Include=\"GirCore.Gst-1.0\" Version=\"0.7.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Infrastructure.csproj:58:    <PackageReference Include=\"GirCore.GstApp-1.0\" Version=\"0.7.0\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Infrastructure.csproj:80:    <PackageReference Include=\"GdkSharp\" Version=\"3.24.24.95\" Condition=\" $(GUI_DISABLED) != 'true' \"/>"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Infrastructure.csproj:81:    <PackageReference Include=\"GLibSharp\" Version=\"3.24.24.95\" Condition=\" $(GUI_DISABLED) != 'true' \"/>"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Plugins/TracePlugin/TracePlugin.csproj:8:    <PackageReference Include=\"Dynamitey\" Version=\"2.0.10.189\" />"
+  },
+  {
+    "snapshot": "current",
+    "repository": "renode/renode-infrastructure",
+    "revision": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "source_declaration": "515cc63eea5c6bbef943e797483f073fbdffdf95:src/Plugins/TracePlugin/TracePlugin.csproj:9:    <PackageReference Include=\"Microsoft.CSharp\" Version=\"4.7.0\" />"
+  }
+]

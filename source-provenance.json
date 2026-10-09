@@ -1,0 +1,59 @@
+{
+  "samples": [
+    {
+      "candidate": "tag",
+      "root_sha": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+      "infrastructure_sha": "066a7f13c052215632d469c995c89aea37c573b1",
+      "path": "tests/platforms/Icicle-Kit.robot",
+      "git_blob_sha256": "919f8374cee7eaf613ac9f93f8054b2e607f588c3ce3bbce7539eac1ddd8aefd",
+      "source_archive_sha256": "64b675cd759ee7121fea1c24bf6d870eff162c707b5b6d07d7a41bee46bb77b2",
+      "matches_archive": false
+    },
+    {
+      "candidate": "tag",
+      "root_sha": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+      "infrastructure_sha": "066a7f13c052215632d469c995c89aea37c573b1",
+      "path": "src/Infrastructure/src/Emulator/Main/Peripherals/Memory/MappedMemory.cs",
+      "git_blob_sha256": "a099d688eafa7451a1376799b607de97de2f95a97f0f02058c6c9ef891480d6a",
+      "source_archive_sha256": "f8fedae4f1f391209351b0066c4aa8d10feaa14ed34084f4cb39eb6a3ff6a09e",
+      "matches_archive": false
+    },
+    {
+      "candidate": "tag",
+      "root_sha": "ab721d88e135a1bcb8ed2ecc5a38f51cbe61fdd2",
+      "infrastructure_sha": "066a7f13c052215632d469c995c89aea37c573b1",
+      "path": "tools/version",
+      "git_blob_sha256": "00afc49f1599e59129a59b64c2b019de3fe35300c05bb9d96cb25002576ff43b",
+      "source_archive_sha256": "00afc49f1599e59129a59b64c2b019de3fe35300c05bb9d96cb25002576ff43b",
+      "matches_archive": true
+    },
+    {
+      "candidate": "build_identity",
+      "root_sha": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+      "infrastructure_sha": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+      "path": "tests/platforms/Icicle-Kit.robot",
+      "git_blob_sha256": "64b675cd759ee7121fea1c24bf6d870eff162c707b5b6d07d7a41bee46bb77b2",
+      "source_archive_sha256": "64b675cd759ee7121fea1c24bf6d870eff162c707b5b6d07d7a41bee46bb77b2",
+      "matches_archive": true
+    },
+    {
+      "candidate": "build_identity",
+      "root_sha": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+      "infrastructure_sha": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+      "path": "src/Infrastructure/src/Emulator/Main/Peripherals/Memory/MappedMemory.cs",
+      "git_blob_sha256": "f8fedae4f1f391209351b0066c4aa8d10feaa14ed34084f4cb39eb6a3ff6a09e",
+      "source_archive_sha256": "f8fedae4f1f391209351b0066c4aa8d10feaa14ed34084f4cb39eb6a3ff6a09e",
+      "matches_archive": true
+    },
+    {
+      "candidate": "build_identity",
+      "root_sha": "f1dd1b4af7838b45a925c17603cdfed0a583844a",
+      "infrastructure_sha": "cd4b002aac2398994c4a61a34a8b31b5700facf2",
+      "path": "tools/version",
+      "git_blob_sha256": "00afc49f1599e59129a59b64c2b019de3fe35300c05bb9d96cb25002576ff43b",
+      "source_archive_sha256": "00afc49f1599e59129a59b64c2b019de3fe35300c05bb9d96cb25002576ff43b",
+      "matches_archive": true
+    }
+  ],
+  "note": "Archive file comparisons establish only the sampled source correspondence. A compiled runtime version string does not prove every linked binary was built from the similarly named root commit. Both source chains are preserved."
+}

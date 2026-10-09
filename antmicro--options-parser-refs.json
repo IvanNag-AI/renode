@@ -1,0 +1,18 @@
+[
+  {
+    "sha": "a3bd520c22118219abb8194ff8e0c3d8027fdc8b",
+    "ref": "refs/heads/73254-aarch64-packages"
+  },
+  {
+    "sha": "6100488c3d68205d9e54dee9ba313c9316ea286d",
+    "ref": "refs/heads/dotnet_support"
+  },
+  {
+    "sha": "34bc258cc4f6585af8c0bea5a77f0c2a9e43d481",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "0008b7d54ad8647bd6d2ad33fbf4620cfc5f229e",
+    "ref": "refs/heads/mh/mirror-test"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "sha": "37b4a88f50e151f1b9e0d6c5409471035ea0ea37",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "64be33848b89ace44a9769767d8cf61fcb18af16",
+    "ref": "refs/heads/update-date"
+  },
+  {
+    "sha": "12b1bf80e47bbedfa6b39049ac22ffc7a3ab5c24",
+    "ref": "refs/tags/20220823"
+  },
+  {
+    "sha": "37b4a88f50e151f1b9e0d6c5409471035ea0ea37",
+    "ref": "refs/tags/20230113"
+  },
+  {
+    "sha": "37b4a88f50e151f1b9e0d6c5409471035ea0ea37",
+    "ref": "refs/tags/20230320"
+  },
+  {
+    "sha": "37b4a88f50e151f1b9e0d6c5409471035ea0ea37",
+    "ref": "refs/tags/20240305"
+  },
+  {
+    "sha": "37b4a88f50e151f1b9e0d6c5409471035ea0ea37",
+    "ref": "refs/tags/20241010"
+  },
+  {
+    "sha": "37b4a88f50e151f1b9e0d6c5409471035ea0ea37",
+    "ref": "refs/tags/20241011"
+  },
+  {
+    "sha": "37b4a88f50e151f1b9e0d6c5409471035ea0ea37",
+    "ref": "refs/tags/20260313"
+  },
+  {
+    "sha": "37b4a88f50e151f1b9e0d6c5409471035ea0ea37",
+    "ref": "refs/tags/20260528"
+  }
+]

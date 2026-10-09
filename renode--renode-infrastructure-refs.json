@@ -1,0 +1,362 @@
+[
+  {
+    "sha": "e764fedd823fcc963ed6388a1c658731652feff2",
+    "ref": "refs/heads/103307-TMP75C"
+  },
+  {
+    "sha": "48f7d7d2473b1a79c95800d4622127a234239967",
+    "ref": "refs/heads/10872-block_completed_hook"
+  },
+  {
+    "sha": "d4eb4412520ef454816e1f8c5e27746982bf05d2",
+    "ref": "refs/heads/10872-block_completed_hook-cleanup"
+  },
+  {
+    "sha": "439a2ebbdb9256ea80b637cd3d4fede41581d9d5",
+    "ref": "refs/heads/12053-fix_delayed_actions"
+  },
+  {
+    "sha": "34b493a2a74a425df02648e523749e277bd519c9",
+    "ref": "refs/heads/14721-cc1200-public"
+  },
+  {
+    "sha": "c9762b16940e179d2442c81b0c2f47c77aa35bf6",
+    "ref": "refs/heads/15083-litex_spi"
+  },
+  {
+    "sha": "2d7f4802c44b07339bbe5c178e6146dcfbe157d9",
+    "ref": "refs/heads/15100-litex_i2c"
+  },
+  {
+    "sha": "9f71bd63254cec010cfcf4ce3fd4a4a31437dec4",
+    "ref": "refs/heads/15737-gdb_stepping_issues"
+  },
+  {
+    "sha": "9ad302fcf180288bebb1aed38d8ef6a2efd50d6b",
+    "ref": "refs/heads/16176--eptri"
+  },
+  {
+    "sha": "f9b6b329bc682bceba9c4dc4f66bc5e175a85d6e",
+    "ref": "refs/heads/16176--valenty_eptri"
+  },
+  {
+    "sha": "2b97fb5a5895a5eb8a57df7fea5081f844d562bb",
+    "ref": "refs/heads/16176-foboot2"
+  },
+  {
+    "sha": "376517bec85f13b932aa082176c3ae4925710d83",
+    "ref": "refs/heads/18771-spisdcardboot_litex"
+  },
+  {
+    "sha": "4c1f2df29dbfb2368a3892acb22f5444519e5175",
+    "ref": "refs/heads/18792-realign_memory"
+  },
+  {
+    "sha": "cba4d72b278da8e6a68d9aa47d3183871970972b",
+    "ref": "refs/heads/19800-fix_compilation_on_debian"
+  },
+  {
+    "sha": "bd084e5ed70106504b4700d9525f7623d9940274",
+    "ref": "refs/heads/19850-litex_i2s"
+  },
+  {
+    "sha": "69099c68b3dd2e4ee86a3395ff8c18d4e15f06e1",
+    "ref": "refs/heads/21322-litesdcard_dma"
+  },
+  {
+    "sha": "2fa28f66f37d902c4d40df999d7c6f581516cac8",
+    "ref": "refs/heads/21408-litex_spiflash_quad"
+  },
+  {
+    "sha": "9a5bf8d4f4a848ba836854d768a909c42dda851f",
+    "ref": "refs/heads/24853-opentitan_plic"
+  },
+  {
+    "sha": "c5c01f731bb5a7e69e7e97a2cd5d77a071812e76",
+    "ref": "refs/heads/24853-plic_refactor"
+  },
+  {
+    "sha": "4f94da398d75b1ef3ea506a271940315d46da2f6",
+    "ref": "refs/heads/26999-rust_uart"
+  },
+  {
+    "sha": "a90ebd829a588db351fa93d81de958faf617af45",
+    "ref": "refs/heads/28449-create_spi_connector"
+  },
+  {
+    "sha": "bd7c7e91afc8b0ee239e31bbc6a7b97ed97695f9",
+    "ref": "refs/heads/30105-emulation_mode"
+  },
+  {
+    "sha": "0f3d8a9995bfcf0ae977029c0fd39b38bb8c5863",
+    "ref": "refs/heads/30105-non_deterministic_mode"
+  },
+  {
+    "sha": "2dff44ed649887b23ed6d62a407150f44ff68dbb",
+    "ref": "refs/heads/30303-execution_tracing"
+  },
+  {
+    "sha": "c2d6b76f26ff594e47a25793bf105837e2bf728c",
+    "ref": "refs/heads/30456-embed_riscv_opcodes"
+  },
+  {
+    "sha": "1b5713c0442cf15734013f5cc6a5892417da20b6",
+    "ref": "refs/heads/30863-ot_timer"
+  },
+  {
+    "sha": "3924f0f4e3098bf180e62d127ca535b2a28daef8",
+    "ref": "refs/heads/33997-watchpoint_virtual"
+  },
+  {
+    "sha": "c954c18dabc7ae8c12ebc24499654c7d49c68e3c",
+    "ref": "refs/heads/36284-vcpu"
+  },
+  {
+    "sha": "07e378bd65ecd91ac28918a635379755e5da42a0",
+    "ref": "refs/heads/36334-risc-v-thread-detection"
+  },
+  {
+    "sha": "884b401e3fb880f7b3bebc3b2720e22e2a7351f8",
+    "ref": "refs/heads/38171-OpenTitan_I2C_target_mode"
+  },
+  {
+    "sha": "85d903f55badfc89c306a8b661f35db19ba776e5",
+    "ref": "refs/heads/38516-stm_lptimer"
+  },
+  {
+    "sha": "0f53e0a87fbcfc4926fcdfbc030f8bea1c687669",
+    "ref": "refs/heads/38527-opentitan_otbn"
+  },
+  {
+    "sha": "17a343cec1cd3367e53c478a1310af472327fcf3",
+    "ref": "refs/heads/39836-quectel_networking_support"
+  },
+  {
+    "sha": "b82eb81e4094ea9d7ec455dc1fa796ba8739f7fa",
+    "ref": "refs/heads/40237-caches_invalidation"
+  },
+  {
+    "sha": "c6ff151aee3181f93dcd4242331ece4d69d63677",
+    "ref": "refs/heads/41222-opentitan_spi_device"
+  },
+  {
+    "sha": "bc6fa579383fb9520f5ec50b7e9f4d2c64073e64",
+    "ref": "refs/heads/41410-spi_multiplexer"
+  },
+  {
+    "sha": "73a01135c8e0ff63880b500c7809a537e597cfe6",
+    "ref": "refs/heads/43328-open_titan_bump"
+  },
+  {
+    "sha": "8f2f10979e7c5ff96e27b24717b33ace152a8da8",
+    "ref": "refs/heads/45839-skip_wait_if_blocked"
+  },
+  {
+    "sha": "25de4ce83e6c2187e7d969c2d321af60068ec531",
+    "ref": "refs/heads/46376-test_verilated_samples"
+  },
+  {
+    "sha": "8fc2ea360688b352d5d0ebb1cdded6eef3af4d7b",
+    "ref": "refs/heads/49711-riscv_zfh-package_1"
+  },
+  {
+    "sha": "67a9c6546eceee583040816f9f9c3a1fdb81069d",
+    "ref": "refs/heads/49712-riscv_zfh-package_0"
+  },
+  {
+    "sha": "d8e7a00e59026fecf7b7b93b05d55a11f283a185",
+    "ref": "refs/heads/49897-lis2dw12_resd_rel_time"
+  },
+  {
+    "sha": "8ad326eefe85acc127fdb01d70dbbc9a6a99dca8",
+    "ref": "refs/heads/50-gdb-support-specific-features"
+  },
+  {
+    "sha": "eac630027961a6d401df9477632efe6d4cbe39f3",
+    "ref": "refs/heads/53362-fix_serialization_breakpoints"
+  },
+  {
+    "sha": "4b66456b0682a8611a421b372a5f3c0c8f04e6a0",
+    "ref": "refs/heads/58985-insn_count"
+  },
+  {
+    "sha": "8ae247ba752c0bda4037fb13dd80456eaaa17643",
+    "ref": "refs/heads/59115-add_riscv_zve_mr"
+  },
+  {
+    "sha": "29cd94f92df95c201fd5776ffae5d0190a44493d",
+    "ref": "refs/heads/59539-clic_test"
+  },
+  {
+    "sha": "282f1ae69939a0a8dc3941c2fb71ede5987fed38",
+    "ref": "refs/heads/60761-clic_test-rc"
+  },
+  {
+    "sha": "4550fa11bf12cb432f016946e93977c0c4452a54",
+    "ref": "refs/heads/65543-build-renode-cmake"
+  },
+  {
+    "sha": "9c1b2f1daf6182da2a318d2d08ae8248e21b59bb",
+    "ref": "refs/heads/68189-aarch64-tcg-ops"
+  },
+  {
+    "sha": "06d55304803ec0d58a2a128df89812eb3897f178",
+    "ref": "refs/heads/70039-fix-deadlock"
+  },
+  {
+    "sha": "b886627003bbe47dc0b22e790f28fa26d373bbbd",
+    "ref": "refs/heads/71552-cfu-crash"
+  },
+  {
+    "sha": "ad0db6a6e9924344ad63e54d9fb1faab35f4c29b",
+    "ref": "refs/heads/73810-automatically_connect_gic_gpios"
+  },
+  {
+    "sha": "e860b3faaff144b3101248734933e568030565e1",
+    "ref": "refs/heads/76001-cosim-ux"
+  },
+  {
+    "sha": "104664d2ea10037c26ed73b554acbc9a29e44511",
+    "ref": "refs/heads/87706-improve_cadence_xspi"
+  },
+  {
+    "sha": "2c6841f35c620fb8359dd5c14232c729da6d68d1",
+    "ref": "refs/heads/88885-prepare-github-formatting-CI"
+  },
+  {
+    "sha": "1c12979691d680b3887673257dbd4e0e503fb729",
+    "ref": "refs/heads/88885-prepare-github-formatting-CI-TEST-FAILURES"
+  },
+  {
+    "sha": "b4abeede02743533b354238fd98d7f1db3b0cc7f",
+    "ref": "refs/heads/89640-rebased-xspi-auto-discovery"
+  },
+  {
+    "sha": "4a72168abcb0f51341a911155bb02f86417645f9",
+    "ref": "refs/heads/90353-multicore_demo"
+  },
+  {
+    "sha": "b299bdf66621f33f5a3f6a91c2f6307867efbb8a",
+    "ref": "refs/heads/91656-arm-mpu-aligment"
+  },
+  {
+    "sha": "85ce15df00b244643ebb182ce1b789025dbb3c45",
+    "ref": "refs/heads/92587-external-as-flag"
+  },
+  {
+    "sha": "567a8365d6a9f3a66f075c4acb9569a5ff3dedeb",
+    "ref": "refs/heads/95150-win-systemc"
+  },
+  {
+    "sha": "5d303e9c4b32827866ff88969e4918806ef403a8",
+    "ref": "refs/heads/Linux_LiteX_VexRiscv"
+  },
+  {
+    "sha": "246cd15b3384e951473be03f82eb2a71841ab58c",
+    "ref": "refs/heads/WIP/15677_nmi"
+  },
+  {
+    "sha": "07be7bd44179472ebf59ef7f278fbc24f4ed75ea",
+    "ref": "refs/heads/WIP/19267_address_translation"
+  },
+  {
+    "sha": "75abd004a28d8ea3eb2bd46e13b27e6877366a9c",
+    "ref": "refs/heads/always-go-through-softmmu-qemu-st"
+  },
+  {
+    "sha": "2b2ebe2380ca640f5102552ae6149d4d36416116",
+    "ref": "refs/heads/energy-consumption-estimation"
+  },
+  {
+    "sha": "20ac7476649a40fe8c715bf3ccd339a394f33f83",
+    "ref": "refs/heads/et171"
+  },
+  {
+    "sha": "f0a4c2e14d8b02e89e5492ed07e1b3c8da83d172",
+    "ref": "refs/heads/executable_array_memory"
+  },
+  {
+    "sha": "98adac72270a9551d6bcd9063f23672000fec1f9",
+    "ref": "refs/heads/gcov_support"
+  },
+  {
+    "sha": "254b1f565a3c77dab2e6405f101b297ad86ac7e9",
+    "ref": "refs/heads/gh37-ibex_uart"
+  },
+  {
+    "sha": "5ab3c35493e6e07b461a9eebd1868ab95c2070d5",
+    "ref": "refs/heads/gh4-v_extensions"
+  },
+  {
+    "sha": "066aeef1f5830a2c09e05b2981e2ca8f31842ee9",
+    "ref": "refs/heads/gh41-opentitan_flash"
+  },
+  {
+    "sha": "282067257a77509d9c191f2c7039411995e7dace",
+    "ref": "refs/heads/gh49-otplic"
+  },
+  {
+    "sha": "850b9617932d34b79c2b2c8440e0ac73aba48ba1",
+    "ref": "refs/heads/hardening-files_access-and-python"
+  },
+  {
+    "sha": "0b8a69bb2c722ed989a28de8417b87ce4d7e8808",
+    "ref": "refs/heads/hps_host_controller_update"
+  },
+  {
+    "sha": "b82f9ece7545861f5ad170d567b62b9831d2b3c5",
+    "ref": "refs/heads/litesdcard_dma"
+  },
+  {
+    "sha": "515cc63eea5c6bbef943e797483f073fbdffdf95",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "ee2752bdf6bcaec2d758e249d7f4de2658cbbd83",
+    "ref": "refs/heads/mh/39355-iomaster_fixes"
+  },
+  {
+    "sha": "90a35729854510e6d1e6cce7f64bc45f2bfa13ea",
+    "ref": "refs/heads/miv-coregpio-fixed-config"
+  },
+  {
+    "sha": "1e2c3ba27a19a1ebf2eb9c53c32747715e964760",
+    "ref": "refs/heads/new_terminal_tester"
+  },
+  {
+    "sha": "0f35dd571858cce261ef3bca1c3a485914feb8b6",
+    "ref": "refs/heads/nxp_k64f"
+  },
+  {
+    "sha": "2731cf6185bf1094f42c135dfc33185f21bdb638",
+    "ref": "refs/heads/public-hst-strong-helpers"
+  },
+  {
+    "sha": "f20984fa6ba92fd6c6df876e5a3db88ccfb084e6",
+    "ref": "refs/heads/public-hst-strong-ir"
+  },
+  {
+    "sha": "d2bcc5ba7cb166db0bc9ce52de6a22fd725e5297",
+    "ref": "refs/heads/public-hst-weak-helpers"
+  },
+  {
+    "sha": "b419e89e8f536d875120c62e110c011b20d05df9",
+    "ref": "refs/heads/public-hst-weak-ir"
+  },
+  {
+    "sha": "c982ae4890cc687ff53f9f6300492448d8cc1dbd",
+    "ref": "refs/heads/stm32f0--dma-adc"
+  },
+  {
+    "sha": "16ff9a7887091282a426940793c2f225a64c3c6a",
+    "ref": "refs/heads/test"
+  },
+  {
+    "sha": "862ac27f50a4270494d6ff2f81ba3925ec26b704",
+    "ref": "refs/heads/tun_tap_on_windows"
+  },
+  {
+    "sha": "3bffde34494daa47e096180daee819f8d1f9d052",
+    "ref": "refs/heads/vexriscv"
+  }
+]

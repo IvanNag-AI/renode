@@ -1,0 +1,34 @@
+[
+  {
+    "sha": "9add77082534d9e222cedc1bcc3dbaf239683638",
+    "ref": "refs/heads/add-jpg-support"
+  },
+  {
+    "sha": "661b9d1690a317023477e27c6389da408c4a2c23",
+    "ref": "refs/heads/dotnet_support"
+  },
+  {
+    "sha": "6858c7e4e529e6bc6543fbaaea0f3523a2663a55",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "e7bfa5873f2300e6e87c185f466e227762dbf4b2",
+    "ref": "refs/heads/renode-build"
+  },
+  {
+    "sha": "2c34a1d088b52cca07081b258847c2a41fac7af5",
+    "ref": "refs/tags/1.0.1"
+  },
+  {
+    "sha": "6e98969ab3148c682b50e9fb0ce8531132880e98",
+    "ref": "refs/tags/v1.0.0"
+  },
+  {
+    "sha": "9272caf00116e36e5a2cdaa304668a4ac2a1a0be",
+    "ref": "refs/tags/v1.0.2"
+  },
+  {
+    "sha": "e18a5331e5a6e25fb010cbc47ec902a3d4412bfb",
+    "ref": "refs/tags/v1.0.3"
+  }
+]

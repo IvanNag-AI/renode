@@ -1,0 +1,62 @@
+[
+  {
+    "sha": "9342982035b8518b0d70365d96f3315b0eb6f760",
+    "ref": "refs/heads/38544-bundle_dotnet"
+  },
+  {
+    "sha": "48a3f298ae21ad45e8fd0c59101107387a4e131f",
+    "ref": "refs/heads/add_has_focus_to_window"
+  },
+  {
+    "sha": "8582aec5abb654f9cb5d77279933332cd724c8f4",
+    "ref": "refs/heads/custom_exception_handler"
+  },
+  {
+    "sha": "18b12c70337f9b9eebad4bf761acfc2d2b365c29",
+    "ref": "refs/heads/dotnet_support"
+  },
+  {
+    "sha": "edb7793688c83448b1eb5336ab2fc9e98905eaa3",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "b67e68332f54ee0d36182816b68b55e9bac57951",
+    "ref": "refs/heads/mixed-toolkit"
+  },
+  {
+    "sha": "8879b4c27d9d4bad104313a9ac21ccd79582e813",
+    "ref": "refs/heads/optimization_in_release"
+  },
+  {
+    "sha": "9610187d401b416bb3d6f0fb1e528271472a4eba",
+    "ref": "refs/heads/optimize_on_release"
+  },
+  {
+    "sha": "5b0782e76ce88349e9c4a931035c178ecdb30ce5",
+    "ref": "refs/heads/possible_crash_fix"
+  },
+  {
+    "sha": "fc675b5880b2e7a6f720075d489c066ada782042",
+    "ref": "refs/heads/possible_memory_leak_fixed"
+  },
+  {
+    "sha": "000137759c4b37b3567bb42745f95884481715a2",
+    "ref": "refs/heads/small_fix"
+  },
+  {
+    "sha": "d702d8bdfdbd337db2447b5a9d5793b07ef8e2d5",
+    "ref": "refs/heads/virttreelistview"
+  },
+  {
+    "sha": "42ea461f00bb4ef1436cecd112c944963b6d5d19",
+    "ref": "refs/heads/wpf-cairo"
+  },
+  {
+    "sha": "8a7d4c651456b56fbf5a99d3ec09334e5cfe8c89",
+    "ref": "refs/heads/xwt_bump"
+  },
+  {
+    "sha": "30c64a9d693dcff9296b6c8803f9e12ccce1c593",
+    "ref": "refs/heads/xwt_upgrade2"
+  }
+]

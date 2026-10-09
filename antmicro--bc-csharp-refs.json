@@ -1,0 +1,130 @@
+[
+  {
+    "sha": "43badfe61179537b54e4430a327f937bc8bfa592",
+    "ref": "refs/heads/dotnet_support"
+  },
+  {
+    "sha": "798ef70e7e33bc2b1c23121a6450ee72c5d88a23",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "6b340565473a5375f2b139e26bf04f47849e5fa7",
+    "ref": "refs/heads/ms-renode_main"
+  },
+  {
+    "sha": "848ecfb021027b5ffce03f930f2e18586a82dbb6",
+    "ref": "refs/heads/net6"
+  },
+  {
+    "sha": "e4dd148f9dcd179839ce8a24327186dbb1eb8353",
+    "ref": "refs/heads/renode_main"
+  },
+  {
+    "sha": "f2e740be178845f5abb7e475ea0490d29637f4d7",
+    "ref": "refs/heads/renode_main_f2e740be178845f5abb7e475ea0490d29637f4d7"
+  },
+  {
+    "sha": "b52e40521e625c1647e78954b283b28eb303d309",
+    "ref": "refs/tags/1.8.0-beta4-update1"
+  },
+  {
+    "sha": "f68623b2031722899fdda88a99a98102b2671b79",
+    "ref": "refs/tags/pcl-v1.8.0"
+  },
+  {
+    "sha": "d0db7d7e187170d0b34f904cd7a05b340918aa0d",
+    "ref": "refs/tags/pcl-v1.8.0-rc2"
+  },
+  {
+    "sha": "e2f23b29fa0a991fe39484c8efa0ebb06b870907",
+    "ref": "refs/tags/pcl-v1.8.0-rc3"
+  },
+  {
+    "sha": "de18d5d5be4a2e82968b1be080275eeaf5d8ab17",
+    "ref": "refs/tags/pcl-v1.8.0-rc4"
+  },
+  {
+    "sha": "81527632dfe22596f27a5f869c32efff5a5bfc6f",
+    "ref": "refs/tags/pcl-v1.8.1"
+  },
+  {
+    "sha": "d8837804922561a5b50d290f95805fbbe65c2469",
+    "ref": "refs/tags/pcl-v1.8.1.1"
+  },
+  {
+    "sha": "a525c71e63bb4b8237daccaee881b14a19da8c12",
+    "ref": "refs/tags/release-1.8.0"
+  },
+  {
+    "sha": "1f49b4b5d58c83ef339ccf16465925258861806e",
+    "ref": "refs/tags/release-1.8.0-RC.2"
+  },
+  {
+    "sha": "d924afe4d5f8a534c0c1963bdf63476e8482fefa",
+    "ref": "refs/tags/release-1.8.0-RC.3"
+  },
+  {
+    "sha": "1043ba89fc3364e62b52341dcb993fa8a55c384c",
+    "ref": "refs/tags/release-1.8.0-beta.1"
+  },
+  {
+    "sha": "2b98dfefb832c2da53c9889f2b0ad76c3cf186dd",
+    "ref": "refs/tags/release-1.8.0-beta.2"
+  },
+  {
+    "sha": "ccac4d05e819d9b65e01e8d5644d3902455e300f",
+    "ref": "refs/tags/release-1.8.0-beta4-pcl"
+  },
+  {
+    "sha": "44b84eac46dd7d5f4391e08ceeeaa8afa3ee920d",
+    "ref": "refs/tags/release-1.8.10"
+  },
+  {
+    "sha": "255b5daa82f857d68868f022a2e84932cebf4d98",
+    "ref": "refs/tags/release-1.8.3"
+  },
+  {
+    "sha": "87e24199a1d099f943ce9a3cd3fa92674c9b1fe4",
+    "ref": "refs/tags/release-1.8.4"
+  },
+  {
+    "sha": "51d28ef860678817100feb6797f3afc00e6ca525",
+    "ref": "refs/tags/release-1.8.5"
+  },
+  {
+    "sha": "c736b1a1aafabe5918300c45cddb8b639aab74d6",
+    "ref": "refs/tags/release-1.8.6"
+  },
+  {
+    "sha": "3caabe33da4ee92cbfa4c27ab21b9e35c2e3d902",
+    "ref": "refs/tags/release-1.8.7"
+  },
+  {
+    "sha": "5023abe0b997644cc3ee452aeaf92a774258af60",
+    "ref": "refs/tags/release-1.8.8"
+  },
+  {
+    "sha": "b340c9bebc874d127d941e8289d339a42ea08252",
+    "ref": "refs/tags/release-1.8.9"
+  },
+  {
+    "sha": "032b4b83df027d06d526677758022d3b9cc1bd0f",
+    "ref": "refs/tags/release-1.9.0"
+  },
+  {
+    "sha": "654c26abd79e9451e5a9bd108f1358bc2849fdbf",
+    "ref": "refs/tags/v1.7.0"
+  },
+  {
+    "sha": "23fdc6f537a7e78e47a7f58e377b8c81301ea55f",
+    "ref": "refs/tags/v1.7.0.1"
+  },
+  {
+    "sha": "6ec774ca1fd4757bdc385b1083aa28b80e1d5383",
+    "ref": "refs/tags/v1.7.0.2"
+  },
+  {
+    "sha": "463e2c3bd75179a28b207f9c61939198579db208",
+    "ref": "refs/tags/v1.8-beta3"
+  }
+]

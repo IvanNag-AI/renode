@@ -1,0 +1,10 @@
+[
+  {
+    "sha": "553f8894ae5aa65537d749c0b159fb58a4677ef2",
+    "ref": "refs/heads/dotnet_support"
+  },
+  {
+    "sha": "20e0f2fe40743fed4e6a81bb8fe9523c257f168b",
+    "ref": "refs/heads/master"
+  }
+]

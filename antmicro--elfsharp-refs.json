@@ -1,0 +1,30 @@
+[
+  {
+    "sha": "dc070602760ba0e362c3bb6b1455e0b5e50325a4",
+    "ref": "refs/heads/10048-riscv64"
+  },
+  {
+    "sha": "b5bb523a1a4fb0bf01eb3c197b96ad01eb94e3d8",
+    "ref": "refs/heads/basic_pe_support"
+  },
+  {
+    "sha": "4664926e382dc875ab5d054ed7a9145fc4522ccd",
+    "ref": "refs/heads/dotnet_support"
+  },
+  {
+    "sha": "55afd45d96c3f03ded5b72145226237434d91e4e",
+    "ref": "refs/heads/dwarf_support"
+  },
+  {
+    "sha": "37a5d80837634c7ef4928867c47e02550f3079ce",
+    "ref": "refs/heads/mach-o"
+  },
+  {
+    "sha": "0207a47936935ec79db3e4725af6aa817d0d1a5b",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "bf797c5bbec983578ded3081a8e17d1c646e7c32",
+    "ref": "refs/heads/renode_base"
+  }
+]

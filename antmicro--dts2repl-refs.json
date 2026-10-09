@@ -1,0 +1,18 @@
+[
+  {
+    "sha": "9c642ae4cbc9bdca5d7f1afb853dfb75fa6927f3",
+    "ref": "refs/heads/41995-test-blinky"
+  },
+  {
+    "sha": "a22ad88ee0af031e0e6ba3345e88776bbfd09c43",
+    "ref": "refs/heads/42448-analyze-gpio"
+  },
+  {
+    "sha": "e285e334c09e404eabd6e4110c86352832647c64",
+    "ref": "refs/heads/main"
+  },
+  {
+    "sha": "f6b2e6965ef9b86b963e78d384644b3bc4a17d38",
+    "ref": "refs/heads/mh/max32655_uart"
+  }
+]

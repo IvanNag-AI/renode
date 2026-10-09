@@ -1,0 +1,308 @@
+[
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "roms/seabios",
+    "upstream_url": "https://gitlab.com/qemu-project/seabios.git/",
+    "sha": "a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "roms/SLOF",
+    "upstream_url": "https://gitlab.com/qemu-project/SLOF.git",
+    "sha": "3a259df2449fc4a4e43ab5f33f0b2c66484b4bc3",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "roms/ipxe",
+    "upstream_url": "https://gitlab.com/qemu-project/ipxe.git",
+    "sha": "4bd064de239dab2426b31c9789a1f4d78087dc63",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "roms/openbios",
+    "upstream_url": "https://gitlab.com/qemu-project/openbios.git",
+    "sha": "c3a19c1e54977a53027d6232050e1e3e39a98a1b",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "roms/qemu-palcode",
+    "upstream_url": "https://gitlab.com/qemu-project/qemu-palcode.git",
+    "sha": "99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "roms/u-boot",
+    "upstream_url": "https://gitlab.com/qemu-project/u-boot.git",
+    "sha": "840658b093976390e9537724f802281c9c8439f5",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "roms/skiboot",
+    "upstream_url": "https://gitlab.com/qemu-project/skiboot.git",
+    "sha": "24a7eb35966d93455520bc2debdd7954314b638b",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "roms/QemuMacDrivers",
+    "upstream_url": "https://gitlab.com/qemu-project/QemuMacDrivers.git",
+    "sha": "90c488d5f4a407342247b9ea869df1c2d9c8e266",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "roms/seabios-hppa",
+    "upstream_url": "https://gitlab.com/qemu-project/seabios-hppa.git",
+    "sha": "a528f01d7abd511d3cc71b7acaab6e036ee524bd",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "roms/u-boot-sam460ex",
+    "upstream_url": "https://gitlab.com/qemu-project/u-boot-sam460ex.git",
+    "sha": "60b3916f33e617a815973c5a6df77055b2e3a588",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "roms/edk2",
+    "upstream_url": "https://gitlab.com/qemu-project/edk2.git",
+    "sha": "4dfdca63a93497203f197ec98ba20e2327e4afe4",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "roms/opensbi",
+    "upstream_url": "https://gitlab.com/qemu-project/opensbi.git",
+    "sha": "43cace6c3671e5172d0df0a8963e552bb04b7b20",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "roms/qboot",
+    "upstream_url": "https://gitlab.com/qemu-project/qboot.git",
+    "sha": "8ca302e86d685fa05b16e2b208888243da319941",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "roms/vbootrom",
+    "upstream_url": "https://gitlab.com/qemu-project/vbootrom.git",
+    "sha": "0c37a43527f0ee2b9584e7fb2fdc805e902635ac",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "espressif/qemu",
+    "revision": "febae182e132e4055529be423a818225ebddaa3a",
+    "path": "tests/lcitool/libvirt-ci",
+    "upstream_url": "https://gitlab.com/libvirt/libvirt-ci.git",
+    "sha": "9ad3f70bde9865d5ad18f36d256d472e72b5cbf3",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "roms/seabios",
+    "upstream_url": "https://gitlab.com/qemu-project/seabios.git/",
+    "sha": "a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "roms/SLOF",
+    "upstream_url": "https://gitlab.com/qemu-project/SLOF.git",
+    "sha": "3a259df2449fc4a4e43ab5f33f0b2c66484b4bc3",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "roms/ipxe",
+    "upstream_url": "https://gitlab.com/qemu-project/ipxe.git",
+    "sha": "4bd064de239dab2426b31c9789a1f4d78087dc63",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "roms/openbios",
+    "upstream_url": "https://gitlab.com/qemu-project/openbios.git",
+    "sha": "c3a19c1e54977a53027d6232050e1e3e39a98a1b",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "roms/qemu-palcode",
+    "upstream_url": "https://gitlab.com/qemu-project/qemu-palcode.git",
+    "sha": "99d9b4dcf27d7fbcbadab71bdc88ef6531baf6bf",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "roms/u-boot",
+    "upstream_url": "https://gitlab.com/qemu-project/u-boot.git",
+    "sha": "840658b093976390e9537724f802281c9c8439f5",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "roms/skiboot",
+    "upstream_url": "https://gitlab.com/qemu-project/skiboot.git",
+    "sha": "24a7eb35966d93455520bc2debdd7954314b638b",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "roms/QemuMacDrivers",
+    "upstream_url": "https://gitlab.com/qemu-project/QemuMacDrivers.git",
+    "sha": "90c488d5f4a407342247b9ea869df1c2d9c8e266",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "roms/seabios-hppa",
+    "upstream_url": "https://gitlab.com/qemu-project/seabios-hppa.git",
+    "sha": "3391c580960febcb9fa8f686f9666adaa462c349",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "roms/u-boot-sam460ex",
+    "upstream_url": "https://gitlab.com/qemu-project/u-boot-sam460ex.git",
+    "sha": "60b3916f33e617a815973c5a6df77055b2e3a588",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "roms/edk2",
+    "upstream_url": "https://gitlab.com/qemu-project/edk2.git",
+    "sha": "4dfdca63a93497203f197ec98ba20e2327e4afe4",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "roms/opensbi",
+    "upstream_url": "https://gitlab.com/qemu-project/opensbi.git",
+    "sha": "43cace6c3671e5172d0df0a8963e552bb04b7b20",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "roms/qboot",
+    "upstream_url": "https://gitlab.com/qemu-project/qboot.git",
+    "sha": "8ca302e86d685fa05b16e2b208888243da319941",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "roms/vbootrom",
+    "upstream_url": "https://gitlab.com/qemu-project/vbootrom.git",
+    "sha": "0c37a43527f0ee2b9584e7fb2fdc805e902635ac",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "OpenE2K/qemu-e2k",
+    "revision": "ebc4bbdbe5d74bbf5a59784f697a6df64a9aa299",
+    "path": "tests/lcitool/libvirt-ci",
+    "upstream_url": "https://gitlab.com/libvirt/libvirt-ci.git",
+    "sha": "b6a65806bc9b2b56985f5e97c936b77c7e7a99fc",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "raspberrypi/pico-bootrom-rp2350",
+    "revision": "c6cdb1711f32c3e34faaebd58618a6d096dbd52e",
+    "path": "lib/pico-sdk",
+    "upstream_url": "../pico-sdk.git",
+    "sha": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "raspberrypi/pico-bootrom-rp2350",
+    "revision": "c6cdb1711f32c3e34faaebd58618a6d096dbd52e",
+    "path": "lib/armulet",
+    "upstream_url": "../armulet.git",
+    "sha": "a95adb4e3a92ca6add831e6e742d824cd5b956f6",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "raspberrypi/pico-bootrom-rp2350",
+    "revision": "c6cdb1711f32c3e34faaebd58618a6d096dbd52e",
+    "path": "lib/sweet-b",
+    "upstream_url": "../sweet-b.git",
+    "sha": "824183c4836281e5b7d4f2d2e6d547b34d1aab81",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  },
+  {
+    "repository": "raspberrypi/pico-bootrom",
+    "revision": "ef22cd8ede5bc007f81d7f2416b48db90f313434",
+    "path": "pico_sdk",
+    "upstream_url": "https://github.com/raspberrypi/pico-sdk.git",
+    "sha": "26653ea81e340cacee55025d110c3e014a252a87",
+    "status": "not-recursively-archived-for-future-backend",
+    "reason": "source preservation only; future build environment not claimed; no bulk SDK archive"
+  }
+]

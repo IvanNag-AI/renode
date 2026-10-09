@@ -1,0 +1,30 @@
+[
+  {
+    "sha": "45f1f180c2f5ef9314dfdeebf4192ce081a54fcf",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "f3ad8ba9952e871d789ac352699f05ff2956efc2",
+    "ref": "refs/heads/renode"
+  },
+  {
+    "sha": "855cfd94d6e492c2724d981aa1232eacc3909f30",
+    "ref": "refs/tags/v1.0.32"
+  },
+  {
+    "sha": "73a44e858d7811c646fc5205f347ae098fa494ce",
+    "ref": "refs/tags/v1.0.33"
+  },
+  {
+    "sha": "c573744047d1e6c0ab0bf0ec3732e34a48b256b4",
+    "ref": "refs/tags/v1.1.0"
+  },
+  {
+    "sha": "5ab513b5fe53624c7b969c2e4f9d6022d75aa5eb",
+    "ref": "refs/tags/v2.0.0"
+  },
+  {
+    "sha": "017514a9e80c4d5cfac02d7f0106f911f01f9687",
+    "ref": "refs/tags/v2.1.2-renode.1"
+  }
+]

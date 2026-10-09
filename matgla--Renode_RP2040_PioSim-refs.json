@@ -1,0 +1,18 @@
+[
+  {
+    "sha": "055b440a1f17bb3650812a2f55679f4f257287b2",
+    "ref": "refs/heads/ci"
+  },
+  {
+    "sha": "4b855b2b1947852228a0aa3326471111f0916494",
+    "ref": "refs/heads/ciAutoBuild"
+  },
+  {
+    "sha": "4001615fcf1143573cf1cec195b9f5798573249b",
+    "ref": "refs/heads/main"
+  },
+  {
+    "sha": "4001615fcf1143573cf1cec195b9f5798573249b",
+    "ref": "refs/tags/v0.0.1"
+  }
+]

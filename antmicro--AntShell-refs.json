@@ -1,0 +1,22 @@
+[
+  {
+    "sha": "8257a33bf8302ba2d1496481493715d33346c4c8",
+    "ref": "refs/heads/dotnet_support"
+  },
+  {
+    "sha": "ca49bd325b6943802578d70ae575baddc7005a49",
+    "ref": "refs/heads/master"
+  },
+  {
+    "sha": "c927287556ac02811943be1d825bf6e4b6c2f3d3",
+    "ref": "refs/heads/multixplexing"
+  },
+  {
+    "sha": "28795b75ff6675e1659d5b8d8d745f89d201949a",
+    "ref": "refs/heads/readline_attempt"
+  },
+  {
+    "sha": "84952f85beb20859504152d5a478301256636690",
+    "ref": "refs/heads/testing"
+  }
+]
