@@ -4,13 +4,14 @@ stages:
   - build
   - test
   - export-neutralino
+  - docs
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
   FRONTEND_BASE_PATH: frontend/
   SCALENODE_DISK: 8
 
-.test_template: &test_template
+.test_template:
   stage: test
 
   variables:
@@ -22,11 +23,15 @@ variables:
     - ./scripts/install_renode.sh
     - npm ci --prefix="$FRONTEND_BASE_PATH"
 
+  after_script:
+    - mv "$FRONTEND_BASE_PATH/playwright-report" "$REPORT_PATH"
+    - ./scripts/patch_trace_viewer.sh "$REPORT_PATH"
+
   artifacts:
-    when: on_failure
+    when: always
     paths:
       - "$FRONTEND_BASE_PATH/test-results/"
-      - "httpserver.log"
+      - "$REPORT_PATH"
     expire_in: 1 week
 
 build:
@@ -45,24 +50,32 @@ build:
     expire_in: 1 week
 
 test_chromium:
-  <<: *test_template
+  extends: .test_template
+  variables:
+    REPORT_PATH: playwright-report-chromium
   script:
     - npm run test:ci:chrome --prefix="$FRONTEND_BASE_PATH"
 
 test_old_chromium:
-  <<: *test_template
+  extends: .test_template
+  variables:
+    REPORT_PATH: playwright-report-old-chromium
   script:
     # Forcefully override version to use Chromium 116.0.5845.82 (August 8th 2023)
     - npm i playwright@1.37
     - npm run test:ci:chrome --prefix="$FRONTEND_BASE_PATH"
 
 test_firefox:
-  <<: *test_template
+  extends: .test_template
+  variables:
+    REPORT_PATH: playwright-report-firefox
   script:
     - npm run test:ci:firefox --prefix="$FRONTEND_BASE_PATH"
 
 test_old_firefox:
-  <<: *test_template
+  extends: .test_template
+  variables:
+    REPORT_PATH: playwright-report-old-firefox
   script:
     # Forcefully override version to use Firefox 115.0 (July 4th 2023)
     - npm i playwright@1.37
@@ -99,3 +112,21 @@ package-neutralino-debug:
     SCALENODE_RAM: 8192
     DEBUG_BUILD: "true"
 
+deploy_docs:
+  stage: docs
+  tags: ['docs']
+  image: busybox:latest
+  when: always
+  dependencies: [test_chromium, test_old_chromium, test_firefox, test_old_firefox]
+  variables:
+    GIT_SUBMODULE_STRATEGY: none
+  script:
+    - mkdir docs
+    - mv playwright-report-* docs
+    - cp scripts/test_results_index.html docs/index.html
+  after_script:
+    - tar cf $CI_DOCS_ARCHIVE -C docs .
+  artifacts:
+    when: always
+    paths:
+      - $CI_DOCS_ARCHIVE

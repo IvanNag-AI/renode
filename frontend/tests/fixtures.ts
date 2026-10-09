@@ -20,20 +20,22 @@ export type PrepareEnvItems = {
 export const test = base.extend<{ fixtures: PrepareEnvItems }>({
   fixtures: [
     async ({ context, page }, use, testInfo) => {
-      const { logStream, websocketProcess } = await spawnRenodeWebsocketProxy(testInfo.title);
+      const logPath = testInfo.outputPath('renode-ws.log');
+      const { logStream, websocketProcess } = await spawnRenodeWebsocketProxy(logPath);
       const items = await prepareEnv(page);
       await use(items);
       await cleanup(context, page, websocketProcess, logStream);
+      await testInfo.attach('renode-ws-log', { path: logPath, contentType: 'text/plain' });
     },
     { auto: true },
   ],
 });
 
-const spawnRenodeWebsocketProxy = async (testName: string) => {
+const spawnRenodeWebsocketProxy = async (logPath: string) => {
   const flags = ['--server-mode'];
   const renodeBinaryPath = path.resolve('../renode-portable/renode');
   const workspacePath = path.resolve('../renode-portable');
-  const logStream = createWriteStream(`test-results/wsproxy-${testName}.log`);
+  const logStream = createWriteStream(logPath);
 
   flags.push(`--server-mode-work-dir=${workspacePath}`);
 
@@ -42,6 +44,8 @@ const spawnRenodeWebsocketProxy = async (testName: string) => {
   websocketProcess.on('error', (msg) => {
     console.log(`RenodeWebsocketProxy has returned an error: ${msg}`);
   });
+
+  websocketProcess.stderr?.pipe(logStream, { end: false });
 
   let passedData = '';
 
@@ -85,12 +89,13 @@ const cleanup = async (
   proc: ChildProcess,
   logStream: WriteStream,
 ) => {
-  logStream.destroy();
   await page.close();
   await context.close();
   await new Promise((resolve) => {
-    proc.once('exit', resolve);
+    proc.once('close', resolve); // 'close' fires after stdout/stderr are drained
     // To kill child process with descendants
     process.kill(-proc.pid!, 'SIGTERM');
   });
+  // Flush the log only after Renode exits, so the attachment has its full output
+  await new Promise((resolve) => logStream.end(resolve));
 };

@@ -8,7 +8,7 @@ export default defineConfig({
   ],
   use: {
     baseURL: 'http://localhost:4173',
-    trace: 'retain-on-failure',
+    trace: 'on',
     video: 'retain-on-failure',
     testIdAttribute: 'data-test-id',
   },
