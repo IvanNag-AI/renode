@@ -118,7 +118,7 @@ deploy_docs:
   tags: ['docs']
   image: busybox:latest
   when: always
-  dependencies: [test_chromium, test_old_chromium, test_firefox, test_old_firefox]
+  dependencies: [build, test_chromium, test_old_chromium, test_firefox, test_old_firefox]
   variables:
     GIT_SUBMODULE_STRATEGY: none
     SCALENODE_FEATURES: "!hetzner"
@@ -126,6 +126,10 @@ deploy_docs:
     - mkdir docs
     - mv playwright-report-* docs
     - cp scripts/test_results_index.html docs/index.html
+    # Static build of this branch; hash routing makes SvelteKit emit absolute /_app/ paths,
+    # rewrite them so the app works from the docs sub-folder
+    - mv "$FRONTEND_BASE_PATH/build" docs/app
+    - sed -i -E 's#"/(_app/|favicon\.svg)#"./\1#g' docs/app/index.html
   after_script:
     - tar cf $CI_DOCS_ARCHIVE -C docs .
   artifacts:
